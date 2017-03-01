@@ -1,0 +1,24 @@
+%h3 Imported: Header Partial
+
+%header
+  .top-bar
+    .top-bar-left
+      %ul.menu
+        %li
+          %a{:href => "#"} Oness
+        %li
+          %a{:href => "#"} Two
+        %li
+          %a{:href => "#"} Three
+        %li
+          %a{:href => "#"} Four
+    .top-bar-right
+      %ul.menu
+        %li
+          %input{:placeholder => "Search", :type => "search"}/
+        %li
+          %button.button{:type => "button"} Search
+
+  .title-bar{"data-hide-for" => "medium", "data-responsive-toggle" => "main-menu"}
+    %button.menu-icon{"data-toggle" => "", :type => "button"}
+    .title-bar-title Menu
