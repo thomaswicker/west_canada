@@ -1,4 +1,4 @@
-# Angular 1.5 Todo App
+# Website for WEST Inc Canada Division
 *
-** My token angular todo app **
+** Built on stack of Wordpress, Gulp, SCSS **
 *
