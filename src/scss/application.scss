@@ -1,0 +1,18 @@
+
+/* %%%%%%%%%%%%%%%%%%%% APPLICATION SCSS %%%%%%%%%%%%%%%%%%%% */
+
+@charset "UTF-8";
+
+/* #########%% GLOBAL %%######### */
+@import "global/vars";
+
+/* #########%% BASE %%######### */
+@import "base/reset";
+@import "base/normalize";
+@import "base/main";
+
+/* #########%% MODULES %%######### */
+// @import "modules/superheros";
+
+/* #########%% LAYOUTS %%######### */
+@import "layouts/home";
