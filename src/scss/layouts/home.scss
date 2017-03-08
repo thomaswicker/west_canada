@@ -1,8 +1,71 @@
 
 /* %%%%%%%%%%%%%%%%%%%% HOME SCSS %%%%%%%%%%%%%%%%%%%% */
 
-#home-container {
-  .superhero {
-    padding-top: 1rem;
+.body-content {
+  float: left;
+  width: 100%;
+
+  p {
+    float: left;
+    width: 100%;
+    margin-top: $unit-md;
+  }
+
+  .bc-left {
+    float: left;
+    width: 60%;
+    padding: $unit-md $unit-xxl 60px $unit-xxl;
+
+    h1 {
+      margin-bottom: $unit-xs;
+      font-size: $font-size-xl;
+      font-weight: $font-weight-light;
+    }
+
+    h2 {
+      font-family: $font-2;
+      font-size: 20px;
+      font-weight: $font-weight-semibold;
+      font-style: italic;
+      color: $color-tertiary;
+    }
+  }
+
+  .bc-right {
+    float: left;
+    width: 40%;
+    padding: $unit-xl 0 45px $unit-md;
+    border-left: 2px solid #ddd;
+
+    .contact-callout {
+      float: left;
+      width: 90%;
+      min-height: 200px;
+      margin-left: 5%;
+      margin-right: 5%;
+      padding: $unit-md $unit-lg;
+      background-color: white;
+
+      h2 {
+        font-size: $font-size-lg;
+        font-weight: $font-weight-semibold;
+      }
+
+      p {
+        float: left;
+        width: 100%;
+        margin-top: $unit-sm;
+      }
+
+      strong {
+        float: left;
+        width: 100%;
+        margin-top: $unit;
+        margin-bottom: $unit-lg;
+        font-family: $font-2;
+        font-style: italic;
+        font-weight: $font-weight-bold;
+      }
+    }
   }
 }

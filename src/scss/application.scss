@@ -3,6 +3,7 @@
 
 @charset "UTF-8";
 
+
 /* #########%% GLOBAL %%######### */
 @import "global/vars";
 
@@ -10,11 +11,17 @@
 @import "base/reset";
 @import "base/normalize";
 @import "base/main";
+@import "base/helpers";
+@import "base/type";
 
 /* #########%% MODULES %%######### */
 @import "modules/buttons";
-@import "modules/nav";
 @import "modules/footer";
+@import "modules/headers";
+@import "modules/nav";
+@import "modules/sm-nav";
+@import "modules/superhero";
+@import "modules/widget-footer";
 
 /* #########%% LAYOUTS %%######### */
 @import "layouts/home";

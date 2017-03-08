@@ -1,8 +1,8 @@
 footer {
   float: left;
   width: 100%;
-  padding: 5px 0;
-  background-color: black;
+  padding: $unit-sm 0;
+  background-color: $color-primary;
 
   .footer-left {
     float: left;

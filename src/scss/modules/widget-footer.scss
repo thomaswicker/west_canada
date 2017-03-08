@@ -1,0 +1,41 @@
+#widget-footer {
+  float: left;
+  width: 100%;
+  min-height: 700px;
+  padding: $unit-xl 2%;
+  padding-right: 2%;
+  background-image: url("../img/topo_bg_gray.jpg");
+  background-size: cover;
+
+  #wf-left, #wf-middle, #wf-right  {
+    float: left;
+    width: 33.333%;
+
+    .widget-panel {
+      width: 94%;
+      min-height: 400px;
+      margin-left: 3%;
+      margin-right: 3%;
+      background-color: white;
+      border: 1px solid $dark-gray;
+
+      h3 {
+        float: left;
+        width: 100%;
+        padding: 12px $unit-md;
+        text-align: left;
+        font-size: 18px;
+        color: white;
+        background-color: $dark-gray;
+
+        i {
+          margin-right: 3px;
+        }
+      }
+
+      .widget-panel-content {
+        padding: 60px $unit-md $unit-md $unit-md;
+      }
+    }
+  }
+}

@@ -1,1 +1,38 @@
-%h3 Imported: Superhero Partial
+= Haml::Engine.new(File.read('./src/views/partials/contact-btn.haml')).render
+
+.orbit.superhero{"aria-label" => "Favorite Space Pictures", "data-orbit" => "", "data-options" => "animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;", :role => "region"}
+  %ul.orbit-container
+    %button.orbit-previous
+      %span.show-for-sr Previous Slide
+      %i.fa.fa-arrow-left
+
+    %button.orbit-next
+      %span.show-for-sr Next Slide
+      %i.fa.fa-arrow-right
+
+    %li.is-active.orbit-slide
+      %figcaption Space, the final frontier.
+      %img.orbit-image{:alt => "Eagle", :src => "img/superhero_img_eagle.jpg"}/
+
+    %li.orbit-slide
+      %figcaption Space, the final frontier.
+      %img.orbit-image{:alt => "Eagle", :src => "img/superhero_img_bear_on_tree.jpg"}/
+
+    %li.orbit-slide
+      %figcaption Space, the final frontier.
+      %img.orbit-image{:alt => "Stats", :src => "img/superhero_img_stats.jpg"}/
+
+    %li.orbit-slide
+      %figcaption Space, the final frontier.
+      %img.orbit-image{:alt => "Power Lines", :src => "img/superhero_img_powerlines.jpg"}/
+
+  -# %nav.orbit-bullets
+  -#   %button.is-active{"data-slide" => "0"}
+  -#     %span.show-for-sr First slide details.
+  -#     %span.show-for-sr Current Slide
+  -#   %button{"data-slide" => "1"}
+  -#     %span.show-for-sr Second slide details.
+  -#   %button{"data-slide" => "2"}
+  -#     %span.show-for-sr Third slide details.
+  -#   %button{"data-slide" => "3"}
+  -#     %span.show-for-sr Fourth slide details.

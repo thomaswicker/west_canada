@@ -8,6 +8,8 @@
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <link href='img/favicon.ico' rel='shortcut icon'>
     <link href='css/foundation.min.css' rel='stylesheet'>
+    <link href='bower_components/motion-ui/dist/motion-ui.min.css' rel='stylesheet'>
+    <link href='bower_components/components-font-awesome/css/font-awesome.min.css' rel='stylesheet'>
     <link href='css/application.min.css' rel='stylesheet'>
   </head>
   <body>
@@ -62,8 +64,126 @@
         <button class='menu-icon' data-toggle='' type='button'></button>
       </div>
     </nav>
-    <h3>Imported: Superhero Partial</h3>
-    <h3>Imported: Body Partial</h3>
+    <a class='btn contact-btn-callout' href='contact.html'>
+      <i class='fa fa-phone'></i>
+      Contact Us
+    </a>
+    <div aria-label='Favorite Space Pictures' class='orbit superhero' data-options='animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;' data-orbit='' role='region'>
+      <ul class='orbit-container'>
+        <button class='orbit-previous'>
+          <span class='show-for-sr'>Previous Slide</span>
+          <i class='fa fa-arrow-left'></i>
+        </button>
+        <button class='orbit-next'>
+          <span class='show-for-sr'>Next Slide</span>
+          <i class='fa fa-arrow-right'></i>
+        </button>
+        <li class='is-active orbit-slide'>
+          <figcaption>Space, the final frontier.</figcaption>
+          <img alt='Eagle' class='orbit-image' src='img/superhero_img_eagle.jpg'>
+        </li>
+        <li class='orbit-slide'>
+          <figcaption>Space, the final frontier.</figcaption>
+          <img alt='Eagle' class='orbit-image' src='img/superhero_img_bear_on_tree.jpg'>
+        </li>
+        <li class='orbit-slide'>
+          <figcaption>Space, the final frontier.</figcaption>
+          <img alt='Stats' class='orbit-image' src='img/superhero_img_stats.jpg'>
+        </li>
+        <li class='orbit-slide'>
+          <figcaption>Space, the final frontier.</figcaption>
+          <img alt='Power Lines' class='orbit-image' src='img/superhero_img_powerlines.jpg'>
+        </li>
+      </ul>
+    </div>
+    <ul class='sm-nav'>
+      <li>
+        <a href='index.html'>
+          <i class='fa fa-facebook'></i>
+        </a>
+      </li>
+      <li>
+        <a href='index.html'>
+          <i class='fa fa-twitter'></i>
+        </a>
+      </li>
+      <li>
+        <a href='index.html'>
+          <i class='fa fa-linkedin'></i>
+        </a>
+      </li>
+      <li>
+        <a href='index.html'>
+          <i class='fa fa-flickr'></i>
+        </a>
+      </li>
+    </ul>
+    <section class='body-content'>
+      <div class='bc-left'>
+        <h1>Western Ecosystems Technology, ULC</h1>
+        <h2>Providing Scientific Solutions to Natural Resource Challenges in Canada</h2>
+        <p class='body-text'>
+          WEST provides environmental and statistical consulting services and contract research
+          throughout Canada and internationally to industry, government, and private organizations.
+          We offer clients a unique combination of field ecology and statistics to help solve on-going
+          and contemporary natural resource problems.
+        </p>
+        <p class='body-text'>
+          Through the use of state-of-the-art statistical principles in the design, conduct and analysis
+          of ecological field studies, WEST specializes in a common sense, defensible, and professional approach to the solution of natural resource problems. WEST’s expert ecologists and biometricians have broad experience in basic and applied ecological studies and the sophisticated
+          analysis of natural resource data.
+        </p>
+      </div>
+      <div class='bc-right'>
+        <div class='contact-callout'>
+          <h2>Contact Us</h2>
+          <p class='body-text'>
+            WEST is committed to providing the highest level of professional consulting services resulting in original solutions to a wide range of natural resource problems.
+          </p>
+          <strong>
+            Contact us with your project inquiries.
+          </strong>
+          <div class='btn btn-primary'>
+            Contact
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id='widget-footer'>
+      <div id='wf-left'>
+        <div class='widget-panel'>
+          <h3>
+            <i class='fa fa-twitter'></i>
+            Tweets by WEST
+          </h3>
+          <div class='widget-panel-content'>
+            Tweets by WEST
+          </div>
+        </div>
+      </div>
+      <div id='wf-middle'>
+        <div class='widget-panel'>
+          <h3>
+            <i class='fa fa-align-left'></i>
+            News & Events
+          </h3>
+          <div class='widget-panel-content'>
+            News & Events
+          </div>
+        </div>
+      </div>
+      <div id='wf-right'>
+        <div class='widget-panel'>
+          <h3>
+            <i class='fa fa-camera-retro'></i>
+            WEST Photo Stream
+          </h3>
+          <div class='widget-panel-content'>
+            WEST Photo Stream
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class='footer-left'>
         <p>
@@ -80,10 +200,14 @@
       </div>
       <!-- Magical Spells -->
       <script src='bower_components/jquery/dist/jquery.min.js'></script>
+      <script src='bower_components/motion-ui/dist/motion-ui.min.js'></script>
       <script src='js/foundation.min.js'></script>
       <script src='js/application.min.js'></script>
       <script>
         $(document).foundation();
+      </script>
+      <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
       </script>
     </footer>
   </body>

@@ -8,10 +8,13 @@
     %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", :name => "viewport"}
     %link{:href => "img/favicon.ico", :rel => "shortcut icon"}
     %link{:href => "css/foundation.min.css", :rel => "stylesheet"}
+    %link{:href => "bower_components/motion-ui/dist/motion-ui.min.css", :rel => "stylesheet"}
+    %link{:href => "bower_components/components-font-awesome/css/font-awesome.min.css", :rel => "stylesheet"}
     %link{:href => "css/application.min.css", :rel => "stylesheet"}
 
   %body
     = Haml::Engine.new(File.read('./src/views/partials/header.haml')).render
     = Haml::Engine.new(File.read('./src/views/partials/superhero.haml')).render
     = Haml::Engine.new(File.read('./src/views/partials/body.haml')).render
+    = Haml::Engine.new(File.read('./src/views/partials/widget_footer.haml')).render
     = Haml::Engine.new(File.read('./src/views/partials/footer.haml')).render

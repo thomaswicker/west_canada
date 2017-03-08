@@ -1,0 +1,32 @@
+.sm-nav {
+  position: absolute;
+  top: 350px;
+  right: 0;
+  width: 200px;
+  background: white;
+
+  li {
+    float: left;
+    width: 25%;
+    text-align: center;
+
+    a {
+      float: left;
+      width: 100%;
+      padding: 10px 20px;
+      background-color: white;
+
+      &:hover {
+        background-color: $color-tertiary-alt;
+
+        i {
+          color: lighten($color-primary, 10%);
+        }
+      }
+
+      i {
+        font-size: 18px;
+      }
+    }
+  }
+}

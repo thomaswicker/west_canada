@@ -3,26 +3,18 @@
 /* %%%%%%%%%%%%%%%%%%%% MAIN SCSS %%%%%%%%%%%%%%%%%%%% */
 
 html {
+  background-color: $color-primary;
   font-size: 100%;
   overflow-x: hidden;
 }
 
 body {
+  background-color: $color-primary;
   font-family: $font-1;
   background-color: white;
   letter-spacing: normal;
   overflow-x: hidden;
   overflow-y: scroll;
-}
-
-a {
-  color: $color-primary;
-  font-family: $font-2;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 .bg-1, .bg-2 {

@@ -1,7 +1,73 @@
-
 .btn {
-  padding: 5px 15px;
-  background-color: $button-primary;
-  color: white;
+  float: left;
+  width: auto;
+  padding: $unit $unit-xl;
+  font-family: $font-1;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semibold;
   text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &.btn-primary {
+    background-color: $color-secondary;
+    color: white;
+
+    &:hover {
+      background-color: darken($color-secondary, 10%);
+      cursor: pointer;
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $color-secondary;
+    color: white;
+
+    &:hover {
+      background-color: darken($color-secondary, 10%);
+      cursor: pointer;
+    }
+  }
+
+  &.btn-tertiary {
+    background-color: $color-tertiary;
+    color: white;
+
+    &:hover {
+      background-color: darken($color-tertiary, 10%);
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+.contact-btn-callout {
+  position: fixed;
+  top: 80px;
+  right: -98px;
+  padding: $unit $unit-sm;
+  background-color: $color-electric-blue;
+  color: white;
+  transition: all 200ms ease;
+  z-index: 20;
+
+  &:hover {
+    right: 0px;
+    background-color: $color-tertiary-alt;
+    color: lighten($color-primary, 10%);
+
+    i {
+      margin-right: $unit-xxs;
+      font-size: 15px;
+    }
+  }
+
+  i {
+    margin-right: $unit-xs;
+    font-size: 18px;
+  }
 }
