@@ -1,24 +1,36 @@
-%h3 Imported: Header Partial
+%nav
+  .nav-bar.hide-for-small-only
+    .nav-bar-left
+      %a{:href => "index.html"}
+        %img{:alt => "West Canada Logo", :src => "svg/west_ca_logo.svg"}
 
-%header
-  .top-bar
-    .top-bar-left
+    .nav-bar-right
       %ul.menu
         %li
-          %a{:href => "#"} Oness
+          %a.active{:href => "index.html"} Home
         %li
-          %a{:href => "#"} Two
+          %a{:href => "careers.html"} Services
         %li
-          %a{:href => "#"} Three
+          %a{:href => "markets.html"} Markets
         %li
-          %a{:href => "#"} Four
-    .top-bar-right
-      %ul.menu
+          %a{:href => "about.html"} About
         %li
-          %input{:placeholder => "Search", :type => "search"}/
-        %li
-          %button.button{:type => "button"} Search
+          %a{:href => "careers.html"} Careers
 
-  .title-bar{"data-hide-for" => "medium", "data-responsive-toggle" => "main-menu"}
+  .nav-bar.show-for-small-only
+    %a{:href => "index.html"}
+      %img{:alt => "West Canada Logo", :src => "svg/west_ca_logo.svg"}
+
+    %ul.menu
+      %li
+        %a{:href => "index.html"} Home
+      %li
+        %a{:href => "careers.html"} Services
+      %li
+        %a{:href => "markets.html"} Markets
+      %li
+        %a{:href => "about.html"} About
+      %li
+        %a{:href => "careers.html"} Careers
+
     %button.menu-icon{"data-toggle" => "", :type => "button"}
-    .title-bar-title Menu

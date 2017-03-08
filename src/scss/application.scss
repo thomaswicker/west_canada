@@ -12,7 +12,9 @@
 @import "base/main";
 
 /* #########%% MODULES %%######### */
-// @import "modules/superheros";
+@import "modules/buttons";
+@import "modules/nav";
+@import "modules/footer";
 
 /* #########%% LAYOUTS %%######### */
 @import "layouts/home";

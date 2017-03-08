@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:charset => "UTF-8"}
-    %title My App
+    %title WEST Canada
     %meta{:content => "WEST Canada", :name => "description"}
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
     %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", :name => "viewport"}
@@ -12,5 +12,6 @@
 
   %body
     = Haml::Engine.new(File.read('./src/views/partials/header.haml')).render
+    = Haml::Engine.new(File.read('./src/views/partials/superhero.haml')).render
     = Haml::Engine.new(File.read('./src/views/partials/body.haml')).render
     = Haml::Engine.new(File.read('./src/views/partials/footer.haml')).render

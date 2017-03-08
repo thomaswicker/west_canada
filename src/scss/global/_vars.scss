@@ -4,7 +4,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,500,500italic,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
 
-
 /* ==========================================================================
    %% Typography Variables %%
    ========================================================================== */
@@ -94,21 +93,24 @@ $border-radius: 0;
    ========================================================================== */
 
 // Generic monochrome colors
-$none:              transparent;
-$white:             #ffffff;
-$off-white:         #f4f4f4;
-$xxlight-gray:      #dddddd;
-$xlight-gray:       #cccccc;
-$light-gray:        #bbbbbb;
-$gray:              #999999;
-$medium-gray:       #777777;
-$dark-gray:         #444444;
-$xdark-gray:        #222222;
-$xxdark-gray:       #111111;
-$black:             #000000;
+$none:                transparent;
+$white:               #ffffff;
+$off-white:           #f4f4f4;
+$xxlight-gray:        #dddddd;
+$xlight-gray:         #cccccc;
+$light-gray:          #bbbbbb;
+$gray:                #999999;
+$medium-gray:         #777777;
+$dark-gray:           #444755;
+$xdark-gray:          #333333;
+$xxdark-gray:         #222222;
+$xxxdark-gray:        #111111;
+$black:               #000000;
 
-$color-primary:     green;
-$color-secondary:   $dark-gray;
+$color-primary:       #101d30;
+$color-secondary:     #72A430;
+$color-tertiary:      #8c9da7;
+$color-tertiary-alt:  #acd1e3;
 
 $link:              $color-secondary;
 $text:              $xdark-gray;

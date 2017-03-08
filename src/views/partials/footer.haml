@@ -1,17 +1,13 @@
-%h3 Imported: Footer Partial
+%footer
+  .footer-left
+    %p
+      Site design by:
+      %a{:href => "http://www.xiri.io"}
+        XIRI Media
 
-.row.expanded
-  .medium-6.columns
-    %ul.menu
-      %li
-        %a{:href => "#"} Legal
-      %li
-        %a{:href => "#"} Partner
-      %li
-        %a{:href => "#"} Explore
-  .medium-6.columns
-    %ul.menu.align-right
-      %li.menu-text Copyright © 2017 WEST Inc
+  .footer-right
+    %p.copyright
+      Copyright © 2017 WEST Inc
 
   / Magical Spells
   %script{:src => "bower_components/jquery/dist/jquery.min.js"}

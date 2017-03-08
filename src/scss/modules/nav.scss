@@ -1,0 +1,56 @@
+nav {
+  .nav-bar {
+    float: left;
+    width: 100%;
+    background-color: $color-primary;
+
+    .nav-bar-left {
+      float: left;
+      width: 30%;
+
+      a {
+        position: relative;
+        left: $unit-xs;
+
+        img {
+          max-width: 100px;
+        }
+      }
+    }
+    .nav-bar-right {
+      float: right;
+      width: 70%;
+
+      ul.menu {
+        float: right;
+        width: 100%;
+        max-width: 475px;
+        text-transform: uppercase;
+
+        li {
+
+          a {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            font-family: $font-1;
+            font-size: $font-size-sm;
+            font-weight: 500;
+            color: white;
+
+            &:hover {
+              background-color: $color-tertiary-alt;
+              color: $color-primary;
+              text-decoration: none;
+            }
+
+            &.active {
+              background-color: $white;
+              color: $color-primary;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
