@@ -1,0 +1,31 @@
+
+/* %%%%%%%%%%%%%%%%%%%% SERVICES SPECIFIC STYLES %%%%%%%%%%%%%%%%%%%% */
+
+.body-content-services {
+  .bc-left {
+    h4 {
+      font-size: $font-size-lg;
+    }
+
+    ul.areas-of-expertise {
+      float: left;
+      width: 100%;
+      list-style-type: disc;
+
+      li {
+        float: left;
+        width: 100%;
+        margin-top: $unit-sm;
+        margin-left: $unit-md;
+      }
+    }
+  }
+
+  .bc-right {
+    padding-right: $unit-xl;
+
+    h3 {
+      text-transform: uppercase;
+    }
+  }
+}

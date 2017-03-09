@@ -2,7 +2,7 @@
   position: relative;;
   float: left;
   width: 100%;
-  margin-top: 0px;
+  margin-top: 0;
   background-color: white;
 
   .orbit-next, .orbit-previous {
@@ -22,19 +22,31 @@
 
   }
 
+  .orbit-image {
+
+  }
+
   .orbit-slide {
     figcaption {
       position: absolute;
-      top: 18%;
+      top: 28%;
       left: 100px;
       width: 100%;
-      max-width: 500px;
+      max-width: 700px;
       font-family: $font-1;
-      font-size: 90px;
+      font-size: 60px;
       font-weight: 300;
       line-height: 115%;
       color: white;
       text-shadow: 1px 1px 1px #000;
+
+      &.short-title {
+        top: 40%;
+      }
+
+      &.shortest-title {
+        top: 30%;
+      }
     }
   }
 

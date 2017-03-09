@@ -1,0 +1,43 @@
+ul.sidebar-nav {
+  float: left;
+  width: 100%;
+
+  li {
+    float: left;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid $xxlight-gray;
+
+    a {
+      float: left;
+      width: 100%;
+      padding: 12px $unit-md 12px $unit-xs;
+      font-size: 18px;
+      background-color: white;
+
+      &:hover {
+        background-color: $color-secondary;
+        color: white;
+
+        i {
+          color: $black;
+        }
+
+        strong {
+          display: inline;
+          color: $black;
+        }
+      }
+
+      i {
+        margin-right: $unit-xxs;
+        font-size: 18px;
+        color: $color-secondary;
+      }
+
+      strong {
+        display: none;
+      }
+    }
+  }
+}

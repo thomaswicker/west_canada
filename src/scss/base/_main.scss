@@ -17,6 +17,11 @@ body {
   overflow-y: scroll;
 }
 
+ul li a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .bg-1, .bg-2 {
   padding-top: 40px;
   text-align: center;

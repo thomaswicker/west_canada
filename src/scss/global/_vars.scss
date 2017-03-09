@@ -133,6 +133,31 @@ $site-background: $white;
 
 $form-focus: $xlight-gray;
 
+/* ==========================================================================
+   %% Media Query Variables %%
+   ========================================================================== */
+
+// small range (0px --> 640px) ==> Good for mobile devices
+$sm-start:   0px;
+$sm-end:     640px;
+
+// medium range (640px --> 1024px) ==> Good for tablet devices
+$md-start:  640px;
+$md-end:    1024px;
+
+// large range (1025px --> 1440px) ==> Good for portable & laptop devices
+$lg-start:   1025px;
+$lg-end:     1440px;
+
+// xlarge range (1441px --> 1992px)  ==> Good for large screens & desktop
+$xl-start:  90.1441px;
+$xl-end:    1992px;
+
+// jumbo range (1993px --> up)  ==> Good for everything above large screens & desktop
+$jumbo-start:  1993px;
+
+// Always declare site background fallback
+$site-background: $white;
 
 // If you have to support IE8
 $support-legacy: true;

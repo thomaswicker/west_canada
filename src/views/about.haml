@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:charset => "UTF-8"}
-    %title WEST Canada
+    %title WEST Canada | About Us
     %meta{:content => "WEST Canada", :name => "description"}
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
     %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", :name => "viewport"}
@@ -14,7 +14,7 @@
 
   %body
     = Haml::Engine.new(File.read('./src/views/partials/header.haml')).render
-    = Haml::Engine.new(File.read('./src/views/partials/superheros/superhero.haml')).render
-    = Haml::Engine.new(File.read('./src/views/partials/body_content/body.haml')).render
+    = Haml::Engine.new(File.read('./src/views/partials/superheros/superhero_about.haml')).render
+    = Haml::Engine.new(File.read('./src/views/partials/body_content/body_about.haml')).render
     = Haml::Engine.new(File.read('./src/views/partials/widget_footer.haml')).render
     = Haml::Engine.new(File.read('./src/views/partials/footer.haml')).render

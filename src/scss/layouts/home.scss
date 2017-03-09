@@ -14,7 +14,7 @@
   .bc-left {
     float: left;
     width: 60%;
-    padding: $unit-md $unit-xxl 60px $unit-xxl;
+    padding: 0 $unit-xxl 60px $unit-xxl;
 
     h1 {
       margin-bottom: $unit-xs;
@@ -34,7 +34,7 @@
   .bc-right {
     float: left;
     width: 40%;
-    padding: $unit-xl 0 45px $unit-md;
+    padding: $unit-md 0 45px $unit-md;
     border-left: 2px solid #ddd;
 
     .contact-callout {

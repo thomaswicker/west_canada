@@ -6,6 +6,7 @@
 
 /* #########%% GLOBAL %%######### */
 @import "global/vars";
+@import "global/mixins";
 
 /* #########%% BASE %%######### */
 @import "base/reset";
@@ -19,9 +20,14 @@
 @import "modules/footer";
 @import "modules/headers";
 @import "modules/nav";
+@import "modules/sidebar-nav";
 @import "modules/sm-nav";
 @import "modules/superhero";
 @import "modules/widget-footer";
 
 /* #########%% LAYOUTS %%######### */
+@import "layouts/about";
+@import "layouts/careers";
 @import "layouts/home";
+@import "layouts/markets";
+@import "layouts/services";

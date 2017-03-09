@@ -1,0 +1,54 @@
+= Haml::Engine.new(File.read('./src/views/partials/sm-nav.haml')).render
+
+%section.body-content.body-content-services
+  .bc-left
+    %h1 Avian Species Research and Management
+
+    %p.body-text
+      Our extensive background provides WEST with the necessary foundation to develop and promote appropriate study designs and analyses. Our team has worked with many threatened and endangered species and have experience with the species, their habitats, and the laws and agencies that we interact with on these projects.
+
+    %h4 Areas of Expertise
+
+    %ul.areas-of-expertise
+      %li
+        Avoidance, Minimization, and Mitigation Strategies
+      %li
+        Compliance Strategies
+      %li
+        Experimental Advanced Conservation Practices Research and Development
+      %li
+        Population Monitoring
+      %li
+        Resource Equivalency Analysis
+    
+    %img{:alt => "West Canada Logo", :src => "img/sage-grouse.jpg"}
+
+
+  .bc-right
+    %h3 Our Services
+    %ul.sidebar-nav
+      %li.active
+        %a{:href => "services.html"}
+          %i.fa.fa-arrow-right
+          %strong OPEN :
+          Avian Species Research & Management
+      %li
+        %a{:href => "bat-research-monitoring.html"}
+          %i.fa.fa-arrow-right
+          %strong OPEN :
+          Bat Research & Monitoring
+      %li
+        %a{:href => "big-game-research-and-monitoring.html"}
+          %i.fa.fa-arrow-right
+          %strong OPEN :
+          Big Game Research & Monitoring
+      %li
+        %a{:href => "index.html"}
+          %i.fa.fa-arrow-right
+          %strong OPEN :
+          Statistics & Biometrics
+      %li
+        %a{:href => "index.html"}
+          %i.fa.fa-arrow-right
+          %strong OPEN :
+          Wildlife Research & Management
