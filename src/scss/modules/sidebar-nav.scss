@@ -8,6 +8,31 @@ ul.sidebar-nav {
     text-align: left;
     border-bottom: 1px solid $xxlight-gray;
 
+    &.active {
+      a {
+        background-color: $color-secondary;
+        color: white;
+
+        &:hover {
+          background-color: $color-secondary;
+          color: white;
+          cursor: default;
+
+          i {
+            color: $white;
+          }
+
+          strong {
+            display: none;
+          }
+        }
+
+        i {
+          color: white;
+        }
+      }
+    }
+
     a {
       float: left;
       width: 100%;
@@ -16,7 +41,7 @@ ul.sidebar-nav {
       background-color: white;
 
       &:hover {
-        background-color: $color-secondary;
+        background-color: $color-tertiary;
         color: white;
 
         i {

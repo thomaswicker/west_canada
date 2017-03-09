@@ -2,8 +2,12 @@
 /* %%%%%%%%%%%%%%%%%%%% SERVICES SPECIFIC STYLES %%%%%%%%%%%%%%%%%%%% */
 
 .body-content-services {
+  float: left;
+  width: 100%;
+
   .bc-left {
     h4 {
+      margin-top: $unit-xl;
       font-size: $font-size-lg;
     }
 
@@ -18,6 +22,13 @@
         margin-top: $unit-sm;
         margin-left: $unit-md;
       }
+    }
+
+    img {
+      float: left;
+      width: 100%;
+      max-width: 400px;
+      margin-top: 30px;
     }
   }
 

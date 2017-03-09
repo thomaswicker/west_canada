@@ -1,12 +1,13 @@
 h1, h2, h3, h4, h5, h6 {
   float: left;
   width: 100%;
-  margin-top: $unit-lg;
+  margin-top: 0;
   margin-bottom: $unit-xxs;
   font-family: $font-1;
 }
 
 h1 {
+  margin-top: $unit-md;
   font-size: $h1-size;
 }
 

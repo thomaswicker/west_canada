@@ -17,12 +17,4 @@
       analysis of natural resource data.
 
   .bc-right
-    .contact-callout
-      %h2 Contact Us
-      %p.body-text
-        WEST is committed to providing the highest level of professional consulting services resulting in original solutions to a wide range of natural resource problems.
-      %strong
-        Contact us with your project inquiries.
-
-      .btn.btn-primary
-        Contact
+    = Haml::Engine.new(File.read('./src/views/partials/sidebar-nav-markets.haml')).render
