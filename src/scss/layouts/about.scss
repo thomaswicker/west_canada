@@ -2,5 +2,135 @@
 /* %%%%%%%%%%%%%%%%%%%% ABOUT SPECIFIC STYLES %%%%%%%%%%%%%%%%%%%% */
 
 .body-content-about {
+  float: left;
+  width: 100%;
+  padding: 0 $unit-jumbo $unit-jumbo $unit-jumbo;
 
+  @include mq(sm) {
+    padding-left: $unit-xl;
+    padding-right: $unit-xl;
+  }
+
+  .bca-left {
+    float: left;
+    width: 70%;
+    padding: 0 $unit-jumbo $unit-jumbo $unit-jumbo;
+
+    @include mq(md) {
+      float: left;
+      width: 100%;
+      padding: 0 $unit-sm $unit-xxs 0;
+    }
+
+    @include mq(sm) {
+      float: left;
+      width: 100%;
+      padding: $unit-lg $unit-sm $unit-xxs 0;
+    }
+
+    h1 {
+      float: left;
+      width: 100%;
+      margin-top: $unit-xl;
+      margin-bottom: $unit-md;
+      font-size: $font-size-xl;
+      font-weight: 300;
+
+      @include mq(md) {
+        margin-bottom: $unit-md;
+        font-weight: 300;
+      }
+
+      @include mq(sm) {
+        margin-bottom: $unit-md;
+        font-weight: $font-weight-semibold;
+      }
+    }
+
+    h2 {
+      float: left;
+      width: 100%;
+      margin-top: $unit-xl;
+      margin-bottom: 0;
+      font-size: 22px;
+      font-weight: $font-weight-bold;
+
+      @include mq(md) {
+        margin-bottom: $unit-sm;
+        font-size: $font-size-md;
+      }
+
+      @include mq(sm) {
+        margin-bottom: $unit-sm;
+        font-size: $font-size-md;
+      }
+    }
+
+    h3 {
+      float: left;
+      width: 100%;
+      margin-bottom: $unit-xl;
+    }
+
+    h4 {
+      margin-top: $unit-xl;
+      font-size: $font-size-lg;
+    }
+
+    img {
+      float: left;
+      width: 100%;
+      max-width: 400px;
+      margin-top: 30px;
+    }
+
+    p.body-text {
+      margin-bottom: $unit-lg;
+    }
+  }
+
+  .bca-right {
+    float: left;
+    width: 30%;
+    margin-top: $unit-xl;
+    padding-right: $unit-xl;
+    text-align: center;
+    border-left: 2px solid #ddd;
+
+    @include mq(md) {
+      float: left;
+      width: 100%;
+      padding-top: $unit-jumbo;
+      border-top: 2px solid $color-tertiary-alt;
+      border-left: none;
+    }
+
+    @include mq(sm) {
+      float: left;
+      width: 100%;
+      padding: 0 0 25px 15px;
+      border-top: 2px solid $color-tertiary-alt;
+      border-left: none;
+    }
+
+    h3 {
+      text-transform: uppercase;
+    }
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      border: 2px solid $color-primary;
+
+      @include mq(md) {
+        max-width: 500px;
+        margin-top: $unit-jumbo;
+      }
+
+      @include mq(sm) {
+        max-width: 500px;
+        margin-top: $unit-jumbo;
+      }
+    }
+  }
 }

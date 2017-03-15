@@ -1,9 +1,8 @@
 = Haml::Engine.new(File.read('./src/views/partials/sm-nav.haml')).render
 
 %section.body-content.body-content-markets
-  .bc-left
+  .bcm-left
     %h1 Markets
-    %h2 Providing Scientific Solutions to Natural Resource Challenges in Canada
 
     %p.body-text
       WEST provides environmental and statistical consulting services and contract research
@@ -16,5 +15,5 @@
       of ecological field studies, WEST specializes in a common sense, defensible, and professional approach to the solution of natural resource problems. WEST’s expert ecologists and biometricians have broad experience in basic and applied ecological studies and the sophisticated
       analysis of natural resource data.
 
-  .bc-right
+  .bcm-right
     = Haml::Engine.new(File.read('./src/views/partials/sidebar-nav-markets.haml')).render

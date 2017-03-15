@@ -1,6 +1,115 @@
 
-/* %%%%%%%%%%%%%%%%%%%% MARKETS SPECIFIC STYLES %%%%%%%%%%%%%%%%%%%% */
+/* %%%%%%%%%%%%%%%%%%%% MARKET SPECIFIC STYLES %%%%%%%%%%%%%%%%%%%% */
 
 .body-content-markets {
+  float: left;
+  width: 100%;
+  padding: 0 $unit-jumbo $unit-jumbo $unit-jumbo;
 
+  @include mq(sm) {
+    padding-left: $unit-xl;
+    padding-right: $unit-xl;
+  }
+
+  .bcm-left {
+    float: left;
+    width: 70%;
+    padding: 0 $unit-jumbo $unit-jumbo $unit-jumbo;
+
+    @include mq(lg) {
+      width: 65%;
+    }
+
+    @include mq(md) {
+      float: left;
+      width: 100%;
+      padding: 0 $unit-sm $unit-md 0;
+    }
+
+    @include mq(sm) {
+      float: left;
+      width: 100%;
+      padding: $unit-lg $unit-sm $unit-xl 0;
+    }
+
+    h1 {
+      float: left;
+      width: 100%;
+      margin-top: $unit-xl;
+      margin-bottom: $unit-md;
+      font-size: $font-size-xl;
+      font-weight: 300;
+
+      @include mq(md) {
+        margin-top: 0;
+        margin-bottom: $unit-md;
+        font-size: $font-size-lg;
+        font-weight: 500;
+      }
+
+      @include mq(sm) {
+        margin-top: 10px;
+        font-size: $font-size-lg;
+        font-weight: 500;
+      }
+    }
+
+    h4 {
+      margin-top: $unit-xl;
+      font-size: $font-size-lg;
+    }
+
+    img {
+      float: left;
+      width: 100%;
+      max-width: 400px;
+      margin-top: 30px;
+    }
+
+    p.body-text {
+      margin-bottom: $unit-lg;
+    }
+  }
+
+  .bcm-right {
+    float: left;
+    width: 30%;
+    padding-right: $unit-xl;
+    padding-left: $unit-jumbo;
+    border-left: 2px solid #ddd;
+
+    h3 {
+      float: left;
+      width: 100%;
+      margin-top: $unit-lg;
+      margin-bottom: $unit-md;
+      font-size: 24px;
+      font-weight: $font-weight-semibold;
+      text-transform: uppercase;
+    }
+
+    @include mq(lg) {
+      width: 35%;
+      padding-left: $unit-xl;
+      padding-right: $unit-lg;
+    }
+
+    @include mq(md) {
+      width: 100%;
+      padding: 10px 0 25px 0;
+      border-top: 2px solid $color-tertiary-alt;
+      border-left: 2px solid transparent;
+    }
+
+    @include mq(sm) {
+      width: 100%;
+      padding: 10px 10px 25px 10px;
+      border-top: 2px solid $color-tertiary-alt;
+      border-left: 2px solid transparent;
+    }
+
+    h3 {
+      text-transform: uppercase;
+    }
+  }
 }

@@ -1,7 +1,7 @@
 = Haml::Engine.new(File.read('./src/views/partials/contact-btn.haml')).render
 
 .orbit.superhero{"aria-label" => "Favorite Space Pictures", "data-orbit" => "", "data-options" => "animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;", :role => "region"}
-  %ul.superhero
+  %ul.orbit-container
     %li.orbit-slide
       %strong OUR SERVICES
       %figcaption.shortest-title  Avian Species Research and Management

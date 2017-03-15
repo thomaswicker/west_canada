@@ -1,9 +1,19 @@
 
 /* %%%%%%%%%%%%%%%%%%%% HOME SCSS %%%%%%%%%%%%%%%%%%%% */
 
-.body-content {
+.body-content-home {
   float: left;
   width: 100%;
+  padding: 0 $unit-jumbo $unit-jumbo $unit-jumbo;
+
+  @include mq(md) {
+    padding: 0 $unit-xxs $unit-jumbo $unit-xxs;
+  }
+
+  @include mq(sm) {
+    padding-left: $unit-xxs;
+    padding-right: $unit-xxs;
+  }
 
   p {
     float: left;
@@ -13,42 +23,134 @@
 
   .bc-left {
     float: left;
-    width: 60%;
-    padding: 0 $unit-xxl 60px $unit-xxl;
+    width: 70%;
+    padding: 0 $unit-jumbo $unit-jumbo $unit-jumbo;
 
     h1 {
+      float: left;
+      width: 100%;
+      margin-top: $unit-xl;
       margin-bottom: $unit-xs;
       font-size: $font-size-xl;
-      font-weight: $font-weight-light;
+      font-weight: 300;
+      line-height: 140%;
+
+      @include mq(md) {
+        margin-top: 0;
+        padding: 0 $unit-xl 10px 0;
+      }
+
+      @include mq(sm) {
+        margin-top: 0;
+        padding: $unit-lg $unit-lg 0 0;
+        font-size: 22px;
+        font-weight: 500;
+      }
     }
 
     h2 {
       font-family: $font-2;
       font-size: 20px;
-      font-weight: $font-weight-semibold;
+      font-weight: $font-weight-bold;
       font-style: italic;
-      color: $color-tertiary;
+      color: lighten($color-primary, 20%);
+      line-height: 140%;
+
+      @include mq(md) {
+        margin-top: 0;
+        padding: 0 $unit-lg 30px 0;
+        font-size: 15px;
+        font-weight: $font-weight-bold;
+        font-style: italic;
+        color: lighten($color-primary, 20%);
+      }
+
+      @include mq(sm) {
+        margin-top: 0;
+        padding: 0 $unit-lg 30px 0;
+        font-size: 15px;
+        font-weight: $font-weight-bold;
+        font-style: italic;
+        color: lighten($color-primary, 20%);
+      }
+
+    }
+
+    @include mq(md) {
+      width: 100%;
+      padding: $unit-lg $unit-xl 30px $unit-xxl;
+    }
+
+    @include mq(sm) {
+      width: 100%;
+      padding: $unit-lg $unit-xl 30px $unit-xxl;
+    }
+
+    p.body-text {
+      margin-top: 0;
+      font-size: $font-size;
     }
   }
 
   .bc-right {
     float: left;
-    width: 40%;
-    padding: $unit-md 0 45px $unit-md;
+    width: 30%;
+    padding-left: $unit-xl;
+    padding-right: $unit-xl;
     border-left: 2px solid #ddd;
+
+    @include mq(md) {
+      width: 100%;
+      padding: 0 0 25px 0px;
+      border-left: 2px solid transparent;
+    }
+
+    @include mq(sm) {
+      width: 100%;
+      padding: 0 0 25px 15px;
+      border-left: 2px solid transparent;
+    }
 
     .contact-callout {
       float: left;
-      width: 90%;
-      min-height: 200px;
-      margin-left: 5%;
-      margin-right: 5%;
-      padding: $unit-md $unit-lg;
+      width: 100%;
+      padding: 0 $unit-lg $unit-md $unit-lg;
       background-color: white;
 
+      @include mq(md) {
+        padding: 0 $unit-lg $unit-xxs $unit-lg;
+        border-top: 1px solid $color-tertiary;
+      }
+
+      @include mq(sm) {
+        padding: 0 $unit-lg $unit-xxs $unit-lg;
+        border-top: 1px solid $color-tertiary;
+      }
+
+      .btn {
+        @include mq(sm) {
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+
       h2 {
-        font-size: $font-size-lg;
+        width: 100%;
+        margin-top: $unit-md;
+        font-size: 24px;
         font-weight: $font-weight-semibold;
+        text-transform: uppercase;
+
+        @include mq(md) {
+          padding: $unit-lg $unit-xl 0 0;
+          font-size: 22px;
+        }
+
+        @include mq(sm) {
+          padding: $unit-lg $unit-xl 0 0;
+          font-size: 22px;
+
+        }
       }
 
       p {

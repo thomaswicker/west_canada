@@ -118,11 +118,13 @@ a {
   }
 }
 
-.body-text {
+p.body-text {
   float: left;
   width: 100%;
+  margin-top: 0;
   font-family: $font-2;
-  line-height: $base-line-height;
+  font-size: $font-size;
+  line-height: 140%;
 }
 
 

@@ -966,11 +966,13 @@ a {
   a:hover {
     text-decoration: underline; }
 
-.body-text {
+p.body-text {
   float: left;
   width: 100%;
+  margin-top: 0;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  line-height: 1.3rem; }
+  font-size: 1rem;
+  line-height: 140%; }
 
 /* ==========================================================================
 %% Font Color Helper Classes %%
@@ -1124,8 +1126,8 @@ nav .nav-bar {
       max-width: 475px;
       text-transform: uppercase; }
       nav .nav-bar .nav-bar-right ul.menu li a {
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: 1.563rem;
+        padding-bottom: 1.563rem;
         font-family: "Roboto", sans-serif;
         font-size: 0.875rem;
         font-weight: 500;
@@ -1137,6 +1139,37 @@ nav .nav-bar {
         nav .nav-bar .nav-bar-right ul.menu li a.active {
           background-color: #ffffff;
           color: #101d30; }
+nav .nav-bar-mobile {
+  float: left;
+  width: 100%;
+  padding-top: 0.3125rem;
+  background-color: #101d30; }
+  nav .nav-bar-mobile button.menu-icon {
+    position: absolute;
+    top: 1.563rem;
+    right: 1.563rem; }
+  nav .nav-bar-mobile .brand img {
+    position: relative;
+    left: 0.3125rem;
+    max-width: 90px; }
+  nav .nav-bar-mobile ul.menu {
+    float: left;
+    width: 100%;
+    margin-top: 0.3125rem;
+    border-bottom: 4px solid #101d30; }
+    nav .nav-bar-mobile ul.menu li {
+      float: left;
+      width: 100%;
+      background-color: #101d30; }
+      nav .nav-bar-mobile ul.menu li a {
+        float: left;
+        width: 100%;
+        background-color: #1d3456;
+        font-size: 17px;
+        text-align: center;
+        color: white; }
+        nav .nav-bar-mobile ul.menu li a:hover {
+          background-color: #00aeef; }
 
 ul.sidebar-nav {
   float: left;
@@ -1165,6 +1198,9 @@ ul.sidebar-nav {
       padding: 12px 1.25rem 12px 0.625rem;
       font-size: 18px;
       background-color: white; }
+      @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        ul.sidebar-nav li a {
+          font-size: 16px; } }
       ul.sidebar-nav li a:hover {
         background-color: #8c9da7;
         color: white; }
@@ -1194,13 +1230,37 @@ ul.sidebar-nav {
       float: left;
       width: 100%;
       padding: 10px 20px;
-      background-color: white; }
+      background-color: #acd1e3;
+      color: #101d30; }
       .sm-nav li a:hover {
         background-color: #acd1e3; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .sm-nav li a:hover {
+            background: #00aeef; }
+            .sm-nav li a:hover i {
+              color: white !important; } }
+        @media only screen and (max-width: 640px) {
+          .sm-nav li a:hover {
+            background: #00aeef;
+            color: white; }
+            .sm-nav li a:hover i {
+              color: white !important; } }
         .sm-nav li a:hover i {
           color: #1d3456; }
       .sm-nav li a i {
         font-size: 18px; }
+  @media only screen and (min-width: 640px) and (max-width: 1024px) {
+    .sm-nav {
+      top: 0px;
+      float: left;
+      width: 100%;
+      background: #8c9da7; } }
+  @media only screen and (max-width: 640px) {
+    .sm-nav {
+      top: 0px;
+      float: left;
+      width: 100%;
+      background: #8c9da7; } }
 
 .orbit.superhero {
   position: relative;
@@ -1226,6 +1286,14 @@ ul.sidebar-nav {
     letter-spacing: 2px;
     background-color: #00aeef;
     color: white; }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .orbit.superhero .orbit-slide strong {
+        top: 0;
+        left: 10px; } }
+    @media only screen and (max-width: 640px) {
+      .orbit.superhero .orbit-slide strong {
+        top: 0;
+        left: 10px; } }
   .orbit.superhero .orbit-slide figcaption {
     position: absolute;
     top: 28%;
@@ -1242,6 +1310,21 @@ ul.sidebar-nav {
       top: 40%; }
     .orbit.superhero .orbit-slide figcaption.shortest-title {
       top: 30%; }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .orbit.superhero .orbit-slide figcaption {
+        top: 8%;
+        left: 80px;
+        padding-left: 0px;
+        padding-right: 150px;
+        font-size: 32px;
+        line-height: 140%; } }
+    @media only screen and (max-width: 640px) {
+      .orbit.superhero .orbit-slide figcaption {
+        top: 8%;
+        left: 80px;
+        padding-left: 0px;
+        padding-right: 100px;
+        font-size: 30px; } }
   .orbit.superhero nav.orbit-bullets {
     position: relative;
     top: -50px; }
@@ -1257,6 +1340,9 @@ ul.sidebar-nav {
   #widget-footer #wf-left, #widget-footer #wf-middle, #widget-footer #wf-right {
     float: left;
     width: 33.333%; }
+    @media only screen and (max-width: 640px) {
+      #widget-footer #wf-left, #widget-footer #wf-middle, #widget-footer #wf-right {
+        width: 100%; } }
     #widget-footer #wf-left .widget-panel, #widget-footer #wf-middle .widget-panel, #widget-footer #wf-right .widget-panel {
       width: 94%;
       min-height: 400px;
@@ -1264,6 +1350,11 @@ ul.sidebar-nav {
       margin-right: 3%;
       background-color: white;
       border: 1px solid #444755; }
+      @media only screen and (max-width: 640px) {
+        #widget-footer #wf-left .widget-panel, #widget-footer #wf-middle .widget-panel, #widget-footer #wf-right .widget-panel {
+          width: 93%;
+          min-height: 200px;
+          margin-bottom: 1.563rem; } }
       #widget-footer #wf-left .widget-panel h3, #widget-footer #wf-middle .widget-panel h3, #widget-footer #wf-right .widget-panel h3 {
         float: left;
         width: 100%;
@@ -1280,50 +1371,233 @@ ul.sidebar-nav {
 
 /* #########%% LAYOUTS %%######### */
 /* %%%%%%%%%%%%%%%%%%%% ABOUT SPECIFIC STYLES %%%%%%%%%%%%%%%%%%%% */
+.body-content-about {
+  float: left;
+  width: 100%;
+  padding: 0 3.125rem 3.125rem 3.125rem; }
+  @media only screen and (max-width: 640px) {
+    .body-content-about {
+      padding-left: 1.875rem;
+      padding-right: 1.875rem; } }
+  .body-content-about .bca-left {
+    float: left;
+    width: 70%;
+    padding: 0 3.125rem 3.125rem 3.125rem; }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .body-content-about .bca-left {
+        float: left;
+        width: 100%;
+        padding: 0 0.9375rem 0.3125rem 0; } }
+    @media only screen and (max-width: 640px) {
+      .body-content-about .bca-left {
+        float: left;
+        width: 100%;
+        padding: 1.563rem 0.9375rem 0.3125rem 0; } }
+    .body-content-about .bca-left h1 {
+      float: left;
+      width: 100%;
+      margin-top: 1.875rem;
+      margin-bottom: 1.25rem;
+      font-size: 2rem;
+      font-weight: 300; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .body-content-about .bca-left h1 {
+          margin-bottom: 1.25rem;
+          font-weight: 300; } }
+      @media only screen and (max-width: 640px) {
+        .body-content-about .bca-left h1 {
+          margin-bottom: 1.25rem;
+          font-weight: 500; } }
+    .body-content-about .bca-left h2 {
+      float: left;
+      width: 100%;
+      margin-top: 1.875rem;
+      margin-bottom: 0;
+      font-size: 22px;
+      font-weight: 600; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .body-content-about .bca-left h2 {
+          margin-bottom: 0.9375rem;
+          font-size: 1.25rem; } }
+      @media only screen and (max-width: 640px) {
+        .body-content-about .bca-left h2 {
+          margin-bottom: 0.9375rem;
+          font-size: 1.25rem; } }
+    .body-content-about .bca-left h3 {
+      float: left;
+      width: 100%;
+      margin-bottom: 1.875rem; }
+    .body-content-about .bca-left h4 {
+      margin-top: 1.875rem;
+      font-size: 1.5rem; }
+    .body-content-about .bca-left img {
+      float: left;
+      width: 100%;
+      max-width: 400px;
+      margin-top: 30px; }
+    .body-content-about .bca-left p.body-text {
+      margin-bottom: 1.563rem; }
+  .body-content-about .bca-right {
+    float: left;
+    width: 30%;
+    margin-top: 1.875rem;
+    padding-right: 1.875rem;
+    text-align: center;
+    border-left: 2px solid #ddd; }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .body-content-about .bca-right {
+        float: left;
+        width: 100%;
+        padding-top: 3.125rem;
+        border-top: 2px solid #acd1e3;
+        border-left: none; } }
+    @media only screen and (max-width: 640px) {
+      .body-content-about .bca-right {
+        float: left;
+        width: 100%;
+        padding: 0 0 25px 15px;
+        border-top: 2px solid #acd1e3;
+        border-left: none; } }
+    .body-content-about .bca-right h3 {
+      text-transform: uppercase; }
+    .body-content-about .bca-right img {
+      width: 100%;
+      max-width: 400px;
+      border: 2px solid #101d30; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .body-content-about .bca-right img {
+          max-width: 500px;
+          margin-top: 3.125rem; } }
+      @media only screen and (max-width: 640px) {
+        .body-content-about .bca-right img {
+          max-width: 500px;
+          margin-top: 3.125rem; } }
+
 /* %%%%%%%%%%%%%%%%%%%% CAREERS SPECIFIC STYLES %%%%%%%%%%%%%%%%%%%% */
 /* %%%%%%%%%%%%%%%%%%%% HOME SCSS %%%%%%%%%%%%%%%%%%%% */
-.body-content {
+.body-content-home {
   float: left;
-  width: 100%; }
-  .body-content p {
+  width: 100%;
+  padding: 0 3.125rem 3.125rem 3.125rem; }
+  @media only screen and (min-width: 640px) and (max-width: 1024px) {
+    .body-content-home {
+      padding: 0 0.3125rem 3.125rem 0.3125rem; } }
+  @media only screen and (max-width: 640px) {
+    .body-content-home {
+      padding-left: 0.3125rem;
+      padding-right: 0.3125rem; } }
+  .body-content-home p {
     float: left;
     width: 100%;
     margin-top: 1.25rem; }
-  .body-content .bc-left {
+  .body-content-home .bc-left {
     float: left;
-    width: 60%;
-    padding: 0 2.5rem 60px 2.5rem; }
-    .body-content .bc-left h1 {
+    width: 70%;
+    padding: 0 3.125rem 3.125rem 3.125rem; }
+    .body-content-home .bc-left h1 {
+      float: left;
+      width: 100%;
+      margin-top: 1.875rem;
       margin-bottom: 0.625rem;
       font-size: 2rem;
-      font-weight: 300; }
-    .body-content .bc-left h2 {
+      font-weight: 300;
+      line-height: 140%; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .body-content-home .bc-left h1 {
+          margin-top: 0;
+          padding: 0 1.875rem 10px 0; } }
+      @media only screen and (max-width: 640px) {
+        .body-content-home .bc-left h1 {
+          margin-top: 0;
+          padding: 1.563rem 1.563rem 0 0;
+          font-size: 22px;
+          font-weight: 500; } }
+    .body-content-home .bc-left h2 {
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 600;
       font-style: italic;
-      color: #8c9da7; }
-  .body-content .bc-right {
+      color: #2a4b7d;
+      line-height: 140%; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .body-content-home .bc-left h2 {
+          margin-top: 0;
+          padding: 0 1.563rem 30px 0;
+          font-size: 15px;
+          font-weight: 600;
+          font-style: italic;
+          color: #2a4b7d; } }
+      @media only screen and (max-width: 640px) {
+        .body-content-home .bc-left h2 {
+          margin-top: 0;
+          padding: 0 1.563rem 30px 0;
+          font-size: 15px;
+          font-weight: 600;
+          font-style: italic;
+          color: #2a4b7d; } }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .body-content-home .bc-left {
+        width: 100%;
+        padding: 1.563rem 1.875rem 30px 2.5rem; } }
+    @media only screen and (max-width: 640px) {
+      .body-content-home .bc-left {
+        width: 100%;
+        padding: 1.563rem 1.875rem 30px 2.5rem; } }
+    .body-content-home .bc-left p.body-text {
+      margin-top: 0;
+      font-size: 1rem; }
+  .body-content-home .bc-right {
     float: left;
-    width: 40%;
-    padding: 1.25rem 0 45px 1.25rem;
+    width: 30%;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
     border-left: 2px solid #ddd; }
-    .body-content .bc-right .contact-callout {
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .body-content-home .bc-right {
+        width: 100%;
+        padding: 0 0 25px 0px;
+        border-left: 2px solid transparent; } }
+    @media only screen and (max-width: 640px) {
+      .body-content-home .bc-right {
+        width: 100%;
+        padding: 0 0 25px 15px;
+        border-left: 2px solid transparent; } }
+    .body-content-home .bc-right .contact-callout {
       float: left;
-      width: 90%;
-      min-height: 200px;
-      margin-left: 5%;
-      margin-right: 5%;
-      padding: 1.25rem 1.563rem;
+      width: 100%;
+      padding: 0 1.563rem 1.25rem 1.563rem;
       background-color: white; }
-      .body-content .bc-right .contact-callout h2 {
-        font-size: 1.5rem;
-        font-weight: 500; }
-      .body-content .bc-right .contact-callout p {
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .body-content-home .bc-right .contact-callout {
+          padding: 0 1.563rem 0.3125rem 1.563rem;
+          border-top: 1px solid #8c9da7; } }
+      @media only screen and (max-width: 640px) {
+        .body-content-home .bc-right .contact-callout {
+          padding: 0 1.563rem 0.3125rem 1.563rem;
+          border-top: 1px solid #8c9da7; } }
+      @media only screen and (max-width: 640px) {
+        .body-content-home .bc-right .contact-callout .btn {
+          font-size: 18px;
+          text-align: center; } }
+      .body-content-home .bc-right .contact-callout h2 {
+        width: 100%;
+        margin-top: 1.25rem;
+        font-size: 24px;
+        font-weight: 500;
+        text-transform: uppercase; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .body-content-home .bc-right .contact-callout h2 {
+            padding: 1.563rem 1.875rem 0 0;
+            font-size: 22px; } }
+        @media only screen and (max-width: 640px) {
+          .body-content-home .bc-right .contact-callout h2 {
+            padding: 1.563rem 1.875rem 0 0;
+            font-size: 22px; } }
+      .body-content-home .bc-right .contact-callout p {
         float: left;
         width: 100%;
         margin-top: 0.9375rem; }
-      .body-content .bc-right .contact-callout strong {
+      .body-content-home .bc-right .contact-callout strong {
         float: left;
         width: 100%;
         margin-top: 1rem;
@@ -1332,29 +1606,201 @@ ul.sidebar-nav {
         font-style: italic;
         font-weight: 600; }
 
-/* %%%%%%%%%%%%%%%%%%%% MARKETS SPECIFIC STYLES %%%%%%%%%%%%%%%%%%%% */
+/* %%%%%%%%%%%%%%%%%%%% MARKET SPECIFIC STYLES %%%%%%%%%%%%%%%%%%%% */
+.body-content-markets {
+  float: left;
+  width: 100%;
+  padding: 0 3.125rem 3.125rem 3.125rem; }
+  @media only screen and (max-width: 640px) {
+    .body-content-markets {
+      padding-left: 1.875rem;
+      padding-right: 1.875rem; } }
+  .body-content-markets .bcm-left {
+    float: left;
+    width: 70%;
+    padding: 0 3.125rem 3.125rem 3.125rem; }
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+      .body-content-markets .bcm-left {
+        width: 65%; } }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .body-content-markets .bcm-left {
+        float: left;
+        width: 100%;
+        padding: 0 0.9375rem 1.25rem 0; } }
+    @media only screen and (max-width: 640px) {
+      .body-content-markets .bcm-left {
+        float: left;
+        width: 100%;
+        padding: 1.563rem 0.9375rem 1.875rem 0; } }
+    .body-content-markets .bcm-left h1 {
+      float: left;
+      width: 100%;
+      margin-top: 1.875rem;
+      margin-bottom: 1.25rem;
+      font-size: 2rem;
+      font-weight: 300; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .body-content-markets .bcm-left h1 {
+          margin-top: 0;
+          margin-bottom: 1.25rem;
+          font-size: 1.5rem;
+          font-weight: 500; } }
+      @media only screen and (max-width: 640px) {
+        .body-content-markets .bcm-left h1 {
+          margin-top: 10px;
+          font-size: 1.5rem;
+          font-weight: 500; } }
+    .body-content-markets .bcm-left h4 {
+      margin-top: 1.875rem;
+      font-size: 1.5rem; }
+    .body-content-markets .bcm-left img {
+      float: left;
+      width: 100%;
+      max-width: 400px;
+      margin-top: 30px; }
+    .body-content-markets .bcm-left p.body-text {
+      margin-bottom: 1.563rem; }
+  .body-content-markets .bcm-right {
+    float: left;
+    width: 30%;
+    padding-right: 1.875rem;
+    padding-left: 3.125rem;
+    border-left: 2px solid #ddd; }
+    .body-content-markets .bcm-right h3 {
+      float: left;
+      width: 100%;
+      margin-top: 1.563rem;
+      margin-bottom: 1.25rem;
+      font-size: 24px;
+      font-weight: 500;
+      text-transform: uppercase; }
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+      .body-content-markets .bcm-right {
+        width: 35%;
+        padding-left: 1.875rem;
+        padding-right: 1.563rem; } }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .body-content-markets .bcm-right {
+        width: 100%;
+        padding: 10px 0 25px 0;
+        border-top: 2px solid #acd1e3;
+        border-left: 2px solid transparent; } }
+    @media only screen and (max-width: 640px) {
+      .body-content-markets .bcm-right {
+        width: 100%;
+        padding: 10px 10px 25px 10px;
+        border-top: 2px solid #acd1e3;
+        border-left: 2px solid transparent; } }
+    .body-content-markets .bcm-right h3 {
+      text-transform: uppercase; }
+
 /* %%%%%%%%%%%%%%%%%%%% SERVICES SPECIFIC STYLES %%%%%%%%%%%%%%%%%%%% */
 .body-content-services {
   float: left;
-  width: 100%; }
-  .body-content-services .bc-left h4 {
-    margin-top: 1.875rem;
-    font-size: 1.5rem; }
-  .body-content-services .bc-left ul.areas-of-expertise {
+  width: 100%;
+  padding: 0 3.125rem 3.125rem 3.125rem; }
+  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .body-content-services {
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; } }
+  @media only screen and (min-width: 640px) and (max-width: 1024px) {
+    .body-content-services {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem; } }
+  @media only screen and (max-width: 640px) {
+    .body-content-services {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  .body-content-services .bcs-left {
     float: left;
-    width: 100%;
-    list-style-type: disc; }
-    .body-content-services .bc-left ul.areas-of-expertise li {
+    width: 70%;
+    padding: 0 3.125rem 3.125rem 3.125rem; }
+    .body-content-services .bcs-left h1 {
       float: left;
       width: 100%;
-      margin-top: 0.9375rem;
-      margin-left: 1.25rem; }
-  .body-content-services .bc-left img {
+      margin-top: 1.875rem;
+      margin-bottom: 0.625rem;
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 145%; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .body-content-services .bcs-left h1 {
+          margin-top: 0;
+          margin-bottom: 1.25rem;
+          font-size: 1.5rem;
+          font-weight: 500; } }
+      @media only screen and (max-width: 640px) {
+        .body-content-services .bcs-left h1 {
+          margin-top: 10px;
+          font-size: 1.5rem;
+          font-weight: 500; } }
+    .body-content-services .bcs-left h4 {
+      margin-top: 1.875rem;
+      font-size: 1.5rem; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .body-content-services .bcs-left h4 {
+          font-size: 1.25rem; } }
+      @media only screen and (max-width: 640px) {
+        .body-content-services .bcs-left h4 {
+          font-size: 1.25rem; } }
+    .body-content-services .bcs-left ul.areas-of-expertise {
+      float: left;
+      width: 100%;
+      list-style-type: disc; }
+      .body-content-services .bcs-left ul.areas-of-expertise li {
+        float: left;
+        width: 100%;
+        margin-top: 0.9375rem;
+        margin-left: 1.25rem;
+        line-height: 140%; }
+    .body-content-services .bcs-left img {
+      float: left;
+      width: 100%;
+      max-width: 400px;
+      margin-top: 30px;
+      border: 2px solid #101d30; }
+      @media only screen and (max-width: 640px) {
+        .body-content-services .bcs-left img {
+          width: 100%; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+      .body-content-services .bcs-left {
+        width: 65%; } }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .body-content-services .bcs-left {
+        width: 100%;
+        padding: 1.563rem 1.875rem 30px 2.5rem; } }
+    @media only screen and (max-width: 640px) {
+      .body-content-services .bcs-left {
+        width: 100%;
+        padding: 1.563rem 1.563rem 30px 1.25rem; } }
+    .body-content-services .bcs-left p.body-text {
+      margin-bottom: 1.563rem; }
+  .body-content-services .bcs-right {
     float: left;
-    width: 100%;
-    max-width: 400px;
-    margin-top: 30px; }
-  .body-content-services .bc-right {
-    padding-right: 1.875rem; }
-    .body-content-services .bc-right h3 {
-      text-transform: uppercase; }
+    width: 30%;
+    padding-left: 3.125rem;
+    padding-right: 1.875rem;
+    border-left: 2px solid #ddd; }
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+      .body-content-services .bcs-right {
+        width: 35%;
+        padding-left: 1.875rem;
+        padding-right: 1.563rem; } }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .body-content-services .bcs-right {
+        width: 100%;
+        padding: 0 2.5rem 25px 2.5rem;
+        border-left: 2px solid transparent; } }
+    @media only screen and (max-width: 640px) {
+      .body-content-services .bcs-right {
+        width: 100%;
+        padding: 0 0 25px 15px;
+        border-left: 2px solid transparent; } }
+    .body-content-services .bcs-right h3 {
+      float: left;
+      width: 100%;
+      margin-top: 1.563rem;
+      margin-bottom: 1.25rem;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 500; }

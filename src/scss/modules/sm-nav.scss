@@ -14,10 +14,28 @@
       float: left;
       width: 100%;
       padding: 10px 20px;
-      background-color: white;
+      background-color: $color-tertiary-alt;
+      color: $color-primary;
 
       &:hover {
         background-color: $color-tertiary-alt;
+
+        @include mq(md) {
+          background: $color-electric-blue;
+
+          i {
+            color: white !important;
+          }
+        }
+
+        @include mq(sm) {
+          background: $color-electric-blue;
+          color: white;
+
+          i {
+            color: white !important;
+          }
+        }
 
         i {
           color: lighten($color-primary, 10%);
@@ -28,5 +46,19 @@
         font-size: 18px;
       }
     }
+  }
+
+  @include mq(md) {
+    top: 0px;
+    float: left;
+    width: 100%;
+    background: $color-tertiary;
+  }
+
+  @include mq(sm) {
+    top: 0px;
+    float: left;
+    width: 100%;
+    background: $color-tertiary;
   }
 }

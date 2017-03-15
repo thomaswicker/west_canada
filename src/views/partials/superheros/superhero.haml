@@ -1,7 +1,9 @@
 = Haml::Engine.new(File.read('./src/views/partials/contact-btn.haml')).render
 
 .orbit.superhero{"aria-label" => "Favorite Space Pictures", "data-orbit" => "", "data-options" => "animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;", :role => "region"}
+
   %ul.orbit-container
+
     %button.orbit-previous
       %span.show-for-sr Previous Slide
       %i.fa.fa-arrow-left
@@ -11,21 +13,26 @@
       %i.fa.fa-arrow-right
 
     %li.is-active.orbit-slide
+      %strong WELCOME TO WEST
       %figcaption Avian Species Research and Management
       %img.orbit-image{:alt => "Eagle", :src => "img/superhero_img_eagle.jpg"}
 
     %li.orbit-slide
+      %strong WELCOME TO WEST
       %figcaption Big Game Research and Monitoring
       %img.orbit-image{:alt => "Eagle", :src => "img/superhero_img_bear_on_tree.jpg"}
 
     %li.orbit-slide
+      %strong WELCOME TO WEST
       %figcaption.short-title Renewable Energy
       %img.orbit-image{:alt => "Power Lines", :src => "img/superhero_img_powerlines.jpg"}
 
     %li.orbit-slide
+      %strong WELCOME TO WEST
       %figcaption.short-title  Statistics and Biometrics
       %img.orbit-image{:alt => "Stats", :src => "img/superhero_img_stats.jpg"}
 
     %li.orbit-slide
+      %strong WELCOME TO WEST
       %figcaption.short-title Utilities
       %img.orbit-image{:alt => "Power Lines", :src => "img/superhero_img_powerlines.jpg"}

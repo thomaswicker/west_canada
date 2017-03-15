@@ -40,6 +40,18 @@ ul.sidebar-nav {
       font-size: 18px;
       background-color: white;
 
+      @include mq(lg) {
+        font-size: 16px;
+      }
+
+      @include mq(md) {
+
+      }
+
+      @include mq(sm) {
+
+      }
+
       &:hover {
         background-color: $color-tertiary;
         color: white;

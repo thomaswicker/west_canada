@@ -7,9 +7,14 @@
   background-image: url("../img/topo_bg_gray.jpg");
   background-size: cover;
 
+
   #wf-left, #wf-middle, #wf-right  {
     float: left;
     width: 33.333%;
+
+    @include mq(sm) {
+      width: 100%;
+    }
 
     .widget-panel {
       width: 94%;
@@ -18,6 +23,12 @@
       margin-right: 3%;
       background-color: white;
       border: 1px solid $dark-gray;
+
+      @include mq(sm) {
+        width: 93%;
+        min-height: 200px;
+        margin-bottom: $unit-lg;
+      }
 
       h3 {
         float: left;
