@@ -1,9 +1,14 @@
-.orbit.superhero {
+.superhero {
   position: relative;;
   float: left;
   width: 100%;
   margin-top: 0;
   background-color: white;
+
+  &.border-bottom {
+    border-top: 4px solid #FFF;
+    border-bottom: 2px solid #BBB;
+  }
 
   .orbit-next, .orbit-previous {
     background-color: rgba(0, 0, 0, .3);
@@ -26,69 +31,67 @@
 
   }
 
-  .orbit-slide {
-    strong {
-      position: absolute;
-      top: 22%;
-      left: 100px;
-      max-width: 700px;
-      padding: 4px 10px;
-      font-family: $font-1;
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 115%;
-      letter-spacing: 2px;
-      background-color: $color-electric-blue;
-      color: white;
+  strong {
+    position: absolute;
+    top: 22%;
+    left: 100px;
+    max-width: 700px;
+    padding: 4px 10px;
+    font-family: $font-1;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 115%;
+    letter-spacing: 2px;
+    background-color: $color-electric-blue;
+    color: white;
 
-      @include mq(md) {
-        top: 0;
-        left: 10px;
-      }
-
-      @include mq(sm) {
-        top: 0;
-        left: 10px;
-      }
+    @include mq(md) {
+      top: 0;
+      left: 10px;
     }
 
-    figcaption {
-      position: absolute;
-      top: 28%;
-      left: 100px;
-      width: 100%;
-      max-width: 700px;
-      font-family: $font-1;
-      font-size: 60px;
-      font-weight: 300;
-      line-height: 115%;
-      color: white;
-      text-shadow: 1px 1px 1px #000;
+    @include mq(sm) {
+      top: 0;
+      left: 10px;
+    }
+  }
 
-      &.short-title {
-        top: 40%;
-      }
+  figcaption {
+    position: absolute;
+    top: 28%;
+    left: 100px;
+    width: 100%;
+    max-width: 700px;
+    font-family: $font-1;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 115%;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
 
-      &.shortest-title {
-        top: 30%;
-      }
+    &.short-title {
+      top: 40%;
+    }
 
-      @include mq(md) {
-        top: 8%;
-        left: 80px;
-        padding-left: 0px;
-        padding-right: 150px;
-        font-size: 32px;
-        line-height: 140%;
-      }
+    &.shortest-title {
+      top: 30%;
+    }
 
-      @include mq(sm) {
-        top: 8%;
-        left: 80px;
-        padding-left: 0px;
-        padding-right: 100px;
-        font-size: 30px;
-      }
+    @include mq(md) {
+      top: 8%;
+      left: 80px;
+      padding-left: 0px;
+      padding-right: 150px;
+      font-size: 32px;
+      line-height: 140%;
+    }
+
+    @include mq(sm) {
+      top: 8%;
+      left: 80px;
+      padding-left: 0px;
+      padding-right: 100px;
+      font-size: 30px;
     }
   }
 

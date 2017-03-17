@@ -51,3 +51,24 @@ ul li a:hover {
   background-color: purple;
   color: white
 }
+
+.body-content {
+  ul.areas-of-expertise {
+    float: left;
+    width: 100%;
+    list-style-type: disc;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    li {
+      float: left;
+      width: 100%;
+      margin-top: $unit-sm;
+      margin-left: $unit-md;
+      line-height: 140%;
+    }
+  }
+}

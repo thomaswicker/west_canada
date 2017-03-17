@@ -34,6 +34,18 @@
       width: 70%;
       padding: 0 $unit-jumbo $unit-jumbo $unit-jumbo;
 
+      .body-contact-form {
+        float: left;
+        width: 100%;
+        background-color: blue;
+
+        label {
+          float: left;
+          width: 100%;
+          background-color: red;
+        }
+      }
+
       h1 {
         float: left;
         width: 100%;
@@ -67,20 +79,6 @@
 
         @include mq(sm) {
           font-size: $font-size-md;
-        }
-      }
-
-      ul.areas-of-expertise {
-        float: left;
-        width: 100%;
-        list-style-type: disc;
-
-        li {
-          float: left;
-          width: 100%;
-          margin-top: $unit-sm;
-          margin-left: $unit-md;
-          line-height: 140%;
         }
       }
 
@@ -122,6 +120,27 @@
       padding-right: $unit-xl;
       border-left: 2px solid #ddd;
 
+      .text-row, .tel-row, .email-row, .web-row {
+        float: left;
+        color: red;
+      }
+
+      .text-row {
+
+      }
+
+      .tel-row {
+
+      }
+
+      .email-row {
+
+      }
+
+      .web-row {
+
+      }
+
       @include mq(lg) {
         width: 35%;
         padding-left: $unit-xl;
@@ -148,6 +167,24 @@
         text-transform: uppercase;
         font-size: 24px;
         font-weight: $font-weight-semibold;
+      }
+
+      p {
+        margin-top: 7px;
+        display: block;
+        font-size: 13px;
+
+        &.block-header {
+          margin-top: 15px;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+
+      a {
+        margin-top: 7px;
+        display: block;
+        font-size: 13px;
       }
     }
   }

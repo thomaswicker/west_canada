@@ -1,37 +1,3 @@
-<section aria-label='Favorite Space Pictures' class='orbit superhero' data-options='animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;' data-orbit='' role='region'>
-  <ul class='orbit-container'>
-    <button class='orbit-previous'>
-      <span class='show-for-sr'>Previous Slide</span>
-      <i class='fa fa-arrow-left'></i>
-    </button>
-    <button class='orbit-next'>
-      <span class='show-for-sr'>Next Slide</span>
-      <i class='fa fa-arrow-right'></i>
-    </button>
-    <li class='is-active orbit-slide'>
-      <strong>WELCOME TO WEST</strong>
-      <figcaption>Avian Species Research and Management</figcaption>
-      <img alt='Eagle' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero_img_eagle.jpg">
-    </li>
-    <li class='orbit-slide'>
-      <strong>WELCOME TO WEST</strong>
-      <figcaption>Big Game Research and Monitoring</figcaption>
-      <img alt='Eagle' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero_img_bear_on_tree.jpg">
-    </li>
-    <li class='orbit-slide'>
-      <strong>WELCOME TO WEST</strong>
-      <figcaption class='short-title'>Renewable Energy</figcaption>
-      <img alt='Power Lines' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero_img_powerlines.jpg">
-    </li>
-    <li class='orbit-slide'>
-      <strong>WELCOME TO WEST</strong>
-      <figcaption class='short-title'>Statistics and Biometrics</figcaption>
-      <img alt='Stats' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero_img_stats.jpg">
-    </li>
-    <li class='orbit-slide'>
-      <strong>WELCOME TO WEST</strong>
-      <figcaption class='short-title'>Utilities</figcaption>
-      <img alt='Power Lines' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero_img_powerlines.jpg">
-    </li>
-  </ul>
+<section class="superhero border-bottom">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d179966.71811164473!2d-114.1175072742776!3d50.97114796815292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1489782941890" width="1600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 </section>

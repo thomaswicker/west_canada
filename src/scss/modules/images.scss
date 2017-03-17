@@ -1,0 +1,11 @@
+
+/* %%%%%%%%%%%%%%%%%%%% IMAGE STYLES %%%%%%%%%%%%%%%%%%%% */
+
+
+.body-content img {
+  border: 5px solid red;
+
+  &.bci-md {
+    max-width: 250px !important;
+  }
+}

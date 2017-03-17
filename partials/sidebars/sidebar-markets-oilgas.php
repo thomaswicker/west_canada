@@ -1,7 +1,7 @@
 <h3>Energy: Utilities</h3>
 <ul class='sidebar-nav'>
   <li class='active'>
-    <a href='http://west-ulc.ca/markets/oilgas-and-mining/'>
+    <a href='http://west-ulc.ca/oilgas-and-mining/'>
       <i class='fa fa-arrow-right'></i>
       <strong>OPEN :</strong>
       Oil/Gas & Mining
@@ -9,7 +9,7 @@
   </li>
 
   <li>
-    <a href='http://west-ulc.ca/markets/pipelines/'>
+    <a href='http://west-ulc.ca/pipelines/'>
       <i class='fa fa-arrow-right'></i>
       <strong>OPEN :</strong>
       Pipelines
@@ -17,7 +17,7 @@
   </li>
 
   <li>
-    <a href='http://west-ulc.ca/markets/power-lines/'>
+    <a href='http://west-ulc.ca/power-lines/'>
       <i class='fa fa-arrow-right'></i>
       <strong>OPEN :</strong>
       Power Lines

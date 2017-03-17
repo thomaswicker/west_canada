@@ -6,7 +6,7 @@ Template Name: Markets => Solar Energy
 
 <?php get_header(); ?>
 
-<?php get_template_part('partials/superheros/superhero-markets-powerlines'); ?>
+<?php get_template_part('partials/superheros/superhero-markets-solar'); ?>
 
 <?php get_template_part('partials/sm-nav'); ?>
 
@@ -28,7 +28,7 @@ Template Name: Markets => Solar Energy
 		</section>
 
 	</section>
-	
+
 </section>
 
 

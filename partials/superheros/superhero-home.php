@@ -11,27 +11,27 @@
     <li class='is-active orbit-slide'>
       <strong>WELCOME TO WEST</strong>
       <figcaption>Avian Species Research and Management</figcaption>
-      <img alt='Eagle' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero_img_eagle.jpg">
+      <img alt='Eagle' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero-img-services-avian.jpg">
     </li>
     <li class='orbit-slide'>
       <strong>WELCOME TO WEST</strong>
       <figcaption>Big Game Research and Monitoring</figcaption>
-      <img alt='Eagle' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero_img_bear_on_tree.jpg">
+      <img alt='Eagle' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero-img-services-biggame.jpg">
     </li>
     <li class='orbit-slide'>
       <strong>WELCOME TO WEST</strong>
       <figcaption class='short-title'>Renewable Energy</figcaption>
-      <img alt='Power Lines' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero_img_powerlines.jpg">
+      <img alt='Power Lines' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero-img-markets-wind.jpg">
     </li>
     <li class='orbit-slide'>
       <strong>WELCOME TO WEST</strong>
       <figcaption class='short-title'>Statistics and Biometrics</figcaption>
-      <img alt='Stats' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero_img_stats.jpg">
+      <img alt='Stats' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero-img-services-stats.jpg">
     </li>
     <li class='orbit-slide'>
       <strong>WELCOME TO WEST</strong>
       <figcaption class='short-title'>Utilities</figcaption>
-      <img alt='Power Lines' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero_img_powerlines.jpg">
+      <img alt='Power Lines' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero-img-markets-powerlines.jpg">
     </li>
   </ul>
 </section>

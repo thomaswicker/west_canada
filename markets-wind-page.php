@@ -6,7 +6,7 @@ Template Name: Markets => Wind Energy
 
 <?php get_header(); ?>
 
-<?php get_template_part('partials/superheros/superhero-markets-powerlines'); ?>
+<?php get_template_part('partials/superheros/superhero-markets-wind'); ?>
 
 <?php get_template_part('partials/sm-nav'); ?>
 

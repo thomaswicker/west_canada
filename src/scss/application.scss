@@ -15,16 +15,6 @@
 @import "base/helpers";
 @import "base/type";
 
-/* #########%% MODULES %%######### */
-@import "modules/buttons";
-@import "modules/footer";
-@import "modules/header";
-@import "modules/nav";
-@import "modules/sidebar-nav";
-@import "modules/sm-nav";
-@import "modules/superhero";
-@import "modules/widget-footer";
-
 /* #########%% LAYOUTS %%######### */
 @import "layouts/about";
 @import "layouts/careers";
@@ -35,3 +25,14 @@
 @import "layouts/news-events";
 @import "layouts/services";
 @import "layouts/team";
+
+/* #########%% MODULES %%######### */
+@import "modules/buttons";
+@import "modules/footer";
+@import "modules/header";
+@import "modules/images";
+@import "modules/nav";
+@import "modules/sidebar-nav";
+@import "modules/sm-nav";
+@import "modules/superhero";
+@import "modules/widget-footer";

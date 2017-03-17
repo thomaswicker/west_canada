@@ -37,11 +37,12 @@ ul.sidebar-nav {
       float: left;
       width: 100%;
       padding: 12px $unit-md 12px $unit-xs;
-      font-size: 18px;
+      font-size: 16px;
       background-color: white;
+      line-height: 140%;
 
       @include mq(lg) {
-        font-size: 16px;
+        font-size: 14px;
       }
 
       @include mq(md) {
