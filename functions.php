@@ -70,7 +70,10 @@ function theme_js() {
     }
 // END - Load the Custom Login Theme JS
 
-
+function register_my_menu() {
+  register_nav_menu('main-menu',__( 'Main Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
 
 // BEGIN CUSTOM ADMIN DASHBOARD HEADER LOGO
 function custom_admin_logo() {

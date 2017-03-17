@@ -53,35 +53,90 @@
 
 	</head>
 
-	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+	<body>
 
-		<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+		<!--  ##### BEGIN NAVIGATION HEADER FOR WEB APP ##### -->
+		<header class="nav-bar-mobile show-for-small-only" role="nav">
 
-			<div class="site-branding">
-				<?php
-				if ( is_front_page() && is_home() ) : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php else : ?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-				endif;
+			<div class="top-bar-title">
+				<span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+					<button class="menu-icon dark" type="button" data-toggle></button>
+				</span>
+			</div>
 
-				$description = get_bloginfo( 'description', 'display' );
-				if ( $description || is_customize_preview() ) : ?>
-					<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-				<?php
-				endif; ?>
-			</div><!-- .site-branding -->
+			<section class="nav-bar-left">
+				<a href='index.html'>
+					<img alt='West Canada Logo' src="<?php bloginfo( 'template_directory' ); ?>/img/west_ca_logo.png">
+				</a>
+			</section>
 
-			<?php // if you'd like to use the site description you can un-comment it below ?>
-			<?php // bloginfo('description'); ?>
+		</header>
 
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'wca' ); ?></button>
-				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-			</nav><!-- #site-navigation -->
+		<!--  ##### END NAVIGATION HEADER FOR WEB APP ##### -->
 
-			</nav> -->
+
+		<!--  ##### BEGIN NAVIGATION HEADER FOR MOBILE APP ##### -->
+
+		<header class="nav-bar hide-for-small-only" role="nav">
+
+			<section class="nav-bar-left">
+				<a href='index.html'>
+					<img alt='West Canada Logo' src="<?php bloginfo( 'template_directory' ); ?>/img/west_ca_logo.png">
+				</a>
+			</section>
+
+			<section class="nav-bar-right" id="example-menu">
+					<ul class="dropdown menu" data-dropdown-menu>
+						<li><a href="http://west-ulc.ca/" class="top-level-nav-item">Home</a></li>
+						<li>
+							<a href="#" class="top-level-nav-item">Services</a>
+							<ul class="menu vertical">
+								<li><a href="http://west-ulc.ca/services/avian-species-research-management/">Avian Species Research & Management</a></li>
+								<li><a href="http://west-ulc.ca/services/bat-research-monitoring/">Bat Research & Monitoring</a></li>
+								<li><a href="http://west-ulc.ca/services/big-game-research-management/">Big Game Research & Management</a></li>
+								<li><a href="http://west-ulc.ca/services/statistics-biometrics/">Statistics & Biometrics</a></li>
+								<li><a href="http://west-ulc.ca/services/wildlife-research-management/">Wildlife Research & Management</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="top-level-nav-item">Markets</a>
+							<ul class="menu vertical">
+								<li>
+									<a href="#">Energy</a>
+									<ul class="menu vertical">
+										<li>
+											<a href="#">Renewable</a>
+											<ul class="menu vertical">
+												<li><a href="http://west-ulc.ca/markets/solar-energy/">Solar Energy</a></li>
+												<li><a href="http://west-ulc.ca/markets/wind-energy/">Wind Energy</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Utilities</a>
+											<ul class="menu vertical">
+												<li><a href="http://west-ulc.ca/markets/oilgas-and-mining/">Oil/Gas & Mining</a></li>
+												<li><a href="http://west-ulc.ca/markets/pipelines/">Pipelines</a></li>
+												<li><a href="http://west-ulc.ca/markets/power-lines/">Power Lines</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="http://west-ulc.ca/markets/infrastructure/">Infrastructure</a></li>
+								<li><a href="http://west-ulc.ca/markets/government/">Government</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="top-level-nav-item">About</a>
+							<ul class="menu vertical">
+								<li><a href="http://west-ulc.ca/about/team/">Team</a></li>
+								<li><a href="http://west-ulc.ca/about/culture/">Culture</a></li>
+								<li><a href="http://west-ulc.ca/about/news-and-events/">News & Events</a></li>
+								<li><a href="http://west-ulc.ca/about/contact/">Contact</a></li>
+							</ul>
+						</li>
+						<li><a href="http://west-ulc.ca/careers/" class="top-level-nav-item">Careers</a></li>
+					</ul>
+			</section>
 
 			<a class='btn contact-btn-callout hide-for-small-only' href='contact.html'>
 				<i class='fa fa-phone'></i>
@@ -90,40 +145,4 @@
 
 		</header>
 
-		<section aria-label='Favorite Space Pictures' class='orbit superhero' data-options='animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;' data-orbit='' role='region'>
-			<ul class='orbit-container'>
-				<button class='orbit-previous'>
-					<span class='show-for-sr'>Previous Slide</span>
-					<i class='fa fa-arrow-left'></i>
-				</button>
-				<button class='orbit-next'>
-					<span class='show-for-sr'>Next Slide</span>
-					<i class='fa fa-arrow-right'></i>
-				</button>
-				<li class='is-active orbit-slide'>
-					<strong>WELCOME TO WEST</strong>
-					<figcaption>Avian Species Research and Management</figcaption>
-					<img alt='Eagle' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero_img_eagle.jpg">
-				</li>
-				<li class='orbit-slide'>
-					<strong>WELCOME TO WEST</strong>
-					<figcaption>Big Game Research and Monitoring</figcaption>
-					<img alt='Eagle' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero_img_bear_on_tree.jpg">
-				</li>
-				<li class='orbit-slide'>
-					<strong>WELCOME TO WEST</strong>
-					<figcaption class='short-title'>Renewable Energy</figcaption>
-					<img alt='Power Lines' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero_img_powerlines.jpg">
-				</li>
-				<li class='orbit-slide'>
-					<strong>WELCOME TO WEST</strong>
-					<figcaption class='short-title'>Statistics and Biometrics</figcaption>
-					<img alt='Stats' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero_img_stats.jpg">
-				</li>
-				<li class='orbit-slide'>
-					<strong>WELCOME TO WEST</strong>
-					<figcaption class='short-title'>Utilities</figcaption>
-					<img alt='Power Lines' class='orbit-image' src="<?php bloginfo( 'template_directory' ); ?>/img/superhero_img_powerlines.jpg">
-				</li>
-			</ul>
-		</section>
+		<!--  ##### END NAVIGATION HEADER FOR MOBILE APP ##### -->

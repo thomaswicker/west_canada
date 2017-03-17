@@ -1,7 +1,7 @@
 
-/* %%%%%%%%%%%%%%%%%%%% CAREERS STYLES %%%%%%%%%%%%%%%%%%%% */
+/* %%%%%%%%%%%%%%%%%%%% CONTACT STYLES %%%%%%%%%%%%%%%%%%%% */
 
-.careers-container {
+.contact-container {
   position: relative;
   top: -20px;
   float: left;
@@ -9,7 +9,7 @@
   min-height: 350px;
   padding: 0 20px;
 
-  .body-content-careers {
+  .body-content-contact {
     float: left;
     width: 100%;
     padding: 0 $unit-jumbo 0 $unit-jumbo;
@@ -29,7 +29,7 @@
       padding-right: $unit-sm;
     }
 
-    .bc-careers-left {
+    .bc-contact-left {
       float: left;
       width: 70%;
       padding: 0 $unit-jumbo $unit-jumbo $unit-jumbo;
@@ -115,7 +115,7 @@
       }
     }
 
-    .bc-careers-right {
+    .bc-contact-right {
       float: left;
       width: 30%;
       padding-left: $unit-jumbo;

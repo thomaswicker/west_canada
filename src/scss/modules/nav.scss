@@ -1,77 +1,27 @@
-nav {
-  .nav-bar {
-    float: left;
-    width: 100%;
-    background-color: $color-primary;
-    border-bottom: 2px solid white;
 
-    .nav-bar-left {
-      float: left;
-      width: 30%;
 
-      a {
-        position: relative;
-        left: $unit-xs;
 
-        img {
-          max-width: 100px;
-        }
-      }
-    }
-    .nav-bar-right {
-      float: right;
-      width: 70%;
 
-      ul.menu {
-        float: right;
-        width: 100%;
-        max-width: 475px;
-        text-transform: uppercase;
+.nav-bar-mobile {
+  float: left;
+  width: 100%;
+  padding-top: $unit-xxs;
+  background-color: $color-primary;
 
-        li {
-
-          a {
-            padding-top: $unit-lg;
-            padding-bottom: $unit-lg;
-            font-family: $font-1;
-            font-size: $font-size-sm;
-            font-weight: 500;
-            color: white;
-
-            &:hover {
-              background-color: $color-tertiary-alt;
-              color: $color-primary;
-              text-decoration: none;
-            }
-
-            &.active {
-              background-color: $white;
-              color: $color-primary;
-            }
-          }
-        }
-      }
-    }
+  button.menu-icon {
+    position: absolute;
+    top: $unit-lg;
+    right: $unit-lg;
   }
 
-  .nav-bar-mobile {
+  .nav-bar-left {
     float: left;
-    width: 100%;
-    padding-top: $unit-xxs;
-    background-color: $color-primary;
+    width: 100px;
+    
+  }
 
-    button.menu-icon {
-      position: absolute;
-      top: $unit-lg;
-      right: $unit-lg;
-    }
 
-    .brand img {
-      position: relative;
-      left: $unit-xxs;
-      max-width: 90px;
-    }
-
+  .nav-bar-right {
     ul.menu {
       float: left;
       width: 100%;
@@ -96,6 +46,91 @@ nav {
           }
         }
       }
+    }
+  }
+}
+
+
+.nav-bar {
+  float: left;
+  width: 100%;
+  border-bottom: 2px solid white;
+  background-color: $color-primary;
+
+  .nav-bar-left {
+    float: left;
+    width: 30%;
+
+    a {
+      position: relative;
+      left: $unit-xs;
+
+      img {
+        max-width: 100px;
+      }
+    }
+  }
+
+  .nav-bar-right {
+    float: left;
+    width: 70%;
+
+    ul.menu {
+      float: right;
+      width: 100%;
+      max-width: 475px;
+      text-transform: uppercase;
+      background-color: transparent;
+
+      li {
+        a {
+          padding-top: $unit-lg;
+          padding-bottom: $unit-lg;
+          font-family: $font-1;
+          font-size: $font-size-sm;
+          font-weight: 500;
+          background-color: transparent;
+
+          &:hover {
+            background-color: $color-electric-blue;
+            color: white;
+            text-decoration: none;
+          }
+
+          &:active {
+            background-color: $color-electric-blue;
+            color: white;
+          }
+        }
+
+        &.isActive a {
+          background-color: teal !important;
+        }
+
+        ul.submenu {
+          background-color: white;
+          color: $color-primary;
+
+          li {
+            a {
+              padding: 11px 18px 11px 18px;
+              background-color: white;
+              color: $color-primary;
+              text-transform: capitalize;
+              line-height: 140%;
+
+              &:hover {
+                background-color: $color-electric-blue;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .top-level-nav-item {
+      color: white !important;
     }
   }
 }

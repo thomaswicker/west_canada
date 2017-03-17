@@ -1078,98 +1078,89 @@ footer {
     footer .footer-right .copyright {
       color: white; }
 
-h1, h2, h3, h4, h5, h6 {
-  float: left;
-  width: 100%;
-  margin-top: 0;
-  margin-bottom: 0.3125rem;
-  font-family: "Roboto", sans-serif; }
-
-h1 {
-  margin-top: 1.25rem;
-  font-size: 2.6rem; }
-
-h2 {
-  font-size: 2.2rem; }
-
-h3 {
-  font-size: 1.6rem; }
-
-h4 {
-  font-size: 1.5rem; }
-
-h5 {
-  font-size: 1.4rem; }
-
-h6 {
-  font-size: 1.2rem; }
-
-nav .nav-bar {
-  float: left;
-  width: 100%;
-  background-color: #101d30;
-  border-bottom: 2px solid white; }
-  nav .nav-bar .nav-bar-left {
-    float: left;
-    width: 30%; }
-    nav .nav-bar .nav-bar-left a {
-      position: relative;
-      left: 0.625rem; }
-      nav .nav-bar .nav-bar-left a img {
-        max-width: 100px; }
-  nav .nav-bar .nav-bar-right {
-    float: right;
-    width: 70%; }
-    nav .nav-bar .nav-bar-right ul.menu {
-      float: right;
-      width: 100%;
-      max-width: 475px;
-      text-transform: uppercase; }
-      nav .nav-bar .nav-bar-right ul.menu li a {
-        padding-top: 1.563rem;
-        padding-bottom: 1.563rem;
-        font-family: "Roboto", sans-serif;
-        font-size: 0.875rem;
-        font-weight: 500;
-        color: white; }
-        nav .nav-bar .nav-bar-right ul.menu li a:hover {
-          background-color: #acd1e3;
-          color: #101d30;
-          text-decoration: none; }
-        nav .nav-bar .nav-bar-right ul.menu li a.active {
-          background-color: #ffffff;
-          color: #101d30; }
-nav .nav-bar-mobile {
+.nav-bar-mobile {
   float: left;
   width: 100%;
   padding-top: 0.3125rem;
   background-color: #101d30; }
-  nav .nav-bar-mobile button.menu-icon {
+  .nav-bar-mobile button.menu-icon {
     position: absolute;
     top: 1.563rem;
     right: 1.563rem; }
-  nav .nav-bar-mobile .brand img {
-    position: relative;
-    left: 0.3125rem;
-    max-width: 90px; }
-  nav .nav-bar-mobile ul.menu {
+  .nav-bar-mobile .nav-bar-left {
+    float: left;
+    width: 100px; }
+  .nav-bar-mobile .nav-bar-right ul.menu {
     float: left;
     width: 100%;
     margin-top: 0.3125rem;
     border-bottom: 4px solid #101d30; }
-    nav .nav-bar-mobile ul.menu li {
+    .nav-bar-mobile .nav-bar-right ul.menu li {
       float: left;
       width: 100%;
       background-color: #101d30; }
-      nav .nav-bar-mobile ul.menu li a {
+      .nav-bar-mobile .nav-bar-right ul.menu li a {
         float: left;
         width: 100%;
         background-color: #1d3456;
         font-size: 17px;
         text-align: center;
         color: white; }
-        nav .nav-bar-mobile ul.menu li a:hover {
+        .nav-bar-mobile .nav-bar-right ul.menu li a:hover {
           background-color: #00aeef; }
+
+.nav-bar {
+  float: left;
+  width: 100%;
+  border-bottom: 2px solid white;
+  background-color: #101d30; }
+  .nav-bar .nav-bar-left {
+    float: left;
+    width: 30%; }
+    .nav-bar .nav-bar-left a {
+      position: relative;
+      left: 0.625rem; }
+      .nav-bar .nav-bar-left a img {
+        max-width: 100px; }
+  .nav-bar .nav-bar-right {
+    float: left;
+    width: 70%; }
+    .nav-bar .nav-bar-right ul.menu {
+      float: right;
+      width: 100%;
+      max-width: 475px;
+      text-transform: uppercase;
+      background-color: transparent; }
+      .nav-bar .nav-bar-right ul.menu li a {
+        padding-top: 1.563rem;
+        padding-bottom: 1.563rem;
+        font-family: "Roboto", sans-serif;
+        font-size: 0.875rem;
+        font-weight: 500;
+        background-color: transparent; }
+        .nav-bar .nav-bar-right ul.menu li a:hover {
+          background-color: #00aeef;
+          color: white;
+          text-decoration: none; }
+        .nav-bar .nav-bar-right ul.menu li a:active {
+          background-color: #00aeef;
+          color: white; }
+      .nav-bar .nav-bar-right ul.menu li.isActive a {
+        background-color: teal !important; }
+      .nav-bar .nav-bar-right ul.menu li ul.submenu {
+        background-color: white;
+        color: #101d30; }
+        .nav-bar .nav-bar-right ul.menu li ul.submenu li a {
+          padding: 11px 18px 11px 18px;
+          background-color: white;
+          color: #101d30;
+          text-transform: capitalize;
+          line-height: 140%; }
+          .nav-bar .nav-bar-right ul.menu li ul.submenu li a:hover {
+            background-color: #00aeef;
+            color: white; }
+    .nav-bar .nav-bar-right .top-level-nav-item {
+      color: white !important; }
 
 ul.sidebar-nav {
   float: left;
@@ -1370,112 +1361,474 @@ ul.sidebar-nav {
         padding: 60px 1.25rem 1.25rem 1.25rem; }
 
 /* #########%% LAYOUTS %%######### */
-/* %%%%%%%%%%%%%%%%%%%% ABOUT SPECIFIC STYLES %%%%%%%%%%%%%%%%%%%% */
-.body-content-about {
+/* %%%%%%%%%%%%%%%%%%%% ABOUT STYLES %%%%%%%%%%%%%%%%%%%% */
+.about-container {
+  position: relative;
+  top: -20px;
   float: left;
   width: 100%;
-  padding: 0 3.125rem 3.125rem 3.125rem; }
-  @media only screen and (max-width: 640px) {
-    .body-content-about {
-      padding-left: 1.875rem;
-      padding-right: 1.875rem; } }
-  .body-content-about .bca-left {
+  background-color: pink;
+  padding: 0 20px; }
+  .about-container .body-content-about {
     float: left;
-    width: 70%;
-    padding: 0 3.125rem 3.125rem 3.125rem; }
-    @media only screen and (min-width: 640px) and (max-width: 1024px) {
-      .body-content-about .bca-left {
-        float: left;
-        width: 100%;
-        padding: 0 0.9375rem 0.3125rem 0; } }
+    width: 100%;
+    padding: 0 3.125rem 0 3.125rem; }
     @media only screen and (max-width: 640px) {
-      .body-content-about .bca-left {
+      .about-container .body-content-about {
+        padding-left: 1.875rem;
+        padding-right: 1.875rem; } }
+    .about-container .body-content-about .bc-about-left {
+      float: left;
+      width: 70%;
+      padding: 0 3.125rem 3.125rem 3.125rem; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .about-container .body-content-about .bc-about-left {
+          float: left;
+          width: 100%;
+          padding: 0 0.9375rem 0.3125rem 0; } }
+      @media only screen and (max-width: 640px) {
+        .about-container .body-content-about .bc-about-left {
+          float: left;
+          width: 100%;
+          padding: 1.563rem 0.9375rem 0.3125rem 0; } }
+      .about-container .body-content-about .bc-about-left h1 {
         float: left;
         width: 100%;
-        padding: 1.563rem 0.9375rem 0.3125rem 0; } }
-    .body-content-about .bca-left h1 {
-      float: left;
-      width: 100%;
-      margin-top: 1.875rem;
-      margin-bottom: 1.25rem;
-      font-size: 2rem;
-      font-weight: 300; }
-      @media only screen and (min-width: 640px) and (max-width: 1024px) {
-        .body-content-about .bca-left h1 {
-          margin-bottom: 1.25rem;
-          font-weight: 300; } }
-      @media only screen and (max-width: 640px) {
-        .body-content-about .bca-left h1 {
-          margin-bottom: 1.25rem;
-          font-weight: 500; } }
-    .body-content-about .bca-left h2 {
-      float: left;
-      width: 100%;
-      margin-top: 1.875rem;
-      margin-bottom: 0;
-      font-size: 22px;
-      font-weight: 600; }
-      @media only screen and (min-width: 640px) and (max-width: 1024px) {
-        .body-content-about .bca-left h2 {
-          margin-bottom: 0.9375rem;
-          font-size: 1.25rem; } }
-      @media only screen and (max-width: 640px) {
-        .body-content-about .bca-left h2 {
-          margin-bottom: 0.9375rem;
-          font-size: 1.25rem; } }
-    .body-content-about .bca-left h3 {
-      float: left;
-      width: 100%;
-      margin-bottom: 1.875rem; }
-    .body-content-about .bca-left h4 {
-      margin-top: 1.875rem;
-      font-size: 1.5rem; }
-    .body-content-about .bca-left img {
-      float: left;
-      width: 100%;
-      max-width: 400px;
-      margin-top: 30px; }
-    .body-content-about .bca-left p.body-text {
-      margin-bottom: 1.563rem; }
-  .body-content-about .bca-right {
-    float: left;
-    width: 30%;
-    margin-top: 1.875rem;
-    padding-right: 1.875rem;
-    text-align: center;
-    border-left: 2px solid #ddd; }
-    @media only screen and (min-width: 640px) and (max-width: 1024px) {
-      .body-content-about .bca-right {
+        margin-top: 1.875rem;
+        margin-bottom: 1.25rem;
+        font-size: 2rem;
+        font-weight: 300; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .about-container .body-content-about .bc-about-left h1 {
+            margin-bottom: 1.25rem;
+            font-weight: 300; } }
+        @media only screen and (max-width: 640px) {
+          .about-container .body-content-about .bc-about-left h1 {
+            margin-bottom: 1.25rem;
+            font-weight: 500; } }
+      .about-container .body-content-about .bc-about-left h2 {
         float: left;
         width: 100%;
-        padding-top: 3.125rem;
-        border-top: 2px solid #acd1e3;
-        border-left: none; } }
-    @media only screen and (max-width: 640px) {
-      .body-content-about .bca-right {
+        margin-top: 1.875rem;
+        margin-bottom: 0;
+        font-size: 22px;
+        font-weight: 600; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .about-container .body-content-about .bc-about-left h2 {
+            margin-bottom: 0.9375rem;
+            font-size: 1.25rem; } }
+        @media only screen and (max-width: 640px) {
+          .about-container .body-content-about .bc-about-left h2 {
+            margin-bottom: 0.9375rem;
+            font-size: 1.25rem; } }
+      .about-container .body-content-about .bc-about-left h3 {
         float: left;
         width: 100%;
-        padding: 0 0 25px 15px;
-        border-top: 2px solid #acd1e3;
-        border-left: none; } }
-    .body-content-about .bca-right h3 {
-      text-transform: uppercase; }
-    .body-content-about .bca-right img {
-      width: 100%;
-      max-width: 400px;
-      border: 2px solid #101d30; }
+        margin-bottom: 1.875rem; }
+      .about-container .body-content-about .bc-about-left h4 {
+        margin-top: 1.875rem;
+        font-size: 1.5rem; }
+      .about-container .body-content-about .bc-about-left img {
+        float: left;
+        width: 100%;
+        max-width: 400px;
+        margin-top: 30px; }
+      .about-container .body-content-about .bc-about-left p.body-text {
+        margin-bottom: 1.563rem; }
+    .about-container .body-content-about .bc-about-right {
+      float: left;
+      width: 30%;
+      margin-top: 1.875rem;
+      padding-right: 1.875rem;
+      text-align: center;
+      border-left: 2px solid #ddd; }
       @media only screen and (min-width: 640px) and (max-width: 1024px) {
-        .body-content-about .bca-right img {
-          max-width: 500px;
-          margin-top: 3.125rem; } }
+        .about-container .body-content-about .bc-about-right {
+          float: left;
+          width: 100%;
+          padding-top: 3.125rem;
+          border-top: 2px solid #acd1e3;
+          border-left: none; } }
       @media only screen and (max-width: 640px) {
-        .body-content-about .bca-right img {
-          max-width: 500px;
-          margin-top: 3.125rem; } }
+        .about-container .body-content-about .bc-about-right {
+          float: left;
+          width: 100%;
+          padding: 0 0 25px 15px;
+          border-top: 2px solid #acd1e3;
+          border-left: none; } }
+      .about-container .body-content-about .bc-about-right h3 {
+        text-transform: uppercase; }
+      .about-container .body-content-about .bc-about-right img {
+        width: 100%;
+        max-width: 400px;
+        border: 2px solid #101d30; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .about-container .body-content-about .bc-about-right img {
+            max-width: 500px;
+            margin-top: 3.125rem; } }
+        @media only screen and (max-width: 640px) {
+          .about-container .body-content-about .bc-about-right img {
+            max-width: 500px;
+            margin-top: 3.125rem; } }
 
-/* %%%%%%%%%%%%%%%%%%%% CAREERS SPECIFIC STYLES %%%%%%%%%%%%%%%%%%%% */
+/* %%%%%%%%%%%%%%%%%%%% CAREERS STYLES %%%%%%%%%%%%%%%%%%%% */
+.careers-container {
+  position: relative;
+  top: -20px;
+  float: left;
+  width: 100%;
+  min-height: 350px;
+  padding: 0 20px; }
+  .careers-container .body-content-careers {
+    float: left;
+    width: 100%;
+    padding: 0 3.125rem 0 3.125rem; }
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+      .careers-container .body-content-careers {
+        padding-left: 0.625rem;
+        padding-right: 0.625rem; } }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .careers-container .body-content-careers {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem; } }
+    @media only screen and (max-width: 640px) {
+      .careers-container .body-content-careers {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    .careers-container .body-content-careers .bc-careers-left {
+      float: left;
+      width: 70%;
+      padding: 0 3.125rem 3.125rem 3.125rem; }
+      .careers-container .body-content-careers .bc-careers-left h1 {
+        float: left;
+        width: 100%;
+        margin-top: 1.875rem;
+        margin-bottom: 0.625rem;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 145%; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .careers-container .body-content-careers .bc-careers-left h1 {
+            margin-top: 0;
+            margin-bottom: 1.25rem;
+            font-size: 1.5rem;
+            font-weight: 500; } }
+        @media only screen and (max-width: 640px) {
+          .careers-container .body-content-careers .bc-careers-left h1 {
+            margin-top: 10px;
+            font-size: 1.5rem;
+            font-weight: 500; } }
+      .careers-container .body-content-careers .bc-careers-left h4 {
+        margin-top: 1.875rem;
+        font-size: 1.5rem; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .careers-container .body-content-careers .bc-careers-left h4 {
+            font-size: 1.25rem; } }
+        @media only screen and (max-width: 640px) {
+          .careers-container .body-content-careers .bc-careers-left h4 {
+            font-size: 1.25rem; } }
+      .careers-container .body-content-careers .bc-careers-left ul.areas-of-expertise {
+        float: left;
+        width: 100%;
+        list-style-type: disc; }
+        .careers-container .body-content-careers .bc-careers-left ul.areas-of-expertise li {
+          float: left;
+          width: 100%;
+          margin-top: 0.9375rem;
+          margin-left: 1.25rem;
+          line-height: 140%; }
+      .careers-container .body-content-careers .bc-careers-left img {
+        float: left;
+        width: 100%;
+        max-width: 400px;
+        margin-top: 30px;
+        border: 2px solid #101d30; }
+        @media only screen and (max-width: 640px) {
+          .careers-container .body-content-careers .bc-careers-left img {
+            width: 100%; } }
+      @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        .careers-container .body-content-careers .bc-careers-left {
+          width: 65%; } }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .careers-container .body-content-careers .bc-careers-left {
+          width: 100%;
+          padding: 1.563rem 1.875rem 30px 2.5rem; } }
+      @media only screen and (max-width: 640px) {
+        .careers-container .body-content-careers .bc-careers-left {
+          width: 100%;
+          padding: 1.563rem 1.563rem 30px 1.25rem; } }
+      .careers-container .body-content-careers .bc-careers-left p.body-text {
+        margin-bottom: 1.563rem; }
+    .careers-container .body-content-careers .bc-careers-right {
+      float: left;
+      width: 30%;
+      padding-left: 3.125rem;
+      padding-right: 1.875rem;
+      border-left: 2px solid #ddd; }
+      @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        .careers-container .body-content-careers .bc-careers-right {
+          width: 35%;
+          padding-left: 1.875rem;
+          padding-right: 1.563rem; } }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .careers-container .body-content-careers .bc-careers-right {
+          width: 100%;
+          padding: 0 2.5rem 25px 2.5rem;
+          border-left: 2px solid transparent; } }
+      @media only screen and (max-width: 640px) {
+        .careers-container .body-content-careers .bc-careers-right {
+          width: 100%;
+          padding: 0 0 25px 15px;
+          border-left: 2px solid transparent; } }
+      .careers-container .body-content-careers .bc-careers-right h3 {
+        float: left;
+        width: 100%;
+        margin-top: 1.563rem;
+        margin-bottom: 1.25rem;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 500; }
+
+/* %%%%%%%%%%%%%%%%%%%% CONTACT STYLES %%%%%%%%%%%%%%%%%%%% */
+.contact-container {
+  position: relative;
+  top: -20px;
+  float: left;
+  width: 100%;
+  min-height: 350px;
+  padding: 0 20px; }
+  .contact-container .body-content-contact {
+    float: left;
+    width: 100%;
+    padding: 0 3.125rem 0 3.125rem; }
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+      .contact-container .body-content-contact {
+        padding-left: 0.625rem;
+        padding-right: 0.625rem; } }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .contact-container .body-content-contact {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem; } }
+    @media only screen and (max-width: 640px) {
+      .contact-container .body-content-contact {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    .contact-container .body-content-contact .bc-contact-left {
+      float: left;
+      width: 70%;
+      padding: 0 3.125rem 3.125rem 3.125rem; }
+      .contact-container .body-content-contact .bc-contact-left h1 {
+        float: left;
+        width: 100%;
+        margin-top: 1.875rem;
+        margin-bottom: 0.625rem;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 145%; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .contact-container .body-content-contact .bc-contact-left h1 {
+            margin-top: 0;
+            margin-bottom: 1.25rem;
+            font-size: 1.5rem;
+            font-weight: 500; } }
+        @media only screen and (max-width: 640px) {
+          .contact-container .body-content-contact .bc-contact-left h1 {
+            margin-top: 10px;
+            font-size: 1.5rem;
+            font-weight: 500; } }
+      .contact-container .body-content-contact .bc-contact-left h4 {
+        margin-top: 1.875rem;
+        font-size: 1.5rem; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .contact-container .body-content-contact .bc-contact-left h4 {
+            font-size: 1.25rem; } }
+        @media only screen and (max-width: 640px) {
+          .contact-container .body-content-contact .bc-contact-left h4 {
+            font-size: 1.25rem; } }
+      .contact-container .body-content-contact .bc-contact-left ul.areas-of-expertise {
+        float: left;
+        width: 100%;
+        list-style-type: disc; }
+        .contact-container .body-content-contact .bc-contact-left ul.areas-of-expertise li {
+          float: left;
+          width: 100%;
+          margin-top: 0.9375rem;
+          margin-left: 1.25rem;
+          line-height: 140%; }
+      .contact-container .body-content-contact .bc-contact-left img {
+        float: left;
+        width: 100%;
+        max-width: 400px;
+        margin-top: 30px;
+        border: 2px solid #101d30; }
+        @media only screen and (max-width: 640px) {
+          .contact-container .body-content-contact .bc-contact-left img {
+            width: 100%; } }
+      @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        .contact-container .body-content-contact .bc-contact-left {
+          width: 65%; } }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .contact-container .body-content-contact .bc-contact-left {
+          width: 100%;
+          padding: 1.563rem 1.875rem 30px 2.5rem; } }
+      @media only screen and (max-width: 640px) {
+        .contact-container .body-content-contact .bc-contact-left {
+          width: 100%;
+          padding: 1.563rem 1.563rem 30px 1.25rem; } }
+      .contact-container .body-content-contact .bc-contact-left p.body-text {
+        margin-bottom: 1.563rem; }
+    .contact-container .body-content-contact .bc-contact-right {
+      float: left;
+      width: 30%;
+      padding-left: 3.125rem;
+      padding-right: 1.875rem;
+      border-left: 2px solid #ddd; }
+      @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        .contact-container .body-content-contact .bc-contact-right {
+          width: 35%;
+          padding-left: 1.875rem;
+          padding-right: 1.563rem; } }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .contact-container .body-content-contact .bc-contact-right {
+          width: 100%;
+          padding: 0 2.5rem 25px 2.5rem;
+          border-left: 2px solid transparent; } }
+      @media only screen and (max-width: 640px) {
+        .contact-container .body-content-contact .bc-contact-right {
+          width: 100%;
+          padding: 0 0 25px 15px;
+          border-left: 2px solid transparent; } }
+      .contact-container .body-content-contact .bc-contact-right h3 {
+        float: left;
+        width: 100%;
+        margin-top: 1.563rem;
+        margin-bottom: 1.25rem;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 500; }
+
+/* %%%%%%%%%%%%%%%%%%%% CULTURE PAGE STYLES %%%%%%%%%%%%%%%%%%%% */
+.culture-container {
+  position: relative;
+  top: -20px;
+  float: left;
+  width: 100%;
+  min-height: 350px;
+  padding: 0 20px; }
+  .culture-container .body-content-culture {
+    float: left;
+    width: 100%;
+    padding: 0 3.125rem 0 3.125rem; }
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+      .culture-container .body-content-culture {
+        padding-left: 0.625rem;
+        padding-right: 0.625rem; } }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .culture-container .body-content-culture {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem; } }
+    @media only screen and (max-width: 640px) {
+      .culture-container .body-content-culture {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    .culture-container .body-content-culture .bc-culture-left {
+      float: left;
+      width: 70%;
+      padding: 0 3.125rem 3.125rem 3.125rem; }
+      .culture-container .body-content-culture .bc-culture-left h1 {
+        float: left;
+        width: 100%;
+        margin-top: 1.875rem;
+        margin-bottom: 0.625rem;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 145%; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .culture-container .body-content-culture .bc-culture-left h1 {
+            margin-top: 0;
+            margin-bottom: 1.25rem;
+            font-size: 1.5rem;
+            font-weight: 500; } }
+        @media only screen and (max-width: 640px) {
+          .culture-container .body-content-culture .bc-culture-left h1 {
+            margin-top: 10px;
+            font-size: 1.5rem;
+            font-weight: 500; } }
+      .culture-container .body-content-culture .bc-culture-left h4 {
+        margin-top: 1.875rem;
+        font-size: 1.5rem; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .culture-container .body-content-culture .bc-culture-left h4 {
+            font-size: 1.25rem; } }
+        @media only screen and (max-width: 640px) {
+          .culture-container .body-content-culture .bc-culture-left h4 {
+            font-size: 1.25rem; } }
+      .culture-container .body-content-culture .bc-culture-left ul.areas-of-expertise {
+        float: left;
+        width: 100%;
+        list-style-type: disc; }
+        .culture-container .body-content-culture .bc-culture-left ul.areas-of-expertise li {
+          float: left;
+          width: 100%;
+          margin-top: 0.9375rem;
+          margin-left: 1.25rem;
+          line-height: 140%; }
+      .culture-container .body-content-culture .bc-culture-left img {
+        float: left;
+        width: 100%;
+        max-width: 400px;
+        margin-top: 30px;
+        border: 2px solid #101d30; }
+        @media only screen and (max-width: 640px) {
+          .culture-container .body-content-culture .bc-culture-left img {
+            width: 100%; } }
+      @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        .culture-container .body-content-culture .bc-culture-left {
+          width: 65%; } }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .culture-container .body-content-culture .bc-culture-left {
+          width: 100%;
+          padding: 1.563rem 1.875rem 30px 2.5rem; } }
+      @media only screen and (max-width: 640px) {
+        .culture-container .body-content-culture .bc-culture-left {
+          width: 100%;
+          padding: 1.563rem 1.563rem 30px 1.25rem; } }
+      .culture-container .body-content-culture .bc-culture-left p.body-text {
+        margin-bottom: 1.563rem; }
+    .culture-container .body-content-culture .bc-culture-right {
+      float: left;
+      width: 30%;
+      padding-left: 3.125rem;
+      padding-right: 1.875rem;
+      border-left: 2px solid #ddd; }
+      @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        .culture-container .body-content-culture .bc-culture-right {
+          width: 35%;
+          padding-left: 1.875rem;
+          padding-right: 1.563rem; } }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .culture-container .body-content-culture .bc-culture-right {
+          width: 100%;
+          padding: 0 2.5rem 25px 2.5rem;
+          border-left: 2px solid transparent; } }
+      @media only screen and (max-width: 640px) {
+        .culture-container .body-content-culture .bc-culture-right {
+          width: 100%;
+          padding: 0 0 25px 15px;
+          border-left: 2px solid transparent; } }
+      .culture-container .body-content-culture .bc-culture-right h3 {
+        float: left;
+        width: 100%;
+        margin-top: 1.563rem;
+        margin-bottom: 1.25rem;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 500; }
+
 /* %%%%%%%%%%%%%%%%%%%% HOME SCSS %%%%%%%%%%%%%%%%%%%% */
 .body-content-home {
+  position: relative;
+  top: -20px;
   float: left;
   width: 100%;
   padding: 0 3.125rem 3.125rem 3.125rem; }
@@ -1607,200 +1960,450 @@ ul.sidebar-nav {
         font-weight: 600; }
 
 /* %%%%%%%%%%%%%%%%%%%% MARKET SPECIFIC STYLES %%%%%%%%%%%%%%%%%%%% */
-.body-content-markets {
+.markets-container {
+  position: relative;
+  top: -20px;
   float: left;
   width: 100%;
-  padding: 0 3.125rem 3.125rem 3.125rem; }
-  @media only screen and (max-width: 640px) {
-    .body-content-markets {
-      padding-left: 1.875rem;
-      padding-right: 1.875rem; } }
-  .body-content-markets .bcm-left {
+  min-height: 350px;
+  padding: 0 20px; }
+  .markets-container .body-content-markets {
     float: left;
-    width: 70%;
-    padding: 0 3.125rem 3.125rem 3.125rem; }
-    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-      .body-content-markets .bcm-left {
-        width: 65%; } }
-    @media only screen and (min-width: 640px) and (max-width: 1024px) {
-      .body-content-markets .bcm-left {
-        float: left;
-        width: 100%;
-        padding: 0 0.9375rem 1.25rem 0; } }
+    width: 100%;
+    padding: 0 3.125rem 0 3.125rem; }
     @media only screen and (max-width: 640px) {
-      .body-content-markets .bcm-left {
-        float: left;
-        width: 100%;
-        padding: 1.563rem 0.9375rem 1.875rem 0; } }
-    .body-content-markets .bcm-left h1 {
-      float: left;
-      width: 100%;
-      margin-top: 1.875rem;
-      margin-bottom: 1.25rem;
-      font-size: 2rem;
-      font-weight: 300; }
-      @media only screen and (min-width: 640px) and (max-width: 1024px) {
-        .body-content-markets .bcm-left h1 {
-          margin-top: 0;
-          margin-bottom: 1.25rem;
-          font-size: 1.5rem;
-          font-weight: 500; } }
-      @media only screen and (max-width: 640px) {
-        .body-content-markets .bcm-left h1 {
-          margin-top: 10px;
-          font-size: 1.5rem;
-          font-weight: 500; } }
-    .body-content-markets .bcm-left h4 {
-      margin-top: 1.875rem;
-      font-size: 1.5rem; }
-    .body-content-markets .bcm-left img {
-      float: left;
-      width: 100%;
-      max-width: 400px;
-      margin-top: 30px; }
-    .body-content-markets .bcm-left p.body-text {
-      margin-bottom: 1.563rem; }
-  .body-content-markets .bcm-right {
-    float: left;
-    width: 30%;
-    padding-right: 1.875rem;
-    padding-left: 3.125rem;
-    border-left: 2px solid #ddd; }
-    .body-content-markets .bcm-right h3 {
-      float: left;
-      width: 100%;
-      margin-top: 1.563rem;
-      margin-bottom: 1.25rem;
-      font-size: 24px;
-      font-weight: 500;
-      text-transform: uppercase; }
-    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-      .body-content-markets .bcm-right {
-        width: 35%;
+      .markets-container .body-content-markets {
         padding-left: 1.875rem;
-        padding-right: 1.563rem; } }
+        padding-right: 1.875rem; } }
+    .markets-container .body-content-markets .bc-markets-left {
+      float: left;
+      width: 70%;
+      padding: 0 3.125rem 3.125rem 3.125rem; }
+      @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        .markets-container .body-content-markets .bc-markets-left {
+          width: 65%; } }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .markets-container .body-content-markets .bc-markets-left {
+          float: left;
+          width: 100%;
+          padding: 0 0.9375rem 1.25rem 0; } }
+      @media only screen and (max-width: 640px) {
+        .markets-container .body-content-markets .bc-markets-left {
+          float: left;
+          width: 100%;
+          padding: 1.563rem 0.9375rem 1.875rem 0; } }
+      .markets-container .body-content-markets .bc-markets-left h1 {
+        float: left;
+        width: 100%;
+        margin-top: 1.875rem;
+        margin-bottom: 1.25rem;
+        font-size: 2rem;
+        font-weight: 300; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .markets-container .body-content-markets .bc-markets-left h1 {
+            margin-top: 0;
+            margin-bottom: 1.25rem;
+            font-size: 1.5rem;
+            font-weight: 500; } }
+        @media only screen and (max-width: 640px) {
+          .markets-container .body-content-markets .bc-markets-left h1 {
+            margin-top: 10px;
+            font-size: 1.5rem;
+            font-weight: 500; } }
+      .markets-container .body-content-markets .bc-markets-left h4 {
+        margin-top: 1.875rem;
+        font-size: 1.5rem; }
+      .markets-container .body-content-markets .bc-markets-left img {
+        float: left;
+        width: 100%;
+        max-width: 400px;
+        margin-top: 30px; }
+      .markets-container .body-content-markets .bc-markets-left p.body-text {
+        margin-bottom: 1.563rem; }
+    .markets-container .body-content-markets .bc-markets-right {
+      float: left;
+      width: 30%;
+      padding-right: 1.875rem;
+      padding-left: 3.125rem;
+      border-left: 2px solid #ddd; }
+      .markets-container .body-content-markets .bc-markets-right h3 {
+        float: left;
+        width: 100%;
+        margin-top: 1.563rem;
+        margin-bottom: 1.25rem;
+        font-size: 24px;
+        font-weight: 500;
+        text-transform: uppercase; }
+      @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        .markets-container .body-content-markets .bc-markets-right {
+          width: 35%;
+          padding-left: 1.875rem;
+          padding-right: 1.563rem; } }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .markets-container .body-content-markets .bc-markets-right {
+          width: 100%;
+          padding: 10px 0 25px 0;
+          border-top: 2px solid #acd1e3;
+          border-left: 2px solid transparent; } }
+      @media only screen and (max-width: 640px) {
+        .markets-container .body-content-markets .bc-markets-right {
+          width: 100%;
+          padding: 10px 10px 25px 10px;
+          border-top: 2px solid #acd1e3;
+          border-left: 2px solid transparent; } }
+      .markets-container .body-content-markets .bc-markets-right h3 {
+        text-transform: uppercase; }
+
+/* %%%%%%%%%%%%%%%%%%%% NEWS/EVENTS STYLES %%%%%%%%%%%%%%%%%%%% */
+.news-events-container {
+  position: relative;
+  top: -20px;
+  float: left;
+  width: 100%;
+  min-height: 350px;
+  padding: 0 20px; }
+  .news-events-container .body-content-news {
+    float: left;
+    width: 100%;
+    padding: 0 3.125rem 0 3.125rem; }
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+      .news-events-container .body-content-news {
+        padding-left: 0.625rem;
+        padding-right: 0.625rem; } }
     @media only screen and (min-width: 640px) and (max-width: 1024px) {
-      .body-content-markets .bcm-right {
-        width: 100%;
-        padding: 10px 0 25px 0;
-        border-top: 2px solid #acd1e3;
-        border-left: 2px solid transparent; } }
+      .news-events-container .body-content-news {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem; } }
     @media only screen and (max-width: 640px) {
-      .body-content-markets .bcm-right {
+      .news-events-container .body-content-news {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    .news-events-container .body-content-news .bc-news-left {
+      float: left;
+      width: 70%;
+      padding: 0 3.125rem 3.125rem 3.125rem; }
+      .news-events-container .body-content-news .bc-news-left h1 {
+        float: left;
         width: 100%;
-        padding: 10px 10px 25px 10px;
-        border-top: 2px solid #acd1e3;
-        border-left: 2px solid transparent; } }
-    .body-content-markets .bcm-right h3 {
-      text-transform: uppercase; }
+        margin-top: 1.875rem;
+        margin-bottom: 0.625rem;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 145%; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .news-events-container .body-content-news .bc-news-left h1 {
+            margin-top: 0;
+            margin-bottom: 1.25rem;
+            font-size: 1.5rem;
+            font-weight: 500; } }
+        @media only screen and (max-width: 640px) {
+          .news-events-container .body-content-news .bc-news-left h1 {
+            margin-top: 10px;
+            font-size: 1.5rem;
+            font-weight: 500; } }
+      .news-events-container .body-content-news .bc-news-left h4 {
+        margin-top: 1.875rem;
+        font-size: 1.5rem; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .news-events-container .body-content-news .bc-news-left h4 {
+            font-size: 1.25rem; } }
+        @media only screen and (max-width: 640px) {
+          .news-events-container .body-content-news .bc-news-left h4 {
+            font-size: 1.25rem; } }
+      .news-events-container .body-content-news .bc-news-left ul.areas-of-expertise {
+        float: left;
+        width: 100%;
+        list-style-type: disc; }
+        .news-events-container .body-content-news .bc-news-left ul.areas-of-expertise li {
+          float: left;
+          width: 100%;
+          margin-top: 0.9375rem;
+          margin-left: 1.25rem;
+          line-height: 140%; }
+      .news-events-container .body-content-news .bc-news-left img {
+        float: left;
+        width: 100%;
+        max-width: 400px;
+        margin-top: 30px;
+        border: 2px solid #101d30; }
+        @media only screen and (max-width: 640px) {
+          .news-events-container .body-content-news .bc-news-left img {
+            width: 100%; } }
+      @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        .news-events-container .body-content-news .bc-news-left {
+          width: 65%; } }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .news-events-container .body-content-news .bc-news-left {
+          width: 100%;
+          padding: 1.563rem 1.875rem 30px 2.5rem; } }
+      @media only screen and (max-width: 640px) {
+        .news-events-container .body-content-news .bc-news-left {
+          width: 100%;
+          padding: 1.563rem 1.563rem 30px 1.25rem; } }
+      .news-events-container .body-content-news .bc-news-left p.body-text {
+        margin-bottom: 1.563rem; }
+    .news-events-container .body-content-news .bc-news-right {
+      float: left;
+      width: 30%;
+      padding-left: 3.125rem;
+      padding-right: 1.875rem;
+      border-left: 2px solid #ddd; }
+      @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        .news-events-container .body-content-news .bc-news-right {
+          width: 35%;
+          padding-left: 1.875rem;
+          padding-right: 1.563rem; } }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .news-events-container .body-content-news .bc-news-right {
+          width: 100%;
+          padding: 0 2.5rem 25px 2.5rem;
+          border-left: 2px solid transparent; } }
+      @media only screen and (max-width: 640px) {
+        .news-events-container .body-content-news .bc-news-right {
+          width: 100%;
+          padding: 0 0 25px 15px;
+          border-left: 2px solid transparent; } }
+      .news-events-container .body-content-news .bc-news-right h3 {
+        float: left;
+        width: 100%;
+        margin-top: 1.563rem;
+        margin-bottom: 1.25rem;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 500; }
 
 /* %%%%%%%%%%%%%%%%%%%% SERVICES SPECIFIC STYLES %%%%%%%%%%%%%%%%%%%% */
-.body-content-services {
+.services-container {
+  position: relative;
+  top: -20px;
   float: left;
   width: 100%;
-  padding: 0 3.125rem 3.125rem 3.125rem; }
-  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    .body-content-services {
-      padding-left: 0.625rem;
-      padding-right: 0.625rem; } }
-  @media only screen and (min-width: 640px) and (max-width: 1024px) {
-    .body-content-services {
-      padding-left: 1.25rem;
-      padding-right: 1.25rem; } }
-  @media only screen and (max-width: 640px) {
-    .body-content-services {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem; } }
-  .body-content-services .bcs-left {
+  min-height: 350px;
+  padding: 0 20px; }
+  .services-container .body-content-services {
     float: left;
-    width: 70%;
-    padding: 0 3.125rem 3.125rem 3.125rem; }
-    .body-content-services .bcs-left h1 {
+    width: 100%;
+    padding: 0 3.125rem 0 3.125rem; }
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+      .services-container .body-content-services {
+        padding-left: 0.625rem;
+        padding-right: 0.625rem; } }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .services-container .body-content-services {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem; } }
+    @media only screen and (max-width: 640px) {
+      .services-container .body-content-services {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    .services-container .body-content-services .bc-services-left {
       float: left;
-      width: 100%;
-      margin-top: 1.875rem;
-      margin-bottom: 0.625rem;
-      font-size: 2rem;
-      font-weight: 300;
-      line-height: 145%; }
-      @media only screen and (min-width: 640px) and (max-width: 1024px) {
-        .body-content-services .bcs-left h1 {
-          margin-top: 0;
-          margin-bottom: 1.25rem;
-          font-size: 1.5rem;
-          font-weight: 500; } }
-      @media only screen and (max-width: 640px) {
-        .body-content-services .bcs-left h1 {
-          margin-top: 10px;
-          font-size: 1.5rem;
-          font-weight: 500; } }
-    .body-content-services .bcs-left h4 {
-      margin-top: 1.875rem;
-      font-size: 1.5rem; }
-      @media only screen and (min-width: 640px) and (max-width: 1024px) {
-        .body-content-services .bcs-left h4 {
-          font-size: 1.25rem; } }
-      @media only screen and (max-width: 640px) {
-        .body-content-services .bcs-left h4 {
-          font-size: 1.25rem; } }
-    .body-content-services .bcs-left ul.areas-of-expertise {
-      float: left;
-      width: 100%;
-      list-style-type: disc; }
-      .body-content-services .bcs-left ul.areas-of-expertise li {
+      width: 70%;
+      padding: 0 3.125rem 3.125rem 3.125rem; }
+      .services-container .body-content-services .bc-services-left h1 {
         float: left;
         width: 100%;
-        margin-top: 0.9375rem;
-        margin-left: 1.25rem;
-        line-height: 140%; }
-    .body-content-services .bcs-left img {
-      float: left;
-      width: 100%;
-      max-width: 400px;
-      margin-top: 30px;
-      border: 2px solid #101d30; }
+        margin-top: 1.875rem;
+        margin-bottom: 0.625rem;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 145%; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .services-container .body-content-services .bc-services-left h1 {
+            margin-top: 0;
+            margin-bottom: 1.25rem;
+            font-size: 1.5rem;
+            font-weight: 500; } }
+        @media only screen and (max-width: 640px) {
+          .services-container .body-content-services .bc-services-left h1 {
+            margin-top: 10px;
+            font-size: 1.5rem;
+            font-weight: 500; } }
+      .services-container .body-content-services .bc-services-left h4 {
+        margin-top: 1.875rem;
+        font-size: 1.5rem; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .services-container .body-content-services .bc-services-left h4 {
+            font-size: 1.25rem; } }
+        @media only screen and (max-width: 640px) {
+          .services-container .body-content-services .bc-services-left h4 {
+            font-size: 1.25rem; } }
+      .services-container .body-content-services .bc-services-left ul.areas-of-expertise {
+        float: left;
+        width: 100%;
+        list-style-type: disc; }
+        .services-container .body-content-services .bc-services-left ul.areas-of-expertise li {
+          float: left;
+          width: 100%;
+          margin-top: 0.9375rem;
+          margin-left: 1.25rem;
+          line-height: 140%; }
+      .services-container .body-content-services .bc-services-left img {
+        float: left;
+        width: 100%;
+        max-width: 400px;
+        margin-top: 30px;
+        border: 2px solid #101d30; }
+        @media only screen and (max-width: 640px) {
+          .services-container .body-content-services .bc-services-left img {
+            width: 100%; } }
+      @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        .services-container .body-content-services .bc-services-left {
+          width: 65%; } }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .services-container .body-content-services .bc-services-left {
+          width: 100%;
+          padding: 1.563rem 1.875rem 30px 2.5rem; } }
       @media only screen and (max-width: 640px) {
-        .body-content-services .bcs-left img {
-          width: 100%; } }
-    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-      .body-content-services .bcs-left {
-        width: 65%; } }
-    @media only screen and (min-width: 640px) and (max-width: 1024px) {
-      .body-content-services .bcs-left {
-        width: 100%;
-        padding: 1.563rem 1.875rem 30px 2.5rem; } }
-    @media only screen and (max-width: 640px) {
-      .body-content-services .bcs-left {
-        width: 100%;
-        padding: 1.563rem 1.563rem 30px 1.25rem; } }
-    .body-content-services .bcs-left p.body-text {
-      margin-bottom: 1.563rem; }
-  .body-content-services .bcs-right {
-    float: left;
-    width: 30%;
-    padding-left: 3.125rem;
-    padding-right: 1.875rem;
-    border-left: 2px solid #ddd; }
-    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-      .body-content-services .bcs-right {
-        width: 35%;
-        padding-left: 1.875rem;
-        padding-right: 1.563rem; } }
-    @media only screen and (min-width: 640px) and (max-width: 1024px) {
-      .body-content-services .bcs-right {
-        width: 100%;
-        padding: 0 2.5rem 25px 2.5rem;
-        border-left: 2px solid transparent; } }
-    @media only screen and (max-width: 640px) {
-      .body-content-services .bcs-right {
-        width: 100%;
-        padding: 0 0 25px 15px;
-        border-left: 2px solid transparent; } }
-    .body-content-services .bcs-right h3 {
+        .services-container .body-content-services .bc-services-left {
+          width: 100%;
+          padding: 1.563rem 1.563rem 30px 1.25rem; } }
+      .services-container .body-content-services .bc-services-left p.body-text {
+        margin-bottom: 1.563rem; }
+    .services-container .body-content-services .bc-services-right {
       float: left;
-      width: 100%;
-      margin-top: 1.563rem;
-      margin-bottom: 1.25rem;
-      text-transform: uppercase;
-      font-size: 24px;
-      font-weight: 500; }
+      width: 30%;
+      padding-left: 3.125rem;
+      padding-right: 1.875rem;
+      border-left: 2px solid #ddd; }
+      @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        .services-container .body-content-services .bc-services-right {
+          width: 35%;
+          padding-left: 1.875rem;
+          padding-right: 1.563rem; } }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .services-container .body-content-services .bc-services-right {
+          width: 100%;
+          padding: 0 2.5rem 25px 2.5rem;
+          border-left: 2px solid transparent; } }
+      @media only screen and (max-width: 640px) {
+        .services-container .body-content-services .bc-services-right {
+          width: 100%;
+          padding: 0 0 25px 15px;
+          border-left: 2px solid transparent; } }
+      .services-container .body-content-services .bc-services-right h3 {
+        float: left;
+        width: 100%;
+        margin-top: 1.563rem;
+        margin-bottom: 1.25rem;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 500; }
+
+/* %%%%%%%%%%%%%%%%%%%% TEAM STYLES %%%%%%%%%%%%%%%%%%%% */
+.team-container {
+  position: relative;
+  top: -20px;
+  float: left;
+  width: 100%;
+  min-height: 350px;
+  padding: 0 20px; }
+  .team-container .body-content-team {
+    float: left;
+    width: 100%;
+    padding: 0 3.125rem 0 3.125rem; }
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+      .team-container .body-content-team {
+        padding-left: 0.625rem;
+        padding-right: 0.625rem; } }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .team-container .body-content-team {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem; } }
+    @media only screen and (max-width: 640px) {
+      .team-container .body-content-team {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    .team-container .body-content-team .bc-team-left {
+      float: left;
+      width: 70%;
+      padding: 0 3.125rem 3.125rem 3.125rem; }
+      .team-container .body-content-team .bc-team-left h1 {
+        float: left;
+        width: 100%;
+        margin-top: 1.875rem;
+        margin-bottom: 0.625rem;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 145%; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .team-container .body-content-team .bc-team-left h1 {
+            margin-top: 0;
+            margin-bottom: 1.25rem;
+            font-size: 1.5rem;
+            font-weight: 500; } }
+        @media only screen and (max-width: 640px) {
+          .team-container .body-content-team .bc-team-left h1 {
+            margin-top: 10px;
+            font-size: 1.5rem;
+            font-weight: 500; } }
+      .team-container .body-content-team .bc-team-left h4 {
+        margin-top: 1.875rem;
+        font-size: 1.5rem; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .team-container .body-content-team .bc-team-left h4 {
+            font-size: 1.25rem; } }
+        @media only screen and (max-width: 640px) {
+          .team-container .body-content-team .bc-team-left h4 {
+            font-size: 1.25rem; } }
+      .team-container .body-content-team .bc-team-left ul.areas-of-expertise {
+        float: left;
+        width: 100%;
+        list-style-type: disc; }
+        .team-container .body-content-team .bc-team-left ul.areas-of-expertise li {
+          float: left;
+          width: 100%;
+          margin-top: 0.9375rem;
+          margin-left: 1.25rem;
+          line-height: 140%; }
+      .team-container .body-content-team .bc-team-left img {
+        float: left;
+        width: 100%;
+        max-width: 400px;
+        margin-top: 30px;
+        border: 2px solid #101d30; }
+        @media only screen and (max-width: 640px) {
+          .team-container .body-content-team .bc-team-left img {
+            width: 100%; } }
+      @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        .team-container .body-content-team .bc-team-left {
+          width: 65%; } }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .team-container .body-content-team .bc-team-left {
+          width: 100%;
+          padding: 1.563rem 1.875rem 30px 2.5rem; } }
+      @media only screen and (max-width: 640px) {
+        .team-container .body-content-team .bc-team-left {
+          width: 100%;
+          padding: 1.563rem 1.563rem 30px 1.25rem; } }
+      .team-container .body-content-team .bc-team-left p.body-text {
+        margin-bottom: 1.563rem; }
+    .team-container .body-content-team .bc-team-right {
+      float: left;
+      width: 30%;
+      padding-left: 3.125rem;
+      padding-right: 1.875rem;
+      border-left: 2px solid #ddd; }
+      @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        .team-container .body-content-team .bc-team-right {
+          width: 35%;
+          padding-left: 1.875rem;
+          padding-right: 1.563rem; } }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .team-container .body-content-team .bc-team-right {
+          width: 100%;
+          padding: 0 2.5rem 25px 2.5rem;
+          border-left: 2px solid transparent; } }
+      @media only screen and (max-width: 640px) {
+        .team-container .body-content-team .bc-team-right {
+          width: 100%;
+          padding: 0 0 25px 15px;
+          border-left: 2px solid transparent; } }
+      .team-container .body-content-team .bc-team-right h3 {
+        float: left;
+        width: 100%;
+        margin-top: 1.563rem;
+        margin-bottom: 1.25rem;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 500; }

@@ -1,7 +1,7 @@
 
-/* %%%%%%%%%%%%%%%%%%%% CAREERS STYLES %%%%%%%%%%%%%%%%%%%% */
+/* %%%%%%%%%%%%%%%%%%%% NEWS/EVENTS STYLES %%%%%%%%%%%%%%%%%%%% */
 
-.careers-container {
+.news-events-container {
   position: relative;
   top: -20px;
   float: left;
@@ -9,7 +9,7 @@
   min-height: 350px;
   padding: 0 20px;
 
-  .body-content-careers {
+  .body-content-news {
     float: left;
     width: 100%;
     padding: 0 $unit-jumbo 0 $unit-jumbo;
@@ -29,7 +29,7 @@
       padding-right: $unit-sm;
     }
 
-    .bc-careers-left {
+    .bc-news-left {
       float: left;
       width: 70%;
       padding: 0 $unit-jumbo $unit-jumbo $unit-jumbo;
@@ -115,7 +115,7 @@
       }
     }
 
-    .bc-careers-right {
+    .bc-news-right {
       float: left;
       width: 30%;
       padding-left: $unit-jumbo;
@@ -140,6 +140,7 @@
         border-left: 2px solid transparent;
       }
 
+
       h3 {
         float: left;
         width: 100%;
@@ -149,6 +150,7 @@
         font-size: 24px;
         font-weight: $font-weight-semibold;
       }
+
     }
   }
 }

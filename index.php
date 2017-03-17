@@ -1,31 +1,15 @@
 <?php get_header(); ?>
 
-<ul class='sm-nav'>
-  <li>
-    <a href='index.html'>
-      <i class='fa fa-facebook'></i>
-    </a>
-  </li>
-  <li>
-    <a href='index.html'>
-      <i class='fa fa-twitter'></i>
-    </a>
-  </li>
-  <li>
-    <a href='index.html'>
-      <i class='fa fa-linkedin'></i>
-    </a>
-  </li>
-  <li>
-    <a href='index.html'>
-      <i class='fa fa-flickr'></i>
-    </a>
-  </li>
-</ul>
+<?php get_template_part('partials/superheros/superhero-home'); ?>
+
+<?php get_template_part('partials/sm-nav'); ?>
+
+
+
 
 <section class='body-content-home'>
 
-  <div class='bch-left'>
+  <div class='bc-home-left'>
     <h1>Western Ecosystems Technology, ULC</h1>
     <h2>Providing Scientific Solutions to Natural Resource Challenges in Canada</h2>
     <p class='body-text'>
@@ -40,35 +24,10 @@
       analysis of natural resource data.
     </p>
 
-
-
-
-
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-			<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
-
-				<header class="article-header">
-
-					<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-
-				</header>
-
-				<section class="entry-content cf">
-					<?php the_content(); ?>
-				</section>
-
-			</article>
-
-		<?php endwhile; ?>
-
-
-
-
   </div>
 
 
-  <div class='bch-right'>
+  <div class='bc-home-right'>
     <div class='contact-callout'>
       <h2>Contact Us</h2>
       <p class='body-text'>
@@ -86,22 +45,6 @@
 </section>
 
 
-<?php else : ?>
 
-	<article id="post-not-found" class="hentry cf">
-			<header class="article-header">
-				<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-		</header>
-			<section class="entry-content">
-				<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-		</section>
-		<footer class="article-footer">
-				<p><?php _e( 'This is the error message in the index.php template.', 'bonestheme' ); ?></p>
-		</footer>
-	</article>
-
-<?php endif; ?>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

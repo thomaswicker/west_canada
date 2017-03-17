@@ -1,7 +1,6 @@
+/* %%%%%%%%%%%%%%%%%%%% CULTURE PAGE STYLES %%%%%%%%%%%%%%%%%%%% */
 
-/* %%%%%%%%%%%%%%%%%%%% CAREERS STYLES %%%%%%%%%%%%%%%%%%%% */
-
-.careers-container {
+.culture-container {
   position: relative;
   top: -20px;
   float: left;
@@ -9,7 +8,7 @@
   min-height: 350px;
   padding: 0 20px;
 
-  .body-content-careers {
+  .body-content-culture {
     float: left;
     width: 100%;
     padding: 0 $unit-jumbo 0 $unit-jumbo;
@@ -29,7 +28,7 @@
       padding-right: $unit-sm;
     }
 
-    .bc-careers-left {
+    .bc-culture-left {
       float: left;
       width: 70%;
       padding: 0 $unit-jumbo $unit-jumbo $unit-jumbo;
@@ -115,7 +114,7 @@
       }
     }
 
-    .bc-careers-right {
+    .bc-culture-right {
       float: left;
       width: 30%;
       padding-left: $unit-jumbo;
@@ -139,6 +138,7 @@
         padding: 0 0 25px 15px;
         border-left: 2px solid transparent;
       }
+
 
       h3 {
         float: left;

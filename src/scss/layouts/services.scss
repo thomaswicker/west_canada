@@ -1,147 +1,156 @@
 
 /* %%%%%%%%%%%%%%%%%%%% SERVICES SPECIFIC STYLES %%%%%%%%%%%%%%%%%%%% */
 
-.body-content-services {
+.services-container {
+  position: relative;
+  top: -20px;
   float: left;
   width: 100%;
-  padding: 0 $unit-jumbo $unit-jumbo $unit-jumbo;
+  min-height: 350px;
+  padding: 0 20px;
 
-  @include mq(lg) {
-    padding-left: $unit-xs;
-    padding-right: $unit-xs;
-  }
-
-  @include mq(md) {
-    padding-left: $unit-md;
-    padding-right: $unit-md;
-  }
-
-  @include mq(sm) {
-    padding-left: $unit-sm;
-    padding-right: $unit-sm;
-  }
-
-  .bcs-left {
+  .body-content-services {
     float: left;
-    width: 70%;
-    padding: 0 $unit-jumbo $unit-jumbo $unit-jumbo;
+    width: 100%;
+    padding: 0 $unit-jumbo 0 $unit-jumbo;
 
-    h1 {
-      float: left;
-      width: 100%;
-      margin-top: $unit-xl;
-      margin-bottom: $unit-xs;
-      font-size: $font-size-xl;
-      font-weight: 300;
-      line-height: 145%;
-
-      @include mq(md) {
-        margin-top: 0;
-        margin-bottom: $unit-md;
-        font-size: $font-size-lg;
-        font-weight: 500;
-      }
-
-      @include mq(sm) {
-        margin-top: 10px;
-        font-size: $font-size-lg;
-        font-weight: 500;
-      }
+    @include mq(lg) {
+      padding-left: $unit-xs;
+      padding-right: $unit-xs;
     }
 
-    h4 {
-      margin-top: $unit-xl;
-      font-size: $font-size-lg;
-
-      @include mq(md) {
-        font-size: $font-size-md;
-      }
-
-      @include mq(sm) {
-        font-size: $font-size-md;
-      }
+    @include mq(md) {
+      padding-left: $unit-md;
+      padding-right: $unit-md;
     }
 
-    ul.areas-of-expertise {
-      float: left;
-      width: 100%;
-      list-style-type: disc;
+    @include mq(sm) {
+      padding-left: $unit-sm;
+      padding-right: $unit-sm;
+    }
 
-      li {
+    .bc-services-left {
+      float: left;
+      width: 70%;
+      padding: 0 $unit-jumbo $unit-jumbo $unit-jumbo;
+
+      h1 {
         float: left;
         width: 100%;
-        margin-top: $unit-sm;
-        margin-left: $unit-md;
-        line-height: 140%;
-      }
-    }
+        margin-top: $unit-xl;
+        margin-bottom: $unit-xs;
+        font-size: $font-size-xl;
+        font-weight: 300;
+        line-height: 145%;
 
-    img {
-      float: left;
-      width: 100%;
-      max-width: 400px;
-      margin-top: 30px;
-      border: 2px solid $color-primary;
+        @include mq(md) {
+          margin-top: 0;
+          margin-bottom: $unit-md;
+          font-size: $font-size-lg;
+          font-weight: 500;
+        }
+
+        @include mq(sm) {
+          margin-top: 10px;
+          font-size: $font-size-lg;
+          font-weight: 500;
+        }
+      }
+
+      h4 {
+        margin-top: $unit-xl;
+        font-size: $font-size-lg;
+
+        @include mq(md) {
+          font-size: $font-size-md;
+        }
+
+        @include mq(sm) {
+          font-size: $font-size-md;
+        }
+      }
+
+      ul.areas-of-expertise {
+        float: left;
+        width: 100%;
+        list-style-type: disc;
+
+        li {
+          float: left;
+          width: 100%;
+          margin-top: $unit-sm;
+          margin-left: $unit-md;
+          line-height: 140%;
+        }
+      }
+
+      img {
+        float: left;
+        width: 100%;
+        max-width: 400px;
+        margin-top: 30px;
+        border: 2px solid $color-primary;
+
+        @include mq(sm) {
+          width: 100%;
+        }
+      }
+
+      @include mq(lg) {
+        width: 65%;
+      }
+
+      @include mq(md) {
+        width: 100%;
+        padding: $unit-lg $unit-xl 30px $unit-xxl;
+      }
 
       @include mq(sm) {
         width: 100%;
+        padding: $unit-lg $unit-lg 30px $unit-md;
+      }
+
+      p.body-text {
+        margin-bottom: $unit-lg;
       }
     }
 
-    @include mq(lg) {
-      width: 65%;
-    }
-
-    @include mq(md) {
-      width: 100%;
-      padding: $unit-lg $unit-xl 30px $unit-xxl;
-    }
-
-    @include mq(sm) {
-      width: 100%;
-      padding: $unit-lg $unit-lg 30px $unit-md;
-    }
-
-    p.body-text {
-      margin-bottom: $unit-lg;
-    }
-  }
-
-  .bcs-right {
-    float: left;
-    width: 30%;
-    padding-left: $unit-jumbo;
-    padding-right: $unit-xl;
-    border-left: 2px solid #ddd;
-
-    @include mq(lg) {
-      width: 35%;
-      padding-left: $unit-xl;
-      padding-right: $unit-lg;
-    }
-
-    @include mq(md) {
-      width: 100%;
-      padding: 0 $unit-xxl 25px $unit-xxl;
-      border-left: 2px solid transparent;
-    }
-
-    @include mq(sm) {
-      width: 100%;
-      padding: 0 0 25px 15px;
-      border-left: 2px solid transparent;
-    }
-
-
-    h3 {
+    .bc-services-right {
       float: left;
-      width: 100%;
-      margin-top: $unit-lg;
-      margin-bottom: $unit-md;
-      text-transform: uppercase;
-      font-size: 24px;
-      font-weight: $font-weight-semibold;
-    }
+      width: 30%;
+      padding-left: $unit-jumbo;
+      padding-right: $unit-xl;
+      border-left: 2px solid #ddd;
 
+      @include mq(lg) {
+        width: 35%;
+        padding-left: $unit-xl;
+        padding-right: $unit-lg;
+      }
+
+      @include mq(md) {
+        width: 100%;
+        padding: 0 $unit-xxl 25px $unit-xxl;
+        border-left: 2px solid transparent;
+      }
+
+      @include mq(sm) {
+        width: 100%;
+        padding: 0 0 25px 15px;
+        border-left: 2px solid transparent;
+      }
+
+
+      h3 {
+        float: left;
+        width: 100%;
+        margin-top: $unit-lg;
+        margin-bottom: $unit-md;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: $font-weight-semibold;
+      }
+
+    }
   }
 }
