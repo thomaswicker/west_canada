@@ -52,6 +52,22 @@ ul li a:hover {
   color: white
 }
 
+.body-content-hold {
+  float: left;
+  width: 100%;
+  background-color: $color-secondary;
+  color: white;
+  text-align: center;
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
 .body-content {
   .body-content-left {
     float: left;

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: About => Team
+Template Name: About => Team => Profile
 */
 ?>
 
@@ -12,9 +12,11 @@ Template Name: About => Team
 
 
 
-<section class="team-container">
+<section class="profiles-container">
 
-	<section class='body-content body-content-team'>
+	<a href="http://west-ulc.ca/team/" class="btn btn-back-to-team"><i class="fa fa-arrow-left"></i>Back to Team</a>
+
+	<section class='body-content body-content-profiles'>
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -24,7 +26,7 @@ Template Name: About => Team
 
 		<?php endif; ?>
 
-		<div class="bc-team-right">
+		<div class="bc-profiles-right">
 			<?php get_template_part('partials/sidebars/sidebar-about-team'); ?>
 		</div>
 	</section>

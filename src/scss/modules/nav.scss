@@ -94,8 +94,9 @@
       left: $unit-xs;
 
       img {
-        position: relative;;
-        max-width: 100px;
+        position: relative;
+        top: 10px;
+        max-width: 75px;
 
         @include mq(md) {
           top: 10px;

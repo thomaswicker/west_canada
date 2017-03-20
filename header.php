@@ -55,6 +55,8 @@
 
 	<body>
 
+		<?php include_once("google-analytics.php") ?>
+
 		<div id="nav-mobile-open">
 			<i class="fa fa-bars"></i>
 		</div>

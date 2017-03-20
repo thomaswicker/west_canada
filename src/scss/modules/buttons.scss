@@ -47,6 +47,24 @@
   }
 }
 
+.btn-back-to-team {
+  position: absolute;
+  top: -10px;
+  left: 0;
+
+  i {
+    margin-right: 8px;
+  }
+
+  @include mq(md) {
+    top: 25px;
+  }
+
+  @include mq(sm) {
+    top: 25px;
+  }
+}
+
 .btn-view-careers {
   float: left;
 
@@ -57,7 +75,7 @@
 
 .contact-btn-callout {
   position: fixed;
-  top: 80px;
+  top: 100px;
   right: -98px;
   padding: $unit $unit-sm;
   background-color: $color-electric-blue;
