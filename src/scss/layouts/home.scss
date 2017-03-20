@@ -6,10 +6,10 @@
   top: -20px;
   float: left;
   width: 100%;
-  padding: 0 $unit-jumbo $unit-jumbo $unit-jumbo;
+  padding: 0 $unit-jumbo 0 $unit-jumbo;
 
   @include mq(md) {
-    padding: 0 $unit-xxs $unit-jumbo $unit-xxs;
+    padding: 0 $unit-xxs 10px $unit-xxs;
   }
 
   @include mq(sm) {
@@ -23,10 +23,16 @@
     margin-top: $unit-md;
   }
 
-  .bch-left {
+  .bc-home-left {
     float: left;
     width: 70%;
     padding: 0 $unit-jumbo $unit-jumbo $unit-jumbo;
+
+    .body-text {
+      float: left;
+      width: 100%;
+      margin-bottom: 20px;
+    }
 
     h1 {
       float: left;
@@ -51,6 +57,9 @@
     }
 
     h2 {
+      float: left;
+      width: 100%;
+      margin-bottom: $unit-lg;
       font-family: $font-2;
       font-size: 20px;
       font-weight: $font-weight-bold;
@@ -60,6 +69,7 @@
 
       @include mq(md) {
         margin-top: 0;
+        margin-bottom: 0;
         padding: 0 $unit-lg 30px 0;
         font-size: 15px;
         font-weight: $font-weight-bold;
@@ -69,6 +79,7 @@
 
       @include mq(sm) {
         margin-top: 0;
+        margin-bottom: 0;
         padding: 0 $unit-lg 30px 0;
         font-size: 15px;
         font-weight: $font-weight-bold;
@@ -80,12 +91,12 @@
 
     @include mq(md) {
       width: 100%;
-      padding: $unit-lg $unit-xl 30px $unit-xxl;
+      padding: $unit-lg $unit-lg 30px $unit-lg;
     }
 
     @include mq(sm) {
       width: 100%;
-      padding: $unit-lg $unit-xl 30px $unit-xxl;
+      padding: $unit-lg $unit-lg 30px $unit-lg;
     }
 
     p.body-text {
@@ -94,22 +105,29 @@
     }
   }
 
-  .bch-right {
+  .bc-home-right {
     float: left;
     width: 30%;
-    padding-left: $unit-xl;
-    padding-right: $unit-xl;
+    padding: $unit-lg $unit-xl 30px $unit-xl;
     border-left: 2px solid #ddd;
+
+    @include mq(lg) {
+      width: 35%;
+      padding-left: $unit-xl;
+      padding-right: $unit-lg;
+    }
 
     @include mq(md) {
       width: 100%;
-      padding: 0 0 25px 0px;
+      padding: 10px 0 5px 0;
+      border-top: 2px solid $color-tertiary-alt;
       border-left: 2px solid transparent;
     }
 
     @include mq(sm) {
       width: 100%;
-      padding: 0 0 25px 15px;
+      padding: 10px 10px 5px 10px;
+      border-top: 2px solid $color-tertiary-alt;
       border-left: 2px solid transparent;
     }
 
@@ -121,12 +139,10 @@
 
       @include mq(md) {
         padding: 0 $unit-lg $unit-xxs $unit-lg;
-        border-top: 1px solid $color-tertiary;
       }
 
       @include mq(sm) {
         padding: 0 $unit-lg $unit-xxs $unit-lg;
-        border-top: 1px solid $color-tertiary;
       }
 
       .btn {

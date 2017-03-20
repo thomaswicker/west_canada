@@ -1,3 +1,12 @@
 /* %%%%%%%%%%%%%%%%%%%% APPLICATION JS %%%%%%%%%%%%%%%%%%%% */
 
-console.log('testing connection to JS file');
+console.log('successful connection to JS file');
+
+
+var navOpenBtn = $('#nav-mobile-open');
+var mobileMenu = $('.nav-bar-right');
+
+navOpenBtn.on('click', function () {
+  console.log('clicked');
+  mobileMenu.toggleClass('expose-mobile-menu');
+})

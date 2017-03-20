@@ -1,11 +1,12 @@
 
 /* %%%%%%%%%%%%%%%%%%%% IMAGE STYLES %%%%%%%%%%%%%%%%%%%% */
 
-
 .body-content img {
-  border: 5px solid red;
+  float: left;
+  width: 100%;
+  border: 4px solid $color-primary;
 
-  &.bci-md {
-    max-width: 250px !important;
+  @include mq(sm) {
+    width: 100%;
   }
 }

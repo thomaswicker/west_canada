@@ -11,10 +11,7 @@ Template Name: Careers Template
 <?php get_template_part('partials/sm-nav'); ?>
 
 
-
-
-
-	<ul class="careers-container">
+	<section class="careers-container">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 			<?php the_content(); ?>
@@ -23,7 +20,11 @@ Template Name: Careers Template
 
 		<?php endif; ?>
 
-	</ul>
+		<div class="bc-careers-right">
+			<?php get_template_part('partials/sidebars/sidebar-careers'); ?>
+		</div>
+
+	</section>
 
 </section>
 

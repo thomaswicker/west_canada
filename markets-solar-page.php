@@ -14,7 +14,6 @@ Template Name: Markets => Solar Energy
 
 
 	<section class="markets-container">
-
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 			<?php the_content(); ?>
@@ -26,7 +25,6 @@ Template Name: Markets => Solar Energy
 		<section class="bc-markets-right">
 			<?php get_template_part('partials/sidebars/sidebar-markets-solar'); ?>
 		</section>
-
 	</section>
 
 </section>

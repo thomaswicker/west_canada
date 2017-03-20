@@ -9,24 +9,33 @@
   min-height: 350px;
   padding: 0 20px;
 
+  @include mq(lg) {
+    padding: 0 15px;
+  }
+
+  @include mq(md) {
+    padding: 0 8px;
+  }
+
+  @include mq(sm) {
+    padding: 0 8px;
+  }
+
   .body-content-team {
     float: left;
     width: 100%;
     padding: 0 $unit-jumbo 0 $unit-jumbo;
 
     @include mq(lg) {
-      padding-left: $unit-xs;
-      padding-right: $unit-xs;
+      padding: 0 $unit-md 0 $unit-md;
     }
 
     @include mq(md) {
-      padding-left: $unit-md;
-      padding-right: $unit-md;
+      padding: 0 $unit-md 0 $unit-md;
     }
 
     @include mq(sm) {
-      padding-left: $unit-sm;
-      padding-right: $unit-sm;
+      padding: 0 $unit-md 0 $unit-md;
     }
 
     .bc-team-left {
@@ -70,16 +79,12 @@
         }
       }
 
-      img {
+      .team-body-container {
         float: left;
         width: 100%;
-        max-width: 400px;
-        margin-top: 30px;
-        border: 2px solid $color-primary;
-
-        @include mq(sm) {
-          width: 100%;
-        }
+        padding: 30px;
+        background-color: red;
+        color: white;
       }
 
       @include mq(lg) {
@@ -116,16 +121,17 @@
 
       @include mq(md) {
         width: 100%;
-        padding: 0 $unit-xxl 25px $unit-xxl;
+        padding: 10px 0 25px 0;
+        border-top: 2px solid $color-tertiary-alt;
         border-left: 2px solid transparent;
       }
 
       @include mq(sm) {
         width: 100%;
-        padding: 0 0 25px 15px;
+        padding: 10px 10px 25px 10px;
+        border-top: 2px solid $color-tertiary-alt;
         border-left: 2px solid transparent;
       }
-
 
       h3 {
         float: left;

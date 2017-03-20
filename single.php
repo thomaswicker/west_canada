@@ -1,54 +1,58 @@
+
+<?php
+/*
+Template Name: About => News & Events
+*/
+?>
+
 <?php get_header(); ?>
 
-			<div id="content">
+<?php get_template_part('partials/superheros/superhero-news'); ?>
 
-				<div id="inner-content" class="wrap cf">
+<?php get_template_part('partials/sm-nav'); ?>
 
-					<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<?php
-								/*
-								 * Ah, post formats. Nature's greatest mystery (aside from the sloth).
-								 *
-								 * So this function will bring in the needed template file depending on what the post
-								 * format is. The different post formats are located in the post-formats folder.
-								 *
-								 *
-								 * REMEMBER TO ALWAYS HAVE A DEFAULT ONE NAMED "format.php" FOR POSTS THAT AREN'T
-								 * A SPECIFIC POST FORMAT.
-								 *
-								 * If you want to remove post formats, just delete the post-formats folder and
-								 * replace the function below with the contents of the "format.php" file.
-								*/
-								get_template_part( 'post-formats/format', get_post_format() );
-							?>
 
-						<?php endwhile; ?>
 
-						<?php else : ?>
+<section class="news-events-container">
+	<div class="body-content-news">
 
-							<article id="post-not-found" class="hentry cf">
-									<header class="article-header">
-										<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-									</header>
-									<section class="entry-content">
-										<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-									</section>
-									<footer class="article-footer">
-											<p><?php _e( 'This is the error message in the single.php template.', 'bonestheme' ); ?></p>
-									</footer>
-							</article>
+		<section class='bc-news-left'>
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				<a href="http://west-ulc.ca/news-and-events/" class="btn btn-secondary btn-back-to-news"><i class="fa fa-arrow-left"></i>Back to News & Events</a>
 
-						<?php endif; ?>
+				<article>
+					<h1><?php the_title() ;?></h1>
+					<p><?php the_field( 'description' ); ?></p>
+					<span><?php the_field( 'links' ); ?></span>
+				</article>
+			<?php endwhile; ?>
 
-					</main>
+			<?php else : ?>
 
-					<?php get_sidebar(); ?>
+				<article id="post-not-found" class="hentry cf">
+						<header class="article-header">
+							<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
+						</header>
+						<section class="entry-content">
+							<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
+						</section>
+						<footer class="article-footer">
+								<p><?php _e( 'This is the error message in the single.php template.', 'bonestheme' ); ?></p>
+						</footer>
+				</article>
 
-				</div>
+			<?php endif; ?>
 
-			</div>
+		</section>
+
+		<section class="bc-news-right">
+			<?php get_template_part('partials/sidebars/sidebar-about-news-events'); ?>
+		</section>
+
+	</div>
+</section>
+
 
 <?php get_footer(); ?>

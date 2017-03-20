@@ -14,15 +14,20 @@ Template Name: About => Team
 
 
 
-<ul class="team-container">
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<section class="team-container">
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-		<?php the_content(); ?>
+			<?php the_content(); ?>
 
-	<?php endwhile; else: ?>
+		<?php endwhile; else: ?>
 
-	<?php endif; ?>
-</ul>
+		<?php endif; ?>
+
+		<div class="bc-team-right">
+			<?php get_template_part('partials/sidebars/sidebar-about-team'); ?>
+		</div>
+	</section>
+</section>
 
 
 

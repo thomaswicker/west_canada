@@ -14,7 +14,7 @@ Template Name: About => Culture
 
 
 
-	<ul class="culture-container">
+	<section class="culture-container">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 			<?php the_content(); ?>
@@ -22,7 +22,11 @@ Template Name: About => Culture
 		<?php endwhile; else: ?>
 
 		<?php endif; ?>
-	</ul>
+
+		<section class="bc-culture-right">
+			<?php get_template_part('partials/sidebars/sidebar-about-culture'); ?>
+		</section>
+	</section>
 
 </section>
 

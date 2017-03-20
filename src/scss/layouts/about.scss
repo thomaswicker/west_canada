@@ -8,14 +8,33 @@
   background-color: pink;
   padding: 0 20px;
 
+  @include mq(lg) {
+    padding: 0 15px;
+  }
+
+  @include mq(md) {
+    padding: 0 8px;
+  }
+
+  @include mq(sm) {
+    padding: 0 8px;
+  }
+
   .body-content-about {
     float: left;
     width: 100%;
     padding: 0 $unit-jumbo 0 $unit-jumbo;
 
+    @include mq(lg) {
+      padding: 0 $unit-md 0 $unit-md;
+    }
+
+    @include mq(md) {
+      padding: 0 $unit-md 0 $unit-md;
+    }
+
     @include mq(sm) {
-      padding-left: $unit-xl;
-      padding-right: $unit-xl;
+      padding: 0 $unit-md 0 $unit-md;
     }
 
     .bc-about-left {
@@ -105,19 +124,17 @@
       border-left: 2px solid #ddd;
 
       @include mq(md) {
-        float: left;
         width: 100%;
-        padding-top: $unit-jumbo;
+        padding: 10px 0 25px 0;
         border-top: 2px solid $color-tertiary-alt;
-        border-left: none;
+        border-left: 2px solid transparent;
       }
 
       @include mq(sm) {
-        float: left;
         width: 100%;
-        padding: 0 0 25px 15px;
+        padding: 10px 10px 25px 10px;
         border-top: 2px solid $color-tertiary-alt;
-        border-left: none;
+        border-left: 2px solid transparent;
       }
 
       h3 {

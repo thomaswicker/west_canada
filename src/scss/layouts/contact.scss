@@ -9,24 +9,29 @@
   min-height: 350px;
   padding: 0 20px;
 
+  @include mq(md) {
+    padding: 0 8px;
+  }
+
+  @include mq(sm) {
+    padding: 0 8px;
+  }
+
   .body-content-contact {
     float: left;
     width: 100%;
     padding: 0 $unit-jumbo 0 $unit-jumbo;
 
     @include mq(lg) {
-      padding-left: $unit-xs;
-      padding-right: $unit-xs;
+      padding: 0 $unit-md 0 $unit-md;
     }
 
     @include mq(md) {
-      padding-left: $unit-md;
-      padding-right: $unit-md;
+      padding: 0 $unit-md 0 $unit-md;
     }
 
     @include mq(sm) {
-      padding-left: $unit-sm;
-      padding-right: $unit-sm;
+      padding: $unit-lg $unit-sm 0 $unit-sm;
     }
 
     .bc-contact-left {
@@ -37,12 +42,37 @@
       .body-contact-form {
         float: left;
         width: 100%;
-        background-color: blue;
+
+        .wpcf7-submit {
+          margin-top: 15px;
+          padding: 12px 30px;
+          font-family: $font-1;
+          font-size: 15px;
+          background-color: $color-secondary;
+          color: white;
+          text-transform: uppercase;
+          border: 0px;
+
+          &:hover {
+            background-color: darken($color-secondary, 15%) ;
+          }
+
+          @include mq(md) {
+            width: 100%;
+          }
+
+          @include mq(sm) {
+            width: 100%;
+          }
+        }
 
         label {
           float: left;
           width: 100%;
-          background-color: red;
+          margin-bottom: 10px;
+          font-size: 13px;
+          font-weight: $font-weight-bold;
+          text-transform: uppercase;
         }
       }
 
@@ -116,17 +146,24 @@
     .bc-contact-right {
       float: left;
       width: 30%;
-      padding-left: $unit-jumbo;
-      padding-right: $unit-xl;
-      border-left: 2px solid #ddd;
+      padding: 50px $unit-xl 0 $unit-jumbo;
+      font-family: $font-2;
+      letter-spacing: 145%;
+
+      .block-header {
+        float: left;
+        width: 100%;
+        margin-top: 40px;
+        line-height: 145%;
+      }
 
       .text-row, .tel-row, .email-row, .web-row {
         float: left;
-        color: red;
+        width: 100%;
+        font-family: $font-2;
       }
 
       .text-row {
-
       }
 
       .tel-row {
@@ -184,7 +221,7 @@
       a {
         margin-top: 7px;
         display: block;
-        font-size: 13px;
+        font-size: 14px;
       }
     }
   }

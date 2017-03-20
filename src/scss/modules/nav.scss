@@ -1,55 +1,31 @@
-
-
-
-
-.nav-bar-mobile {
-  float: left;
-  width: 100%;
-  padding-top: $unit-xxs;
-  background-color: $color-primary;
-
-  button.menu-icon {
-    position: absolute;
-    top: $unit-lg;
-    right: $unit-lg;
-  }
-
-  .nav-bar-left {
-    float: left;
-    width: 100px;
-    
-  }
-
-
-  .nav-bar-right {
-    ul.menu {
-      float: left;
-      width: 100%;
-      margin-top: $unit-xxs;
-      border-bottom: 4px solid $color-primary;
-
-      li {
-        float: left;
-        width: 100%;
-        background-color: $color-primary;
-
-        a {
-          float: left;
-          width: 100%;
-          background-color: lighten($color-primary, 10%);
-          font-size: 17px;
-          text-align: center;
-          color: white;
-
-          &:hover {
-            background-color: $color-electric-blue;
-          }
-        }
-      }
-    }
-  }
+#responsive-menu-button {
+  display: none !important;
 }
 
+
+#nav-mobile-open {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 10px;
+  background: $color-electric-blue;
+  color: white;
+  z-index: 102;
+  display: none;
+
+  &:hover {
+    background: lighten($color-primary, 15%);
+    cursor: pointer;
+  }
+
+  @include mq(md) {
+    display: block;
+  }
+
+  @include mq(sm) {
+    display: block;
+  }
+}
 
 .nav-bar {
   float: left;
@@ -57,16 +33,79 @@
   border-bottom: 2px solid white;
   background-color: $color-primary;
 
+  &.nav-bar-mobile {
+    display: none;
+
+    @include mq(md) {
+      display: block;
+    }
+
+    @include mq(sm) {
+      display: block;
+    }
+  }
+
+  &.nav-bar-desktop {
+    display: block;
+
+    @include mq(md) {
+      display: none;
+    }
+
+    @include mq(sm) {
+      display: none;
+    }
+  }
+
+  @include mq(md) {
+    min-height: 70px;
+  }
+
+  @include mq(sm) {
+    min-height: 70px;
+  }
+
   .nav-bar-left {
     float: left;
     width: 30%;
+
+    @include mq(md) {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      min-height: 70px;
+      margin-bottom: 15px;
+      background-color: $color-primary;
+      z-index: 101;
+    }
+
+    @include mq(sm) {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      min-height: 70px;
+      margin-bottom: 15px;
+      background-color: $color-primary;
+      z-index: 101;
+    }
 
     a {
       position: relative;
       left: $unit-xs;
 
       img {
+        position: relative;;
         max-width: 100px;
+
+        @include mq(md) {
+          top: 10px;
+          max-width: 75px;
+        }
+
+        @include mq(sm) {
+          top: 10px;
+          max-width: 75px;
+        }
       }
     }
   }
@@ -75,21 +114,104 @@
     float: left;
     width: 70%;
 
-    ul.menu {
+    @include mq(md) {
+      position: absolute;
+      top: -2000px;
+      width: 100%;
+      background-color: white;
+      border-top: 3px solid $color-electric-blue;
+      border-bottom: 3px solid $color-electric-blue;
+      transition: all 1s ease 0s;
+      z-index: 100;
+    }
+
+    @include mq(sm) {
+      position: absolute;
+      top: -2000px;
+      width: 100%;
+      background-color: white;
+      border-top: 3px solid $color-electric-blue;
+      border-bottom: 3px solid $color-electric-blue;
+      transition: all 1s ease 0s;
+      z-index: 100;
+    }
+
+    &.expose-mobile-menu {
+      @include mq(md) {
+        top: 70px;
+      }
+
+      @include mq(sm) {
+        top: 70px;
+      }
+    }
+
+    .mobile-nav-menu {
+      float: left;
+      width: 100%;
+      background-color: white;
+
+      a {
+        @include mq(md) {
+          color: $color-primary !important;
+        }
+
+        @include mq(sm) {
+          color: $color-primary !important;
+        }
+      }
+    }
+
+    ul {
       float: right;
       width: 100%;
-      max-width: 475px;
+      max-width: 530px;
       text-transform: uppercase;
       background-color: transparent;
 
+      @include mq(md) {
+        max-width: none;
+      }
+
+      @include mq(sm) {
+        max-width: none;
+      }
+
       li {
+        @include mq(md) {
+          float: left;
+          width: 100%;
+        }
+
+        @include mq(sm) {
+          float: left;
+          width: 100%;
+        }
+
+        &.mobile-nav-row-divider {
+          float: left;
+          width: 100%;
+          padding: 10px 20px;
+          font-weight: 600;
+          background-color: $color-tertiary;
+          color: black;
+        }
+
+        @include mq(md) {
+          width: 100%;
+        }
+
+        @include mq(sm) {
+          width: 100%;
+        }
+
         a {
-          padding-top: $unit-lg;
-          padding-bottom: $unit-lg;
+          padding: $unit-lg $unit-lg $unit-lg $unit-lg;
           font-family: $font-1;
           font-size: $font-size-sm;
           font-weight: 500;
           background-color: transparent;
+          text-transform: uppercase;
 
           &:hover {
             background-color: $color-electric-blue;
@@ -100,6 +222,32 @@
           &:active {
             background-color: $color-electric-blue;
             color: white;
+          }
+
+          @include mq(md) {
+            float: left;
+            width: 100%;
+            padding: $unit-md $unit-md $unit-md $unit-md;
+            text-transform: capitalize;
+          }
+
+          @include mq(sm) {
+            float: left;
+            width: 100%;
+            padding: $unit-md $unit-md $unit-md $unit-md;
+            text-transform: capitalize;
+          }
+
+          i {
+            @include mq(md) {
+              position: absolute;
+              right: 20px;
+            }
+
+            @include mq(sm) {
+              position: absolute;
+              right: 20px;
+            }
           }
         }
 

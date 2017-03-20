@@ -27,11 +27,11 @@
   }
 
   &.btn-secondary {
-    background-color: $color-secondary;
+    background-color: $color-electric-blue;
     color: white;
 
     &:hover {
-      background-color: darken($color-secondary, 10%);
+      background-color: darken($color-electric-blue, 10%);
       cursor: pointer;
     }
   }
@@ -47,7 +47,13 @@
   }
 }
 
+.btn-view-careers {
+  float: left;
 
+  i {
+    margin-left: 8px;
+  }
+}
 
 .contact-btn-callout {
   position: fixed;
@@ -73,5 +79,11 @@
   i {
     margin-right: $unit-xs;
     font-size: 18px;
+  }
+}
+
+.btn-back-to-news {
+  i {
+    margin-right: 8px;
   }
 }

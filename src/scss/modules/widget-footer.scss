@@ -7,7 +7,6 @@
   background-image: url("../img/topo_bg_gray.jpg");
   background-size: cover;
 
-
   #wf-left, #wf-middle, #wf-right  {
     float: left;
     width: 33.333%;
@@ -16,13 +15,46 @@
       width: 100%;
     }
 
+    h3 {
+      margin-top: 0;
+      margin-left: 3%;
+      margin-right: 3%;
+      padding: 12px $unit-md;
+      text-align: left;
+      font-size: 18px;
+      color: white;
+      background-color: $dark-gray;
+
+      @include mq(md) {
+        font-size: 13px;
+      }
+
+      @include mq(sm) {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 12px $unit-md;
+        font-size: 18px;
+        font-weight: bold;
+        color: $color-primary;
+        background-color: transparent;
+      }
+
+      i {
+        margin-right: 3px;
+      }
+    }
+
     .widget-panel {
+      float: left;
+      width: 100%;
       width: 94%;
       min-height: 400px;
+      max-height: 800px;
       margin-left: 3%;
       margin-right: 3%;
       background-color: white;
       border: 1px solid $dark-gray;
+      overflow: auto;
 
       @include mq(sm) {
         width: 93%;
@@ -30,24 +62,83 @@
         margin-bottom: $unit-lg;
       }
 
-      h3 {
+      hr {
         float: left;
         width: 100%;
-        margin-top: 0;
-        padding: 12px $unit-md;
-        text-align: left;
-        font-size: 18px;
-        color: white;
-        background-color: $dark-gray;
+      }
 
-        i {
-          margin-right: 3px;
-        }
+      .SandboxRoot.env-bp-430 .timeline-Header-title, .SandboxRoot.env-bp-550 .timeline-Header-title {
+        font-size: 18px !important;
       }
 
       .widget-panel-content {
-        padding: 60px $unit-md $unit-md $unit-md;
+        float: left;
+        width: 100%;
+        padding: $unit-sm $unit-md $unit-xxl $unit-md;
+        border-bottom: 1px solid #ddd;
+
+        h2 {
+          float: left;
+          width: 100%;
+          margin-top: 0;
+          padding: 12px $unit-md 12px 0;
+          font-family: $font-1;
+          font-size: 18px;
+          font-weight: $font-weight-bold;
+          text-align: left;
+          color: $color-primary;
+        }
+
+        p {
+          font-family: $font-2;
+          font-size: 14px;
+          line-height: 140%;
+        }
+
+        span {
+          float: left;
+          width: 100%;
+          border: 0px;
+
+          blockquote {
+            float: left;
+            width: 100%;
+            border: 0px;
+
+            p {
+              float: left;
+              width: 100%;
+              border: 0px;
+
+              a {
+                float: left;
+                width: 100%;
+                margin-top: $unit-sm;
+                font-family: $font-2;
+                font-size: 15px;
+                text-decoration: underline;
+                color: $color-electric-blue;
+
+                &:hover {
+                  color: darken($color-electric-blue, 10%);
+                }
+              }
+            }
+          }
+        }
       }
+    }
+  }
+
+  #wf-middle {
+    .widget-panel-content {
+      padding: $unit-sm $unit-xxl $unit-xxl $unit-xxl !important;
+    }
+  }
+
+  #wf-right {
+    .widget-panel-content {
+      padding: $unit-sm $unit-md $unit-sm $unit-md !important;
     }
   }
 }

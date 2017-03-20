@@ -7,7 +7,19 @@
   float: left;
   width: 100%;
   min-height: 350px;
-  padding: 0 20px;
+  padding: 0 60px;
+
+  @include mq(lg) {
+    padding: 0 40px;
+  }
+
+  @include mq(md) {
+    padding: 0 8px;
+  }
+
+  @include mq(sm) {
+    padding: 0 8px;
+  }
 
   .body-content-news {
     float: left;
@@ -15,24 +27,21 @@
     padding: 0 $unit-jumbo 0 $unit-jumbo;
 
     @include mq(lg) {
-      padding-left: $unit-xs;
-      padding-right: $unit-xs;
+      padding: 0 $unit-md 0 $unit-md;
     }
 
     @include mq(md) {
-      padding-left: $unit-md;
-      padding-right: $unit-md;
+      padding: 0 $unit-md 0 $unit-md;
     }
 
     @include mq(sm) {
-      padding-left: $unit-sm;
-      padding-right: $unit-sm;
+      padding: 0 $unit-md 0 $unit-md;
     }
 
     .bc-news-left {
       float: left;
       width: 70%;
-      padding: 0 $unit-jumbo $unit-jumbo $unit-jumbo;
+      padding: 40px $unit-jumbo $unit-jumbo 0;
 
       h1 {
         float: left;
@@ -57,9 +66,28 @@
         }
       }
 
-      h4 {
+      h2 {
+        float: left;
+        width: 100%;
         margin-top: $unit-xl;
-        font-size: $font-size-lg;
+        font-size: 18px;
+        font-weight: $font-weight-bold;
+
+        a {
+          float: left;
+          width: 100%;
+          margin-bottom: 15px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          color: lighten($color-primary, 20%);
+          border-top: 1px solid lighten($color-primary, 20%);
+          border-bottom: 1px solid lighten($color-primary, 20%);
+
+          &:hover {
+            cursor: pointer;
+            color: lighten($color-primary, 40%);
+          }
+        }
 
         @include mq(md) {
           font-size: $font-size-md;
@@ -68,6 +96,19 @@
         @include mq(sm) {
           font-size: $font-size-md;
         }
+      }
+
+      hr {
+        float: left;
+        width: 100%;
+        display: none !important;
+      }
+
+      p {
+        float: left;
+        width: 100%;
+        font-family: $font-2;
+        line-height: 144%;
       }
 
       img {
@@ -84,16 +125,17 @@
 
       @include mq(lg) {
         width: 65%;
+        padding: $unit-lg $unit-sm 30px $unit-sm;
       }
 
       @include mq(md) {
         width: 100%;
-        padding: $unit-lg $unit-xl 30px $unit-xxl;
+        padding: 70px $unit-xl 30px $unit-xl;
       }
 
       @include mq(sm) {
         width: 100%;
-        padding: $unit-lg $unit-lg 30px $unit-md;
+        padding: 60px $unit-md 30px $unit-md;
       }
 
       p.body-text {
@@ -116,16 +158,17 @@
 
       @include mq(md) {
         width: 100%;
-        padding: 0 $unit-xxl 25px $unit-xxl;
+        padding: 10px 0 25px 0;
+        border-top: 2px solid $color-tertiary-alt;
         border-left: 2px solid transparent;
       }
 
       @include mq(sm) {
         width: 100%;
-        padding: 0 0 25px 15px;
+        padding: 10px 10px 25px 10px;
+        border-top: 2px solid $color-tertiary-alt;
         border-left: 2px solid transparent;
       }
-
 
       h3 {
         float: left;

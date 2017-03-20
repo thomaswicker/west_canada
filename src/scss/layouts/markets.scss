@@ -9,14 +9,33 @@
   min-height: 350px;
   padding: 0 20px;
 
+  @include mq(lg) {
+    padding: 0 15px;
+  }
+
+  @include mq(md) {
+    padding: 0 8px;
+  }
+
+  @include mq(sm) {
+    padding: 0 8px;
+  }
+
   .body-content-markets {
     float: left;
     width: 100%;
     padding: 0 $unit-jumbo 0 $unit-jumbo;
 
+    @include mq(lg) {
+      padding: 0 $unit-md 0 $unit-md;
+    }
+
+    @include mq(md) {
+      padding: 0 $unit-md 0 $unit-md;
+    }
+
     @include mq(sm) {
-      padding-left: $unit-xl;
-      padding-right: $unit-xl;
+      padding: 0 $unit-md 0 $unit-md;
     }
 
     .bc-markets-left {
@@ -26,18 +45,19 @@
 
       @include mq(lg) {
         width: 65%;
+        padding: 0 $unit-xl $unit-jumbo 0;
       }
 
       @include mq(md) {
         float: left;
         width: 100%;
-        padding: 0 $unit-sm $unit-md 0;
+        padding: 60px $unit-sm $unit-md 0;
       }
 
       @include mq(sm) {
         float: left;
         width: 100%;
-        padding: $unit-lg $unit-sm $unit-xl 0;
+        padding: 60px $unit-sm $unit-xl 0;
       }
 
       h1 {
@@ -47,6 +67,7 @@
         margin-bottom: $unit-md;
         font-size: $font-size-xl;
         font-weight: 300;
+        line-height: 145%;
 
         @include mq(md) {
           margin-top: 0;
@@ -65,13 +86,6 @@
       h4 {
         margin-top: $unit-xl;
         font-size: $font-size-lg;
-      }
-
-      img {
-        float: left;
-        width: 100%;
-        max-width: 400px;
-        margin-top: 30px;
       }
 
       p.body-text {

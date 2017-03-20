@@ -55,37 +55,80 @@
 
 	<body>
 
-		<!--  ##### BEGIN NAVIGATION HEADER FOR WEB APP ##### -->
-		<header class="nav-bar-mobile show-for-small-only" role="nav">
+		<div id="nav-mobile-open">
+			<i class="fa fa-bars"></i>
+		</div>
 
-			<div class="top-bar-title">
-				<span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-					<button class="menu-icon dark" type="button" data-toggle></button>
-				</span>
-			</div>
+		</div>
+
+		<header class="nav-bar nav-bar-mobile" role="nav">
 
 			<section class="nav-bar-left">
-				<a href='index.html'>
+				<a href='http://west-ulc.ca/'>
 					<img alt='West Canada Logo' src="<?php bloginfo( 'template_directory' ); ?>/img/west_ca_logo.png">
 				</a>
+			</section>
+
+			<section class="nav-bar-right">
+					<ul class="mobile-nav-menu">
+
+						<li><a href="http://west-ulc.ca/" class="top-level-nav-item">Home</a></li>
+
+						<li class="mobile-nav-row-divider">Services</li>
+
+						<li><a href="http://west-ulc.ca/services/avian-species-research-management/">Avian Species Research & Management<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+
+						<li><a href="http://west-ulc.ca/services/bat-research-monitoring/">Bat Research & Monitoring<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+
+						<li><a href="http://west-ulc.ca/services/big-game-research-management/">Big Game Research & Management<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+
+						<li><a href="http://west-ulc.ca/services/statistics-biometrics/">Statistics & Biometrics<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+
+						<li><a href="http://west-ulc.ca/services/wildlife-research-management/">Wildlife Research & Management<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+
+						<li class="mobile-nav-row-divider">Markets: Renewable Energy</li>
+						<li><a href="http://west-ulc.ca/markets/solar-energy/">Solar Energy<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+						<li><a href="http://west-ulc.ca/markets/wind-energy/">Wind Energy<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+
+						<li class="mobile-nav-row-divider">Markets: Utilities</li>
+						<li><a href="http://west-ulc.ca/markets/oilgas-and-mining/">Oil/Gas & Mining<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+						<li><a href="http://west-ulc.ca/markets/pipelines/">Pipelines<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+						<li><a href="http://west-ulc.ca/markets/power-lines/">Power Lines<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+
+
+						<li><a href="http://west-ulc.ca/markets/infrastructure/">Infrastructure<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+						<li><a href="http://west-ulc.ca/markets/government/">Government<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+
+						<li class="mobile-nav-row-divider">About</li>
+						<li><a href="http://west-ulc.ca/about/team/">Team<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+						<li><a href="http://west-ulc.ca/about/culture/">Culture<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+						<li><a href="http://west-ulc.ca/about/news-and-events/">News & Events<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+						<li><a href="http://west-ulc.ca/about/contact/">Contact<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+
+						<li class="mobile-nav-row-divider">Careers</li>
+						<li><a href="http://west-ulc.ca/careers/" class="top-level-nav-item">Careers<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+
+					</ul>
 			</section>
 
 		</header>
 
-		<!--  ##### END NAVIGATION HEADER FOR WEB APP ##### -->
+
+
+
 
 
 		<!--  ##### BEGIN NAVIGATION HEADER FOR MOBILE APP ##### -->
 
-		<header class="nav-bar hide-for-small-only" role="nav">
+		<header class="nav-bar nav-bar-desktop" role="nav">
 
 			<section class="nav-bar-left">
-				<a href='index.html'>
+				<a href='http://west-ulc.ca/'>
 					<img alt='West Canada Logo' src="<?php bloginfo( 'template_directory' ); ?>/img/west_ca_logo.png">
 				</a>
 			</section>
 
-			<section class="nav-bar-right" id="example-menu">
+			<section class="nav-bar-right">
 					<ul class="dropdown menu" data-dropdown-menu>
 						<li><a href="http://west-ulc.ca/" class="top-level-nav-item">Home</a></li>
 						<li>
@@ -138,7 +181,7 @@
 					</ul>
 			</section>
 
-			<a class='btn contact-btn-callout hide-for-small-only' href='contact.html'>
+			<a class='btn contact-btn-callout hide-for-small-only' href='http://west-ulc.ca/contact/'>
 				<i class='fa fa-phone'></i>
 				Contact Us
 			</a>

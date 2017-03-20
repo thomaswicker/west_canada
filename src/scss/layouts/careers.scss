@@ -9,24 +9,33 @@
   min-height: 350px;
   padding: 0 20px;
 
+  @include mq(lg) {
+    padding: 0 15px;
+  }
+
+  @include mq(md) {
+    padding: 0 8px;
+  }
+
+  @include mq(sm) {
+    padding: 0 8px;
+  }
+
   .body-content-careers {
     float: left;
     width: 100%;
     padding: 0 $unit-jumbo 0 $unit-jumbo;
 
     @include mq(lg) {
-      padding-left: $unit-xs;
-      padding-right: $unit-xs;
+      padding: 0 $unit-md 0 $unit-md;
     }
 
     @include mq(md) {
-      padding-left: $unit-md;
-      padding-right: $unit-md;
+      padding: 0 $unit-md 0 $unit-md;
     }
 
     @include mq(sm) {
-      padding-left: $unit-sm;
-      padding-right: $unit-sm;
+      padding: 0 $unit-xxs 0 $unit-xxs;
     }
 
     .bc-careers-left {
@@ -134,6 +143,10 @@
         text-transform: uppercase;
         font-size: 24px;
         font-weight: $font-weight-semibold;
+      }
+
+      img {
+        max-width: 300px;
       }
     }
   }
