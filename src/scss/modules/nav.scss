@@ -89,6 +89,25 @@
       z-index: 101;
     }
 
+    .site-title {
+      position: fixed;
+      top: 30px;
+      left: 98px;
+      font-family: $font-1;
+      font-size: $font-size-xs;
+      font-style: italic;
+      color: white;
+      z-index: 1000;
+
+      @include mq(md) {
+
+      }
+
+      @include mq(sm) {
+        display: none;
+      }
+    }
+
     a {
       position: relative;
       left: $unit-xs;

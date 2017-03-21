@@ -69,6 +69,7 @@
 				<a href='http://west-ulc.ca/'>
 					<img alt='West Canada Logo' src="<?php bloginfo( 'template_directory' ); ?>/img/west_ca_logo.png">
 				</a>
+				<section class="site-title">Scientific Solutions to Natural Resource Challenges in Canada</section>
 			</section>
 
 			<section class="nav-bar-right">
@@ -128,6 +129,7 @@
 				<a href='http://west-ulc.ca/'>
 					<img alt='West Canada Logo' src="<?php bloginfo( 'template_directory' ); ?>/img/west_ca_logo.png">
 				</a>
+				<section class="site-title">Scientific Solutions to Natural Resource Challenges in Canada</section>
 			</section>
 
 			<section class="nav-bar-right">

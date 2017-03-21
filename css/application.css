@@ -2596,6 +2596,18 @@ footer {
         margin-bottom: 15px;
         background-color: #101d30;
         z-index: 101; } }
+    .nav-bar .nav-bar-left .site-title {
+      position: fixed;
+      top: 30px;
+      left: 98px;
+      font-family: "Roboto", sans-serif;
+      font-size: 0.75rem;
+      font-style: italic;
+      color: white;
+      z-index: 1000; }
+      @media only screen and (max-width: 640px) {
+        .nav-bar .nav-bar-left .site-title {
+          display: none; } }
     .nav-bar .nav-bar-left a {
       position: relative;
       left: 0.625rem; }
@@ -3027,7 +3039,21 @@ ul.sidebar-nav {
                 color: #00aeef; }
                 #widget-footer #wf-left .widget-panel .widget-panel-content span blockquote p a:hover, #widget-footer #wf-middle .widget-panel .widget-panel-content span blockquote p a:hover, #widget-footer #wf-right .widget-panel .widget-panel-content span blockquote p a:hover {
                   color: #0089bc; }
+  #widget-footer #wf-left .widget-panel-content {
+    padding: 0.9375rem 0.625rem 2.5rem 0.625rem !important; }
   #widget-footer #wf-middle .widget-panel-content {
     padding: 0.9375rem 2.5rem 2.5rem 2.5rem !important; }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      #widget-footer #wf-middle .widget-panel-content {
+        padding: 0.9375rem 1.25rem 2.5rem 1.25rem !important; }
+        #widget-footer #wf-middle .widget-panel-content h2 {
+          font-size: 14px; }
+        #widget-footer #wf-middle .widget-panel-content p {
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 12px !important;
+          line-height: 140%; } }
   #widget-footer #wf-right .widget-panel-content {
     padding: 0.9375rem 1.25rem 0.9375rem 1.25rem !important; }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      #widget-footer #wf-right .widget-panel-content {
+        padding: 0.9375rem 0.625rem 0.9375rem 0.625rem !important; } }

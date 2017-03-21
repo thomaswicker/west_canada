@@ -130,15 +130,39 @@
     }
   }
 
+  #wf-left {
+    .widget-panel-content {
+      padding: $unit-sm $unit-xs $unit-xxl $unit-xs !important;
+    }
+  }
+
   #wf-middle {
     .widget-panel-content {
       padding: $unit-sm $unit-xxl $unit-xxl $unit-xxl !important;
+
+      @include mq(md) {
+        padding: $unit-sm $unit-md $unit-xxl $unit-md !important;
+
+        h2 {
+          font-size: 14px;
+        }
+
+        p {
+          font-family: $font-2;
+          font-size: 12px !important;
+          line-height: 140%;
+        }
+      }
     }
   }
 
   #wf-right {
     .widget-panel-content {
       padding: $unit-sm $unit-md $unit-sm $unit-md !important;
+
+      @include mq(md) {
+        padding: $unit-sm $unit-xs $unit-sm $unit-xs !important;
+      }
     }
   }
 }
