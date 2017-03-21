@@ -2597,7 +2597,7 @@ footer {
         background-color: #101d30;
         z-index: 101; } }
     .nav-bar .nav-bar-left .site-title {
-      position: fixed;
+      position: absolute;
       top: 30px;
       left: 98px;
       font-family: "Roboto", sans-serif;
