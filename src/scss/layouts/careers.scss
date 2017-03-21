@@ -107,6 +107,22 @@
 
       p.body-text {
         margin-bottom: $unit-lg;
+
+        &.quote {
+          background-color: lighten($color-tertiary-alt, 15%);
+          padding: 10px 20px;
+          color: $color-primary;
+          font-family: $font-1;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 145%;
+
+          span {
+            display: block;
+            padding-top: 8px;
+            font-weight: 600;
+          }
+        }
       }
     }
 

@@ -6,7 +6,7 @@ Template Name: About => Team => Profile
 
 <?php get_header(); ?>
 
-<?php get_template_part('partials/superheros/superhero-team'); ?>
+<?php get_template_part('partials/superheros/superhero-profile'); ?>
 
 <?php get_template_part('partials/sm-nav'); ?>
 

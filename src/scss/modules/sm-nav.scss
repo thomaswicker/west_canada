@@ -1,9 +1,11 @@
 .sm-nav {
   position: relative;
-  top: -41px;
+  top: -43px;
   float: right;
   width: 200px;
   background: white;
+  border-top: 2px solid $color-primary;
+  border-left: 2px solid $color-primary;
 
   li {
     float: left;
@@ -14,14 +16,18 @@
       float: left;
       width: 100%;
       padding: 10px 20px;
-      background-color: $color-tertiary-alt;
+      background-color: white;
       color: $color-primary;
 
       &:hover {
-        background-color: $color-tertiary-alt;
+        background-color: $color-electric-blue;
+
+        i {
+          color: white !important;
+        }
 
         @include mq(md) {
-          background: $color-electric-blue;
+          color: white;
 
           i {
             color: white !important;
@@ -29,7 +35,7 @@
         }
 
         @include mq(sm) {
-          background: $color-electric-blue;
+          background-color: $color-electric-blue;
           color: white;
 
           i {
@@ -53,6 +59,9 @@
     float: left;
     width: 100%;
     background: $color-tertiary;
+    border-top: none;
+    border-left: none;
+
   }
 
   @include mq(sm) {
@@ -60,5 +69,8 @@
     float: left;
     width: 100%;
     background: $color-tertiary;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid $color-primary;
   }
 }

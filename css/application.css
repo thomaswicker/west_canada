@@ -1259,6 +1259,18 @@ p.body-text {
           padding: 1.563rem 1.563rem 30px 1.25rem; } }
       .careers-container .body-content-careers .bc-careers-left p.body-text {
         margin-bottom: 1.563rem; }
+        .careers-container .body-content-careers .bc-careers-left p.body-text.quote {
+          background-color: #e5f1f6;
+          padding: 10px 20px;
+          color: #101d30;
+          font-family: "Roboto", sans-serif;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 145%; }
+          .careers-container .body-content-careers .bc-careers-left p.body-text.quote span {
+            display: block;
+            padding-top: 8px;
+            font-weight: 600; }
     .careers-container .body-content-careers .bc-careers-right {
       float: left;
       width: 30%;
@@ -2772,10 +2784,12 @@ ul.sidebar-nav {
 
 .sm-nav {
   position: relative;
-  top: -41px;
+  top: -43px;
   float: right;
   width: 200px;
-  background: white; }
+  background: white;
+  border-top: 2px solid #101d30;
+  border-left: 2px solid #101d30; }
   .sm-nav li {
     float: left;
     width: 25%;
@@ -2784,18 +2798,20 @@ ul.sidebar-nav {
       float: left;
       width: 100%;
       padding: 10px 20px;
-      background-color: #acd1e3;
+      background-color: white;
       color: #101d30; }
       .sm-nav li a:hover {
-        background-color: #acd1e3; }
+        background-color: #00aeef; }
+        .sm-nav li a:hover i {
+          color: white !important; }
         @media only screen and (min-width: 640px) and (max-width: 1024px) {
           .sm-nav li a:hover {
-            background: #00aeef; }
+            color: white; }
             .sm-nav li a:hover i {
               color: white !important; } }
         @media only screen and (max-width: 640px) {
           .sm-nav li a:hover {
-            background: #00aeef;
+            background-color: #00aeef;
             color: white; }
             .sm-nav li a:hover i {
               color: white !important; } }
@@ -2808,13 +2824,18 @@ ul.sidebar-nav {
       top: 0px;
       float: left;
       width: 100%;
-      background: #8c9da7; } }
+      background: #8c9da7;
+      border-top: none;
+      border-left: none; } }
   @media only screen and (max-width: 640px) {
     .sm-nav {
       top: 0px;
       float: left;
       width: 100%;
-      background: #8c9da7; } }
+      background: #8c9da7;
+      border-top: none;
+      border-left: none;
+      border-bottom: 1px solid #101d30; } }
 
 .superhero {
   position: relative;
@@ -2847,7 +2868,7 @@ ul.sidebar-nav {
     font-weight: 600;
     line-height: 115%;
     letter-spacing: 2px;
-    background-color: #00aeef;
+    background-color: #72A430;
     color: white; }
     @media only screen and (min-width: 640px) and (max-width: 1024px) {
       .superhero strong {
@@ -2857,7 +2878,7 @@ ul.sidebar-nav {
         display: none; } }
   .superhero figcaption {
     position: absolute;
-    top: 28%;
+    top: 30%;
     left: 100px;
     width: 100%;
     max-width: 700px;

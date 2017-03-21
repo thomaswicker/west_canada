@@ -50,7 +50,7 @@
     font-weight: 600;
     line-height: 115%;
     letter-spacing: 2px;
-    background-color: $color-electric-blue;
+    background-color: $color-secondary;
     color: white;
 
     @include mq(md) {
@@ -64,7 +64,7 @@
 
   figcaption {
     position: absolute;
-    top: 28%;
+    top: 30%;
     left: 100px;
     width: 100%;
     max-width: 700px;
