@@ -12,7 +12,7 @@
   }
 
   &:hover {
-    cursor: pointer;
+    cursor: pointer !important;
     text-decoration: none;
   }
 
@@ -21,17 +21,18 @@
     color: white;
 
     &:hover {
-      background-color: darken($color-secondary, 10%);
+      background-color: $color-secondary-alt;
       cursor: pointer;
     }
   }
 
   &.btn-secondary {
-    background-color: $color-electric-blue;
+    background-color: $color-secondary;
     color: white;
 
     &:hover {
-      background-color: darken($color-electric-blue, 10%);
+      background-color: $color-secondary-alt;
+      color: white;
       cursor: pointer;
     }
   }
@@ -111,26 +112,25 @@
   top: 100px;
   right: -98px;
   padding: $unit $unit-sm;
-  background-color: $color-electric-blue;
+  background-color: $color-secondary;
   color: white;
   transition: all 200ms ease;
   z-index: 20;
 
   &:hover {
     right: 0px;
-    background-color: $color-tertiary-alt;
-    color: lighten($color-primary, 10%);
+    background-color: lighten($color-secondary, 12%);
+    color: white;
 
     i {
       margin-right: $unit-xxs;
-      font-size: 15px;
     }
   }
 
   i {
     margin-right: $unit-xs;
     font-size: 18px;
-    color: $color-electric-blue;
+    color: white;
   }
 }
 

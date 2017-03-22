@@ -140,12 +140,12 @@
               font-family: $font-2;
               font-size: 15px;
               font-weight: 600;
-              color: darken($color-electric-blue, 20%);
+              color: darken( $color-secondary, 20%);
               font-style: italic;
             }
 
             &:hover {
-              background-color: $color-electric-blue;
+              background-color: $color-secondary-alt;
               color: white;
               cursor: pointer;
               text-decoration: none;

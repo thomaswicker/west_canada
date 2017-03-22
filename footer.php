@@ -66,14 +66,14 @@
 			<div class='footer-left'>
 				<p>
 					Site design by:
-					<a href='http://www.xiri.io'>
+					<a href='http://www.xiri.io' target="_blank">
 						XIRI Media
 					</a>
 				</p>
 			</div>
 			<div class='footer-right'>
 				<p class='copyright'>
-					Copyright © 2017 WEST Inc
+					Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. WEST Inc
 				</p>
 			</div>
 			<!-- Magical Spells -->
@@ -84,7 +84,6 @@
 			<script>
 				$(document).foundation();
 			</script>
-			<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 
 		</footer>
 

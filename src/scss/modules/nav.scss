@@ -172,6 +172,8 @@
       background-color: white;
 
       a {
+        padding: $unit-sm $unit-lg $unit-sm $unit-lg;
+
         @include mq(md) {
           color: $color-primary !important;
         }
@@ -213,8 +215,18 @@
           width: 100%;
           padding: 10px 20px;
           font-weight: 600;
+          background-color: $color-primary;
+          color: white;
+        }
+
+        &.mobile-nav-row-divider-alt {
+          float: left;
+          width: 100%;
+          padding: 5px 15px;
+          font-size: 13px;
+          font-weight: 600;
           background-color: $color-tertiary;
-          color: black;
+          color: $color-primary;
         }
 
         @include mq(md) {
@@ -235,8 +247,12 @@
 
           &:hover {
             background-color: $color-electric-blue;
-            color: white;
+            color: white !important;
             text-decoration: none;
+
+            i {
+              color: white !important;
+            }
           }
 
           &:active {
@@ -302,3 +318,39 @@
     }
   }
 }
+
+// Below is overrides to the carets on the main nav
+
+.dropdown.menu>li.is-dropdown-submenu-parent>a:after {
+  border-color: $color-secondary transparent transparent;
+}
+
+.is-dropdown-submenu .is-dropdown-submenu-parent.opens-left>a {
+  &:after {
+    border-color: transparent $color-secondary transparent transparent;
+  }
+
+  &:hover {
+    &:after {
+      border-color: transparent $white transparent transparent;
+    }
+  }
+}
+
+.is-dropdown-submenu .is-dropdown-submenu-parent.opens-right>a {
+  &:after {
+    border-color: transparent transparent transparent $color-secondary;
+  }
+}
+
+
+
+.nav-row-divider {
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: $color-primary;
+}
+

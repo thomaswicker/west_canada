@@ -53,6 +53,10 @@
     background-color: $color-secondary;
     color: white;
 
+    //REMOVING THIS TAG FOR NOW
+    display: none;
+
+
     @include mq(md) {
       display: none;
     }
@@ -64,7 +68,7 @@
 
   figcaption {
     position: absolute;
-    top: 30%;
+    top: 28%;
     left: 100px;
     width: 100%;
     max-width: 700px;

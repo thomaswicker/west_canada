@@ -89,18 +89,20 @@
 
 						<li><a href="http://west-ulc.ca/services/wildlife-research-management/">Wildlife Research & Management<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
 
-						<li class="mobile-nav-row-divider">Markets: Renewable Energy</li>
+						<li class="mobile-nav-row-divider">Markets</li>
+						<li><a href="http://west-ulc.ca/markets/infrastructure/">Infrastructure<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+						<li><a href="http://west-ulc.ca/markets/government/">Government<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+
+						<li class="mobile-nav-row-divider-alt">Markets: Renewable Energy</li>
 						<li><a href="http://west-ulc.ca/markets/solar-energy/">Solar Energy<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
 						<li><a href="http://west-ulc.ca/markets/wind-energy/">Wind Energy<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
 
-						<li class="mobile-nav-row-divider">Markets: Utilities</li>
-						<li><a href="http://west-ulc.ca/markets/oilgas-and-mining/">Oil/Gas & Mining<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
-						<li><a href="http://west-ulc.ca/markets/pipelines/">Pipelines<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+						<li class="mobile-nav-row-divider-alt">Markets: Utilities</li>
 						<li><a href="http://west-ulc.ca/markets/power-lines/">Power Lines<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
 
-
-						<li><a href="http://west-ulc.ca/markets/infrastructure/">Infrastructure<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
-						<li><a href="http://west-ulc.ca/markets/government/">Government<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+						<li class="mobile-nav-row-divider-alt">Markets: Other</li>
+						<li><a href="http://west-ulc.ca/markets/oilgas-and-mining/">Oil/Gas & Mining<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+						<li><a href="http://west-ulc.ca/markets/pipelines/">Pipelines<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
 
 						<li class="mobile-nav-row-divider">About</li>
 						<li><a href="http://west-ulc.ca/about/team/">Team<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
@@ -145,26 +147,25 @@
 								<li><a href="http://west-ulc.ca/services/wildlife-research-management/">Wildlife Research & Management</a></li>
 							</ul>
 						</li>
+
+
+
 						<li>
 							<a href="#" class="top-level-nav-item">Markets</a>
 							<ul class="menu vertical">
 								<li>
 									<a href="#">Energy</a>
 									<ul class="menu vertical">
+											<li><a href="http://west-ulc.ca/markets/oilgas-and-mining/">Oil/Gas & Mining</a></li>
+											<li><a href="http://west-ulc.ca/markets/pipelines/">Pipelines</a></li>
 										<li>
-											<a href="#">Renewable</a>
-											<ul class="menu vertical">
-												<li><a href="http://west-ulc.ca/markets/solar-energy/">Solar Energy</a></li>
-												<li><a href="http://west-ulc.ca/markets/wind-energy/">Wind Energy</a></li>
-											</ul>
+											<li class="nav-row-divider">Renewable Energy</li>
+											<li><a href="http://west-ulc.ca/markets/solar-energy/">Solar Energy</a></li>
+											<li><a href="http://west-ulc.ca/markets/wind-energy/">Wind Energy</a></li>
 										</li>
 										<li>
-											<a href="#">Utilities</a>
-											<ul class="menu vertical">
-												<li><a href="http://west-ulc.ca/markets/oilgas-and-mining/">Oil/Gas & Mining</a></li>
-												<li><a href="http://west-ulc.ca/markets/pipelines/">Pipelines</a></li>
-												<li><a href="http://west-ulc.ca/markets/power-lines/">Power Lines</a></li>
-											</ul>
+											<li class="nav-row-divider">Utilities</li>
+											<li><a href="http://west-ulc.ca/markets/power-lines/">Power Lines</a></li>
 										</li>
 									</ul>
 								</li>

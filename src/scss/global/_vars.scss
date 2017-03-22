@@ -108,11 +108,14 @@ $xxxdark-gray:        #111111;
 $black:               #000000;
 
 $color-primary:       #101d30;
-$color-secondary:     #72A430;
+$color-secondary:     #577d24;
+$color-secondary-alt: lighten($color-secondary, 10%);
 $color-tertiary:      #8c9da7;
 $color-tertiary-alt:  #acd1e3;
+$color-tertiary-alt2: #5f7a8c;
 
-$color-electric-blue: #00aeef;
+$color-electric-blue: $color-secondary;
+$color-electric-blue-original: #00aeef;
 
 $link:              $color-secondary;
 $text:              $xdark-gray;
