@@ -662,6 +662,12 @@ ul li a:hover {
   .body-content ul.areas-of-expertise h3 {
     font-size: 20px;
     font-weight: 600; }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .body-content ul.areas-of-expertise h3 {
+        font-size: 17px; } }
+    @media only screen and (max-width: 640px) {
+      .body-content ul.areas-of-expertise h3 {
+        font-size: 17px; } }
   .body-content ul.areas-of-expertise li {
     float: left;
     width: 100%;
@@ -1152,13 +1158,13 @@ p.body-text {
         .about-container .body-content-about .bc-about-right {
           width: 100%;
           padding: 10px 0 25px 0;
-          border-top: 2px solid #acd1e3;
+          border-top: 2px dotted #acd1e3;
           border-left: 2px solid transparent; } }
       @media only screen and (max-width: 640px) {
         .about-container .body-content-about .bc-about-right {
           width: 100%;
-          padding: 10px 10px 25px 10px;
-          border-top: 2px solid #acd1e3;
+          padding: 10px 0 25px 0;
+          border-top: 2px dotted #acd1e3;
           border-left: 2px solid transparent; } }
       .about-container .body-content-about .bc-about-right h3 {
         text-transform: uppercase; }
@@ -1252,11 +1258,11 @@ p.body-text {
       @media only screen and (min-width: 640px) and (max-width: 1024px) {
         .careers-container .body-content-careers .bc-careers-left {
           width: 100%;
-          padding: 1.563rem 1.875rem 30px 2.5rem; } }
+          padding: 2.5rem 1.875rem 0 1.875rem; } }
       @media only screen and (max-width: 640px) {
         .careers-container .body-content-careers .bc-careers-left {
           width: 100%;
-          padding: 1.563rem 1.563rem 30px 1.25rem; } }
+          padding: 2.5rem 1.25rem 0 1.25rem; } }
       .careers-container .body-content-careers .bc-careers-left p.body-text {
         margin-bottom: 1.563rem; }
         .careers-container .body-content-careers .bc-careers-left p.body-text.quote {
@@ -1285,12 +1291,12 @@ p.body-text {
       @media only screen and (min-width: 640px) and (max-width: 1024px) {
         .careers-container .body-content-careers .bc-careers-right {
           width: 100%;
-          padding: 0 2.5rem 25px 2.5rem;
+          padding: 0 1.875rem 0 1.875rem;
           border-left: 2px solid transparent; } }
       @media only screen and (max-width: 640px) {
         .careers-container .body-content-careers .bc-careers-right {
           width: 100%;
-          padding: 0 0 25px 15px;
+          padding: 0 1.25rem 0 1.25rem;
           border-left: 2px solid transparent; } }
       .careers-container .body-content-careers .bc-careers-right h3 {
         float: left;
@@ -1300,8 +1306,20 @@ p.body-text {
         text-transform: uppercase;
         font-size: 24px;
         font-weight: 500; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .careers-container .body-content-careers .bc-careers-right h3 {
+            display: none; } }
+        @media only screen and (max-width: 640px) {
+          .careers-container .body-content-careers .bc-careers-right h3 {
+            display: none; } }
       .careers-container .body-content-careers .bc-careers-right img {
         max-width: 300px; }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          .careers-container .body-content-careers .bc-careers-right img {
+            display: none; } }
+        @media only screen and (max-width: 640px) {
+          .careers-container .body-content-careers .bc-careers-right img {
+            display: none; } }
 
 /* %%%%%%%%%%%%%%%%%%%% CONTACT STYLES %%%%%%%%%%%%%%%%%%%% */
 .contact-container {
@@ -1543,11 +1561,11 @@ p.body-text {
       @media only screen and (min-width: 640px) and (max-width: 1024px) {
         .culture-container .body-content-culture .bc-culture-left {
           width: 100%;
-          padding: 1.875rem 1.875rem 30px 2.5rem; } }
+          padding: 2.5rem 1.25rem 30px 1.25rem; } }
       @media only screen and (max-width: 640px) {
         .culture-container .body-content-culture .bc-culture-left {
           width: 100%;
-          padding: 1.875rem 1.563rem 15px 1.25rem; } }
+          padding: 2.5rem 0.625rem 15px 0.625rem; } }
       .culture-container .body-content-culture .bc-culture-left p.body-text {
         margin-bottom: 1.563rem; }
     .culture-container .body-content-culture .bc-culture-right {
@@ -1565,13 +1583,13 @@ p.body-text {
         .culture-container .body-content-culture .bc-culture-right {
           width: 100%;
           padding: 10px 0 25px 0;
-          border-top: 2px solid #acd1e3;
+          border-top: 2px dotted #acd1e3;
           border-left: 2px solid transparent; } }
       @media only screen and (max-width: 640px) {
         .culture-container .body-content-culture .bc-culture-right {
           width: 100%;
-          padding: 10px 10px 25px 10px;
-          border-top: 2px solid #acd1e3;
+          padding: 10px 0 25px 0;
+          border-top: 2px dotted #acd1e3;
           border-left: 2px solid transparent; } }
       .culture-container .body-content-culture .bc-culture-right h3 {
         float: left;
@@ -1679,13 +1697,13 @@ p.body-text {
       .body-content-home .bc-home-right {
         width: 100%;
         padding: 10px 0 5px 0;
-        border-top: 2px solid #acd1e3;
+        border-top: 2px dotted #acd1e3;
         border-left: 2px solid transparent; } }
     @media only screen and (max-width: 640px) {
       .body-content-home .bc-home-right {
         width: 100%;
-        padding: 10px 10px 5px 10px;
-        border-top: 2px solid #acd1e3;
+        padding: 10px 0 5px 0;
+        border-top: 2px dotted #acd1e3;
         border-left: 2px solid transparent; } }
     .body-content-home .bc-home-right .contact-callout {
       float: left;
@@ -1793,8 +1811,8 @@ p.body-text {
             font-weight: 500; } }
         @media only screen and (max-width: 640px) {
           .markets-container .body-content-markets .bc-markets-left h1 {
-            margin-top: 10px;
-            font-size: 1.5rem;
+            margin-top: 5px;
+            font-size: 1.25rem;
             font-weight: 500; } }
       .markets-container .body-content-markets .bc-markets-left h4 {
         margin-top: 1.875rem;
@@ -1824,13 +1842,13 @@ p.body-text {
         .markets-container .body-content-markets .bc-markets-right {
           width: 100%;
           padding: 10px 0 25px 0;
-          border-top: 2px solid #acd1e3;
+          border-top: 2px dotted #acd1e3;
           border-left: 2px solid transparent; } }
       @media only screen and (max-width: 640px) {
         .markets-container .body-content-markets .bc-markets-right {
           width: 100%;
-          padding: 10px 10px 25px 10px;
-          border-top: 2px solid #acd1e3;
+          padding: 10px 0 25px 0;
+          border-top: 2px dotted #acd1e3;
           border-left: 2px solid transparent; } }
       .markets-container .body-content-markets .bc-markets-right h3 {
         text-transform: uppercase; }
@@ -1838,7 +1856,7 @@ p.body-text {
 /* %%%%%%%%%%%%%%%%%%%% NEWS/EVENTS STYLES %%%%%%%%%%%%%%%%%%%% */
 .news-events-container {
   position: relative;
-  top: -20px;
+  top: -1.25rem;
   float: left;
   width: 100%;
   min-height: 350px;
@@ -1868,7 +1886,7 @@ p.body-text {
     .news-events-container .body-content-news .bc-news-left {
       float: left;
       width: 70%;
-      padding: 40px 3.125rem 3.125rem 0; }
+      padding: 0.625rem 3.125rem 3.125rem 0; }
       .news-events-container .body-content-news .bc-news-left h1 {
         float: left;
         width: 100%;
@@ -1880,12 +1898,13 @@ p.body-text {
         @media only screen and (min-width: 640px) and (max-width: 1024px) {
           .news-events-container .body-content-news .bc-news-left h1 {
             margin-top: 0;
-            margin-bottom: 1.25rem;
+            margin-bottom: 0.625rem;
             font-size: 1.5rem;
             font-weight: 500; } }
         @media only screen and (max-width: 640px) {
           .news-events-container .body-content-news .bc-news-left h1 {
-            margin-top: 10px;
+            margin-top: 0.625rem;
+            margin-bottom: 0;
             font-size: 1.5rem;
             font-weight: 500; } }
       .news-events-container .body-content-news .bc-news-left h2 {
@@ -1906,12 +1925,12 @@ p.body-text {
           .news-events-container .body-content-news .bc-news-left h2 a:hover {
             cursor: pointer;
             color: #4a7bc3; }
-        @media only screen and (min-width: 640px) and (max-width: 1024px) {
-          .news-events-container .body-content-news .bc-news-left h2 {
-            font-size: 1.25rem; } }
-        @media only screen and (max-width: 640px) {
-          .news-events-container .body-content-news .bc-news-left h2 {
-            font-size: 1.25rem; } }
+          @media only screen and (min-width: 640px) and (max-width: 1024px) {
+            .news-events-container .body-content-news .bc-news-left h2 a {
+              font-size: 1.25rem; } }
+          @media only screen and (max-width: 640px) {
+            .news-events-container .body-content-news .bc-news-left h2 a {
+              font-size: 1rem; } }
       .news-events-container .body-content-news .bc-news-left hr {
         float: left;
         width: 100%;
@@ -1925,7 +1944,7 @@ p.body-text {
         float: left;
         width: 100%;
         max-width: 400px;
-        margin-top: 30px;
+        margin-top: 1.875rem;
         border: 2px solid #101d30; }
         @media only screen and (max-width: 640px) {
           .news-events-container .body-content-news .bc-news-left img {
@@ -1933,15 +1952,15 @@ p.body-text {
       @media only screen and (min-width: 1025px) and (max-width: 1440px) {
         .news-events-container .body-content-news .bc-news-left {
           width: 65%;
-          padding: 1.563rem 0.9375rem 30px 0.9375rem; } }
+          padding: 1.563rem 0.9375rem 1.875rem 0.9375rem; } }
       @media only screen and (min-width: 640px) and (max-width: 1024px) {
         .news-events-container .body-content-news .bc-news-left {
           width: 100%;
-          padding: 70px 1.875rem 30px 1.875rem; } }
+          padding: 3.125rem 1.25rem 1.875rem 1.25rem; } }
       @media only screen and (max-width: 640px) {
         .news-events-container .body-content-news .bc-news-left {
           width: 100%;
-          padding: 60px 1.25rem 30px 1.25rem; } }
+          padding: 3.125rem 0 1.875rem 0; } }
       .news-events-container .body-content-news .bc-news-left p.body-text {
         margin-bottom: 1.563rem; }
     .news-events-container .body-content-news .bc-news-right {
@@ -1958,14 +1977,14 @@ p.body-text {
       @media only screen and (min-width: 640px) and (max-width: 1024px) {
         .news-events-container .body-content-news .bc-news-right {
           width: 100%;
-          padding: 10px 0 25px 0;
-          border-top: 2px solid #acd1e3;
+          padding: 0.625rem 0 1.563rem 0;
+          border-top: 2px dotted #acd1e3;
           border-left: 2px solid transparent; } }
       @media only screen and (max-width: 640px) {
         .news-events-container .body-content-news .bc-news-right {
           width: 100%;
-          padding: 10px 10px 25px 10px;
-          border-top: 2px solid #acd1e3;
+          padding: 0.625rem 0 1.563rem 0;
+          border-top: 2px dotted #acd1e3;
           border-left: 2px solid transparent; } }
       .news-events-container .body-content-news .bc-news-right h3 {
         float: left;
@@ -2140,13 +2159,13 @@ p.body-text {
         .profiles-container .body-content-profiles .bc-profiles-right {
           width: 100%;
           padding: 10px 0 25px 0;
-          border-top: 2px solid #acd1e3;
+          border-top: 2px dotted #acd1e3;
           border-left: 2px solid transparent; } }
       @media only screen and (max-width: 640px) {
         .profiles-container .body-content-profiles .bc-profiles-right {
           width: 100%;
-          padding: 10px 10px 25px 10px;
-          border-top: 2px solid #acd1e3;
+          padding: 10px 0 25px 0;
+          border-top: 2px dotted #acd1e3;
           border-left: 2px solid transparent; } }
       .profiles-container .body-content-profiles .bc-profiles-right h3 {
         float: left;
@@ -2225,11 +2244,11 @@ p.body-text {
       @media only screen and (min-width: 640px) and (max-width: 1024px) {
         .services-container .body-content-services .bc-services-left {
           width: 100%;
-          padding: 70px 1.875rem 30px 2.5rem; } }
+          padding: 70px 1.25rem 1.875rem 1.25rem; } }
       @media only screen and (max-width: 640px) {
         .services-container .body-content-services .bc-services-left {
           width: 100%;
-          padding: 60px 1.563rem 30px 1.25rem; } }
+          padding: 60px 0.625rem 1.875rem 0.625rem; } }
       .services-container .body-content-services .bc-services-left p.body-text {
         margin-bottom: 1.563rem; }
     .services-container .body-content-services .bc-services-right {
@@ -2246,14 +2265,14 @@ p.body-text {
       @media only screen and (min-width: 640px) and (max-width: 1024px) {
         .services-container .body-content-services .bc-services-right {
           width: 100%;
-          padding: 10px 0 25px 0;
-          border-top: 2px solid #acd1e3;
+          padding: 1.25rem 0.9375rem 0 0.9375rem;
+          border-top: 2px dotted #acd1e3;
           border-left: 2px solid transparent; } }
       @media only screen and (max-width: 640px) {
         .services-container .body-content-services .bc-services-right {
           width: 100%;
-          padding: 10px 10px 25px 10px;
-          border-top: 2px solid #acd1e3;
+          padding: 1.25rem 0 0 0;
+          border-top: 2px dotted #acd1e3;
           border-left: 2px solid transparent; } }
       .services-container .body-content-services .bc-services-right h3 {
         float: left;
@@ -2334,42 +2353,58 @@ p.body-text {
           display: none; }
         .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link {
           float: left;
-          width: 25%;
+          width: 33.33%;
           padding: 5px; }
           @media only screen and (min-width: 1025px) and (max-width: 1440px) {
             .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link {
-              width: 33.33%; } }
+              width: 50%; } }
           @media only screen and (min-width: 640px) and (max-width: 1024px) {
             .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link {
               width: 50%; } }
           @media only screen and (max-width: 640px) {
             .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link {
               width: 100%; } }
-          .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link .tpl--inner {
+          .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link a.tpl--inner {
+            position: relative;
             float: left;
             width: 100%;
-            padding: 15px;
-            border: 1px solid #72A430; }
-            .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link .tpl--inner h2 {
+            padding: 8px 0 8px 0.9375rem;
+            border: 1px solid #00aeef; }
+            .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link a.tpl--inner:after {
+              content: "\f061";
+              float: right;
+              display: inline;
+              width: 25px;
+              height: 25px;
+              margin-top: -1.875rem;
+              color: #00aeef;
+              font-family: FontAwesome; }
+            .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link a.tpl--inner h2 {
               float: left;
               width: 100%;
+              padding-top: 8px;
               margin-bottom: 4px;
               font-family: "Roboto", sans-serif;
               font-size: 18px;
               color: #101d30; }
-            .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link .tpl--inner h3 {
+            .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link a.tpl--inner h3 {
               float: left;
               width: 100%;
               margin-bottom: 4px;
               font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-              font-size: 14px;
-              color: #72A430;
+              font-size: 15px;
+              font-weight: 600;
+              color: #006489;
               font-style: italic; }
-            .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link .tpl--inner:hover {
-              background-color: #72A430;
+            .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link a.tpl--inner:hover {
+              background-color: #00aeef;
               color: white;
-              cursor: pointer; }
-              .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link .tpl--inner:hover h2, .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link .tpl--inner:hover h3 {
+              cursor: pointer;
+              text-decoration: none; }
+              .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link a.tpl--inner:hover:after {
+                color: white;
+                text-decoration: none; }
+              .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link a.tpl--inner:hover h2, .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link a.tpl--inner:hover h3 {
                 color: white; }
       @media only screen and (min-width: 1025px) and (max-width: 1440px) {
         .team-container .body-content-team .bc-team-left {
@@ -2399,13 +2434,13 @@ p.body-text {
         .team-container .body-content-team .bc-team-right {
           width: 100%;
           padding: 10px 0 25px 0;
-          border-top: 2px solid #acd1e3;
+          border-top: 2px dotted #acd1e3;
           border-left: 2px solid transparent; } }
       @media only screen and (max-width: 640px) {
         .team-container .body-content-team .bc-team-right {
           width: 100%;
-          padding: 10px 10px 25px 10px;
-          border-top: 2px solid #acd1e3;
+          padding: 10px 0 25px 0;
+          border-top: 2px dotted #acd1e3;
           border-left: 2px solid transparent; } }
       .team-container .body-content-team .bc-team-right h3 {
         float: left;
@@ -2415,6 +2450,19 @@ p.body-text {
         text-transform: uppercase;
         font-size: 24px;
         font-weight: 500; }
+
+.mini-profile-pic {
+  float: left;
+  width: 60px;
+  overflow: hidden; }
+  .mini-profile-pic img {
+    width: 100%;
+    max-width: 50px;
+    border: 0px !important; }
+
+.mini-profile-content {
+  float: left;
+  width: calc(100% - 60px); }
 
 /* #########%% MODULES %%######### */
 .btn {
@@ -2450,12 +2498,28 @@ p.body-text {
       background-color: #6f8491;
       cursor: pointer; }
 
+.btn-view-event {
+  margin-top: 1.25rem; }
+  @media only screen and (min-width: 640px) and (max-width: 1024px) {
+    .btn-view-event {
+      width: 100%;
+      text-align: center;
+      font-size: 1.25rem; } }
+  @media only screen and (max-width: 640px) {
+    .btn-view-event {
+      width: 100%;
+      text-align: center;
+      font-size: 1rem; } }
+  .btn-view-event i {
+    margin-left: 8px; }
+
 .btn-back-to-team {
   position: absolute;
   top: -10px;
   left: 0; }
   .btn-back-to-team i {
-    margin-right: 8px; }
+    margin-right: 8px;
+    color: #00aeef !important; }
   @media only screen and (min-width: 640px) and (max-width: 1024px) {
     .btn-back-to-team {
       top: 25px; } }
@@ -2465,6 +2529,16 @@ p.body-text {
 
 .btn-view-careers {
   float: left; }
+  @media only screen and (min-width: 640px) and (max-width: 1024px) {
+    .btn-view-careers {
+      width: 100%;
+      text-align: center;
+      font-size: 1.25rem; } }
+  @media only screen and (max-width: 640px) {
+    .btn-view-careers {
+      width: 100%;
+      text-align: center;
+      font-size: 1rem; } }
   .btn-view-careers i {
     margin-left: 8px; }
 
@@ -2487,10 +2561,20 @@ p.body-text {
       font-size: 15px; }
   .contact-btn-callout i {
     margin-right: 0.625rem;
-    font-size: 18px; }
+    font-size: 18px;
+    color: #00aeef; }
 
-.btn-back-to-news i {
-  margin-right: 8px; }
+.btn-back-to-news {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  background-color: transparent !important;
+  color: #101d30 !important; }
+  .btn-back-to-news:hover {
+    color: #006489 !important; }
+  .btn-back-to-news i {
+    margin-right: 8px;
+    color: #00aeef !important; }
 
 footer {
   float: left;
@@ -2780,7 +2864,7 @@ ul.sidebar-nav {
         ul.sidebar-nav li a {
           font-size: 14px; } }
       ul.sidebar-nav li a:hover {
-        background-color: #8c9da7;
+        background-color: #00aeef;
         color: white; }
         ul.sidebar-nav li a:hover i {
           color: #000000; }

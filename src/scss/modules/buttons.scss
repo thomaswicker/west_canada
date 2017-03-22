@@ -47,6 +47,26 @@
   }
 }
 
+.btn-view-event {
+  margin-top: $unit-md;
+
+  @include mq(md) {
+    width: 100%;
+    text-align: center;
+    font-size: $font-size-md;
+  }
+
+  @include mq(sm) {
+    width: 100%;
+    text-align: center;
+    font-size: $font-size;
+  }
+
+  i {
+    margin-left: 8px;
+  }
+}
+
 .btn-back-to-team {
   position: absolute;
   top: -10px;
@@ -54,6 +74,7 @@
 
   i {
     margin-right: 8px;
+    color: $color-electric-blue !important;
   }
 
   @include mq(md) {
@@ -67,6 +88,18 @@
 
 .btn-view-careers {
   float: left;
+
+  @include mq(md) {
+    width: 100%;
+    text-align: center;
+    font-size: $font-size-md;
+  }
+
+  @include mq(sm) {
+    width: 100%;
+    text-align: center;
+    font-size: $font-size;
+  }
 
   i {
     margin-left: 8px;
@@ -97,11 +130,23 @@
   i {
     margin-right: $unit-xs;
     font-size: 18px;
+    color: $color-electric-blue;
   }
 }
 
 .btn-back-to-news {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  background-color: transparent !important;
+  color: $color-primary !important;
+
+  &:hover {
+    color: darken($color-electric-blue, 20%) !important;
+  }
+
   i {
     margin-right: 8px;
+    color: $color-electric-blue !important;
   }
 }

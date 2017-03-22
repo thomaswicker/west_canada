@@ -90,11 +90,11 @@
 
         .team-profile-link {
           float: left;
-          width: 25%;
+          width: 33.33%;
           padding: 5px;
 
           @include mq(lg) {
-            width: 33.33%;
+            width: 50%;
           }
 
           @include mq(md) {
@@ -105,15 +105,28 @@
             width: 100%;
           }
 
-          .tpl--inner {
+          a.tpl--inner {
+            position: relative;
             float: left;
             width: 100%;
-            padding: 15px;
-            border: 1px solid $color-secondary;
+            padding: 8px 0 8px $unit-sm;
+            border: 1px solid $color-electric-blue;
+
+            &:after {
+              content: "\f061";
+              float: right;
+              display: inline;
+              width: 25px;
+              height: 25px;
+              margin-top: -$unit-xl;
+              color: $color-electric-blue;
+              font-family: FontAwesome;
+            }
 
             h2 {
               float: left;
               width: 100%;
+              padding-top: 8px;
               margin-bottom: 4px;
               font-family: $font-1;
               font-size: 18px;
@@ -125,15 +138,22 @@
               width: 100%;
               margin-bottom: 4px;
               font-family: $font-2;
-              font-size: 14px;
-              color: $color-secondary;
+              font-size: 15px;
+              font-weight: 600;
+              color: darken($color-electric-blue, 20%);
               font-style: italic;
             }
 
             &:hover {
-              background-color: $color-secondary;
+              background-color: $color-electric-blue;
               color: white;
               cursor: pointer;
+              text-decoration: none;
+
+              &:after {
+                color: white;
+                text-decoration: none;
+              }
 
               h2, h3 {
                 color: white;
@@ -178,14 +198,14 @@
       @include mq(md) {
         width: 100%;
         padding: 10px 0 25px 0;
-        border-top: 2px solid $color-tertiary-alt;
+        border-top: 2px dotted $color-tertiary-alt;
         border-left: 2px solid transparent;
       }
 
       @include mq(sm) {
         width: 100%;
-        padding: 10px 10px 25px 10px;
-        border-top: 2px solid $color-tertiary-alt;
+        padding: 10px 0 25px 0;
+        border-top: 2px dotted $color-tertiary-alt;
         border-left: 2px solid transparent;
       }
 
@@ -200,4 +220,23 @@
       }
     }
   }
+}
+
+// left side of mini profile card
+.mini-profile-pic {
+  float: left;
+  width: 60px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    max-width: 50px;
+    border: 0px !important;
+  }
+}
+
+// right side of mini profile card
+.mini-profile-content {
+  float: left;
+  width: calc(100% - 60px);
 }

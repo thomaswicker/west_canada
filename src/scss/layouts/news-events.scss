@@ -3,7 +3,7 @@
 
 .news-events-container {
   position: relative;
-  top: -20px;
+  top: -$unit-md;
   float: left;
   width: 100%;
   min-height: 350px;
@@ -41,7 +41,7 @@
     .bc-news-left {
       float: left;
       width: 70%;
-      padding: 40px $unit-jumbo $unit-jumbo 0;
+      padding: $unit-xs $unit-jumbo $unit-jumbo 0;
 
       h1 {
         float: left;
@@ -54,13 +54,14 @@
 
         @include mq(md) {
           margin-top: 0;
-          margin-bottom: $unit-md;
+          margin-bottom: $unit-xs;
           font-size: $font-size-lg;
           font-weight: 500;
         }
 
         @include mq(sm) {
-          margin-top: 10px;
+          margin-top: $unit-xs;
+          margin-bottom: 0;
           font-size: $font-size-lg;
           font-weight: 500;
         }
@@ -87,14 +88,14 @@
             cursor: pointer;
             color: lighten($color-primary, 40%);
           }
-        }
 
-        @include mq(md) {
-          font-size: $font-size-md;
-        }
+          @include mq(md) {
+            font-size: $font-size-md;
+          }
 
-        @include mq(sm) {
-          font-size: $font-size-md;
+          @include mq(sm) {
+            font-size: $font-size;
+          }
         }
       }
 
@@ -115,7 +116,7 @@
         float: left;
         width: 100%;
         max-width: 400px;
-        margin-top: 30px;
+        margin-top: $unit-xl;
         border: 2px solid $color-primary;
 
         @include mq(sm) {
@@ -125,17 +126,17 @@
 
       @include mq(lg) {
         width: 65%;
-        padding: $unit-lg $unit-sm 30px $unit-sm;
+        padding: $unit-lg $unit-sm $unit-xl $unit-sm;
       }
 
       @include mq(md) {
         width: 100%;
-        padding: 70px $unit-xl 30px $unit-xl;
+        padding: $unit-jumbo $unit-md $unit-xl $unit-md;
       }
 
       @include mq(sm) {
         width: 100%;
-        padding: 60px $unit-md 30px $unit-md;
+        padding: $unit-jumbo 0 $unit-xl 0;
       }
 
       p.body-text {
@@ -158,15 +159,15 @@
 
       @include mq(md) {
         width: 100%;
-        padding: 10px 0 25px 0;
-        border-top: 2px solid $color-tertiary-alt;
+        padding: $unit-xs 0 $unit-lg 0;
+        border-top: 2px dotted $color-tertiary-alt;
         border-left: 2px solid transparent;
       }
 
       @include mq(sm) {
         width: 100%;
-        padding: 10px 10px 25px 10px;
-        border-top: 2px solid $color-tertiary-alt;
+        padding: $unit-xs 0 $unit-lg 0;
+        border-top: 2px dotted $color-tertiary-alt;
         border-left: 2px solid transparent;
       }
 

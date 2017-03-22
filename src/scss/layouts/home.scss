@@ -120,14 +120,14 @@
     @include mq(md) {
       width: 100%;
       padding: 10px 0 5px 0;
-      border-top: 2px solid $color-tertiary-alt;
+      border-top: 2px dotted $color-tertiary-alt;
       border-left: 2px solid transparent;
     }
 
     @include mq(sm) {
       width: 100%;
-      padding: 10px 10px 5px 10px;
-      border-top: 2px solid $color-tertiary-alt;
+      padding: 10px 0 5px 0;
+      border-top: 2px dotted $color-tertiary-alt;
       border-left: 2px solid transparent;
     }
 

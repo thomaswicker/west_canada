@@ -119,6 +119,14 @@ ul li a:hover {
     h3 {
       font-size: 20px;
       font-weight: 600;
+
+      @include mq(md) {
+        font-size: 17px;
+      }
+
+      @include mq(sm) {
+        font-size: 17px;
+      }
     }
 
     li {

@@ -100,12 +100,12 @@
 
       @include mq(md) {
         width: 100%;
-        padding: $unit-xl $unit-xl 30px $unit-xxl;
+        padding: $unit-xxl $unit-md 30px $unit-md;
       }
 
       @include mq(sm) {
         width: 100%;
-        padding: $unit-xl $unit-lg 15px $unit-md;
+        padding: $unit-xxl $unit-xs 15px $unit-xs;
       }
 
       p.body-text {
@@ -129,14 +129,14 @@
       @include mq(md) {
         width: 100%;
         padding: 10px 0 25px 0;
-        border-top: 2px solid $color-tertiary-alt;
+        border-top: 2px dotted $color-tertiary-alt;
         border-left: 2px solid transparent;
       }
 
       @include mq(sm) {
         width: 100%;
-        padding: 10px 10px 25px 10px;
-        border-top: 2px solid $color-tertiary-alt;
+        padding: 10px 0 25px 0;
+        border-top: 2px dotted $color-tertiary-alt;
         border-left: 2px solid transparent;
       }
 

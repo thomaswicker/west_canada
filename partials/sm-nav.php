@@ -1,6 +1,6 @@
 <ul class='sm-nav'>
   <li>
-    <a href='https://www.facebook.com/Western-EcoSystems-Technology-WEST-Inc-125604770807646/' target="_blank">
+    <a href='https://www.facebook.com/WESTULC/' target="_blank">
       <i class='fa fa-facebook'></i>
     </a>
   </li>
