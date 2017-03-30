@@ -1,4 +1,4 @@
-<h3>About West & Team</h3>
+<h3>About WEST ULC & Team</h3>
 <ul class='sidebar-nav'>
   <li class='active'>
     <a href='http://west-ulc.ca/team/'>

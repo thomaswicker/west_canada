@@ -2,7 +2,7 @@
 			<div id='wf-left'>
 				<h3>
 					<i class='fa fa-twitter'></i>
-					Tweets by WEST
+					Tweets by WEST, ULC
 				</h3>
 				<div class='widget-panel'>
 					<div class='widget-panel-content'>
