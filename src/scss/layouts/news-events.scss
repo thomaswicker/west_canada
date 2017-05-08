@@ -184,3 +184,18 @@
     }
   }
 }
+
+.news-events-image {
+  float: left;
+  width: 100%;
+
+  img {
+    float: left;
+    width: 100%;
+    max-width: 350px;
+
+    @include mq(sm) {
+      max-width: none !important;
+    }
+  }
+}

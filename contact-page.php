@@ -15,24 +15,27 @@ Template Name: About => Contact
 
 
 <section class="contact-container">
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-			<?php the_content(); ?>
+		<?php the_content(); ?>
 
-		<?php endwhile; else: ?>
+	<?php endwhile; else: ?>
 
-		<?php endif; ?>
+	<?php endif; ?>
 
 	<section class='bc-contact-right'>
 		<p class="block-header">WEST, ULC Headquarters</p>
-		<p class="text-row">Calgary, Alberta, Canada</p>
-		<a href="tel:403-623-9231" class="tel-row">403.623.9231</a>
+		<p class="text-row">Unit 207, 535 10 Ave SW</p>
+		<p class="text-row">Calgary, AB T2R 0A8</p>
+		<a href="tel:403-265-0343" class="tel-row">403.265.0343</a>
 		<a href="mailto:marketing@west-ulc.ca" class="email-row" target="_top">marketing@west-ulc.ca</a>
 
-		<p class="block-header">To contact WEST’s International Corporate Headquarters</p>
+		<p class="block-header margin-top">WEST, INC Headquarters</p>
+		<p class="text-row">415 W. 17th Street, Suite 200</p>
+		<p class="text-row">Cheyenne, WY 82001</p>
+		<a href="tel:307-634-1756" class="tel-row">307.634.1756</a>
 		<a href="mailto:marketing@west-inc.com" class="email-row" target="_top">marketing@west-inc.com</a>
 		<a href="http://www.west-inc.com" class="web-row">west-inc.com</a>
-		<a href="tel:307-634-1756" class="tel-row">307.634.1756</a>
 	</section>
 
 </section>

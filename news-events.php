@@ -37,6 +37,8 @@ Template Name: About => News & Events
 					<hr style="border: 1px solid #dddddd;">
 					<p><?php the_field( 'description' ); ?></p>
 					<span><?php the_field( 'links' ); ?></span>
+					<div class="news-events-image"><img src="<?php the_field( 'image' ); ?>" alt=""></div>
+
 					<a class="btn btn-secondary btn-view-event" href="<?php the_permalink() ;?>">VIEW EVENT<i class="fa fa-arrow-right" class="margin left md"></i></a>
 			</article>
 

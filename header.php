@@ -108,6 +108,7 @@
 						<li><a href="http://west-ulc.ca/about/team/">Team<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
 						<li><a href="http://west-ulc.ca/about/culture/">Culture<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
 						<li><a href="http://west-ulc.ca/about/news-and-events/">News & Events<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+						<li><a href="http://west-inc.com/" target="_blank">WEST USA<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
 						<li><a href="http://west-ulc.ca/about/contact/">Contact<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
 
 						<li class="mobile-nav-row-divider">Careers</li>
@@ -179,6 +180,7 @@
 								<li><a href="http://west-ulc.ca/about/team/">Team</a></li>
 								<li><a href="http://west-ulc.ca/about/culture/">Culture</a></li>
 								<li><a href="http://west-ulc.ca/about/news-and-events/">News & Events</a></li>
+								<li><a href="http://west-inc.com/" target="_blank">WEST USA</a></li>
 								<li><a href="http://west-ulc.ca/about/contact/">Contact</a></li>
 							</ul>
 						</li>

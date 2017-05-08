@@ -150,11 +150,23 @@
       font-family: $font-2;
       letter-spacing: 145%;
 
+      a {
+        color: $color-electric-blue;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
       .block-header {
         float: left;
         width: 100%;
         margin-top: 40px;
         line-height: 145%;
+
+        &.margin-top {
+          margin-top: 40px;
+        }
       }
 
       .text-row, .tel-row, .email-row, .web-row {
