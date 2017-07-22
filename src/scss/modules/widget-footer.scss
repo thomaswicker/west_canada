@@ -85,20 +85,24 @@
           font-family: $font-1;
           font-size: 18px;
           font-weight: $font-weight-bold;
+          line-height: 145%;
           text-align: left;
           color: $color-primary;
         }
 
         p {
           font-family: $font-2;
-          font-size: 14px;
-          line-height: 140%;
+          font-size: 13px !important;;
+          line-height: 140% !important;;
         }
 
         span {
           float: left;
           width: 100%;
           border: 0px;
+          font-family: $font-2 !important;;
+          font-size: 13px !important;;
+          line-height: 140% !important;;
 
           blockquote {
             float: left;
@@ -109,6 +113,9 @@
               float: left;
               width: 100%;
               border: 0px;
+              font-family: $font-2 !important;;
+              font-size: 13px !important;;
+              line-height: 140% !important;;
 
               a {
                 float: left;
