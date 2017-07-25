@@ -74,6 +74,10 @@
         font-size: 18px;
         font-weight: $font-weight-bold;
 
+        &:first-child {
+          margin-top: $unit-sm;
+        }
+
         a {
           float: left;
           width: 100%;
@@ -108,20 +112,43 @@
       p {
         float: left;
         width: 100%;
-        font-family: $font-2;
-        line-height: 144%;
+        font-family: $font-2 !important;
+        line-height: 145%;
+      }
+
+      div {
+        float: left;
+        width: 100%;
+        font-family: $font-2 !important;
+        line-height: 145%;
+      }
+
+      span {
+        float: left;
+        width: 100%;
+        font-family: $font-2 !important;
+        line-height: 145%;
       }
 
       img {
         float: left;
         width: 100%;
-        max-width: 400px;
-        margin-top: $unit-xl;
+        max-width: 300px;
+        margin-top: 20px;
         border: 2px solid $color-primary;
 
         @include mq(sm) {
           width: 100%;
         }
+      }
+
+      img[src=""] {
+         display: none !important;
+      }
+
+      .btn {
+        margin-top: $unit-md;
+        margin-bottom: $unit-lg;
       }
 
       @include mq(lg) {
