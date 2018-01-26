@@ -80,9 +80,11 @@
       }
 
       .team-body-container {
-        float: left;
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
         color: white;
+        align-items: flex-start;
 
         p {
           display: none;
@@ -90,8 +92,12 @@
 
         .team-profile-link {
           float: left;
-          width: 33.33%;
+          width: 25%;
           padding: 5px;
+
+          @include mq(xl) {
+            width: 33.333%;
+          }
 
           @include mq(lg) {
             width: 50%;
@@ -137,11 +143,24 @@
               float: left;
               width: 100%;
               margin-bottom: 4px;
+              padding-right: 40px;
               font-family: $font-2;
               font-size: 15px;
               font-weight: 600;
               color: darken( $color-secondary, 20%);
               font-style: italic;
+
+              @include mq(lg) {
+
+              }
+
+              @include mq(md) {
+
+              }
+
+              @include mq(sm) {
+
+              }
             }
 
             &:hover {

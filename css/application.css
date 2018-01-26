@@ -2380,15 +2380,25 @@ p.body-text {
           .team-container .body-content-team .bc-team-left h4 {
             font-size: 1.25rem; } }
       .team-container .body-content-team .bc-team-left .team-body-container {
-        float: left;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         width: 100%;
-        color: white; }
+        color: white;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; }
         .team-container .body-content-team .bc-team-left .team-body-container p {
           display: none; }
         .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link {
           float: left;
-          width: 33.33%;
+          width: 25%;
           padding: 5px; }
+          @media only screen and (min-width: 90.1441px) and (max-width: 1992px) {
+            .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link {
+              width: 33.333%; } }
           @media only screen and (min-width: 1025px) and (max-width: 1440px) {
             .team-container .body-content-team .bc-team-left .team-body-container .team-profile-link {
               width: 50%; } }
@@ -2425,6 +2435,7 @@ p.body-text {
               float: left;
               width: 100%;
               margin-bottom: 4px;
+              padding-right: 40px;
               font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
               font-size: 15px;
               font-weight: 600;
