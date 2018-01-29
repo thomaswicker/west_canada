@@ -36,9 +36,9 @@
       <strong>
         Contact us with your project inquiries.
       </strong>
-      <div class='btn btn-primary'>
+      <a href="http://west-ulc.ca/contact/" class='btn btn-primary'>
         Contact
-      </div>
+      </a>
     </div>
   </div>
 
