@@ -73,7 +73,7 @@
 			</div>
 			<div class='footer-right'>
 				<p class='copyright'>
-					Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. WEST Inc
+					Copyright &copy; <?php echo date('Y'); ?> WEST Inc.
 				</p>
 			</div>
 			<!-- Magical Spells -->

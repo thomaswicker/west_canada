@@ -27,7 +27,7 @@ Template Name: About => Contact
 		<p class="block-header">WEST, ULC Headquarters</p>
 		<p class="text-row">Suite 303, 1000 9th Ave SW</p>
 		<p class="text-row">Calgary, Alberta, T2P 2Y6</p>
-		<a href="tel:403-265-0343" class="tel-row">403.265.0343</a>
+		<a href="tel:403-629-6741" class="tel-row">403.629.6741</a>
 		<a href="mailto:marketing@west-ulc.ca" class="email-row" target="_top">marketing@west-ulc.ca</a>
 
 		<p class="block-header margin-top">WEST, INC Headquarters</p>
